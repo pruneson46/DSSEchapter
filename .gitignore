@@ -16,3 +16,4 @@
 *.log
 DSSEchapter.pdf
 *.idx
+.DS_Store
