@@ -8,3 +8,11 @@
 .thm
 *.aux
 *.bbl
+*.ilg
+*.thm
+*.blg
+*.ind
+*.gz
+*.log
+DSSEchapter.pdf
+*.idx
