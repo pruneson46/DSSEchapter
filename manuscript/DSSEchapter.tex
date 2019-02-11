@@ -35,6 +35,26 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%=========================Manage Comments=============================
+\usepackage{color}
+\usepackage{ifthen}
+\newboolean{showcomments}
+\setboolean{showcomments}{true} % toggle to show or hide comments
+\ifthenelse{\boolean{showcomments}}
+    {
+        \newcommand{\emelie}[1]{\textcolor{red}{{\it [Emelie says: #1]}}}
+        \newcommand{\peggy}[1]{\textcolor{blue}{{\it [Peggy says: #1]}}}
+        \newcommand{\per}[1]{\textcolor{cyan}{{\it [Per says: #1]}}}
+        \newcommand{\othercomment}[1]{\textcolor{magenta}{{\it [#1]}}}
+    }
+    {
+        \newcommand{\emelie}[1]{}
+        \newcommand{\peggy}[1]{}
+        \newcommand{\per}[1]{}
+        \newcommand{\othercomment}[1]{}
+    }
+%=======================================================================
+
 %(1)    The formatting templates (in both LaTeX and Word) are available under [1]. The current LaTeX template is directly available at [2] (please use the template from the subdirectory “author” in the zip file) and the current Word template at [3].
 %(2)    The chapters should be written in a clear, consistent, self-contained textbook-like style. Therefore, please comply with the following structure:
 %a.       Each chapter should start with an “Introduction” and end with a short “Conclusion”. Please also consider a section “Recommended Further Reading” before the Conclusion.
@@ -69,6 +89,7 @@ Please use the 'starred' version of the \texttt{abstract} command for typesettin
 
 \section{Introduction}
 \label{sec:intro}
+
 
 \section{Background}
 \label{sec:background}
@@ -163,8 +184,79 @@ Design knowledge is gained through studying real-world problem-solution pairs. W
 
 Our DS model covers the main constructs of DS research, see Figure~\ref{fig:VA-template}. The theoretical contribution in terms of a technological rule, its instantiation in terms of a real problem-solution pair and the empirical or theoretical support for the problem understanding, the solution design and the validity of the solution to the problem.
 
+=======
+\begin{itemize}
+\item Software engineering research aims at practically useful methods, technologies and tools to help industry to improve software engineering practice. 
+\item Discussed already when SE was defined \emph{The phrase 'software engineering' was [...] implying the need for software manufacture to be based on the types of theoretical foundations and practical disciplines, that are traditional in the established branches of engineering} \cite[p13]{Nato1968}.
+\item Lots of solution proposals have been published, be it development methods/processes, tools, languages, although not evaluated in large scale SE.
+\item With the advent of empirical SE, focus shifted towards validation of solution proposals. 
+\item Families of experiments, theory building to systematically add to the knowledge basis.
+\item Industry-academia collaboration -- methods, models -- aim to make research more relevant 
+\item Action research/technical action research -- research methods to impact practice
+\item Continuous* for engineering cycles -- applicable for research?
+\item The Design Science paradigm integrates \emph{problem understanding, solution design and evaluation}.
+\item Different methods can be used within the DS paradigm
+\end{itemize}
+
+\section{Design Science -- an overview}
+
+\subsection{Concepts of Design Science}
+\begin{itemize}
+\item Problem understanding
+\item Solution design
+\item Evaluation
+\item Technological Rule
+\end{itemize}
+
+\subsection{Variants of Design Science}
+
+Hevner \cite{hevner_design_2004}
+
+van Aken \cite{aken_management_2004}
+
+Wieringa \cite{wieringa_what_2014}
+
+
+\subsection{Design Science in Software Engineering}
+
+Our conceptualization \cite{StoreyESEM17}
+
+\section{Technological rules}
+
+\section{Problem understanding}
+
+\section{Solution design}
+
+\section{Evaluation}
+
+\section{Knowledge building}
+\begin{itemize}
+\item Technological rule -- as a means for knowledge summary
+\item Theory building
+\item Continuous learning and improvement
+\item Generalization
+\end{itemize}
+
+\section{Research communication}
+\begin{itemize}
+\item Technological rule -- as a means for communication
+\item Visual abstracts
+\end{itemize}
+
+\section{Examples}
+Either we choose examples that illustrate the different aspects of DS, or we choose three examples that are good examples of DS -- candidates from the ICSE best papers, or our own papers?
+
+\subsection{Processes?}
+Aiming to stress that DS is a paradigm, we might present different alternative processes/methods to conduct DS research.
+Gorschek? \cite{GorschekSW2006}
+
+\subsection{Problem understanding}
+
+\subsection{Solution design}
+
 
 \section{Recommended Further Reading}
+
 \section{Conclusion}
 
 \bibliographystyle{plain}
