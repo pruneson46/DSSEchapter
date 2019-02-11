@@ -90,6 +90,29 @@ Please use the 'starred' version of the \texttt{abstract} command for typesettin
 \section{Introduction}
 \label{sec:intro}
 
+\begin{itemize}
+\item Software engineering research aims at practically useful methods, technologies and tools to help industry to improve software engineering practice. 
+\item Discussed already when SE was defined \emph{The phrase 'software engineering' was [...] implying the need for software manufacture to be based on the types of theoretical foundations and practical disciplines, that are traditional in the established branches of engineering} \cite[p13]{Nato1968}.
+\item Lots of solution proposals have been published, be it development methods/processes, tools, languages, although not evaluated in large scale SE.
+\item With the advent of empirical SE, focus shifted towards validation of solution proposals. 
+\item Families of experiments, theory building to systematically add to the knowledge basis.
+\item Industry-academia collaboration -- methods, models -- aim to make research more relevant 
+\item Action research/technical action research -- research methods to impact practice
+\item Continuous* for engineering cycles -- applicable for research?
+\item The Design Science paradigm integrates \emph{problem understanding, solution design and evaluation}.
+\item Different methods can be used within the DS paradigm
+\end{itemize}
+
+\section{Design Science -- an overview}
+
+\subsection{Concepts of Design Science}
+\begin{itemize}
+\item Problem understanding
+\item Solution design
+\item Evaluation
+\item Technological Rule
+\end{itemize}
+
 
 \section{Background}
 \label{sec:background}
@@ -152,13 +175,13 @@ Just like Gregor and Hevner~\cite{gregor_positioning_2013}, Wieringa emphasises 
 
 \subsubsection{Design knowledge can be generalised to technological rules, TRs}
 %\subsubsection{Design knowledge is prescriptive and context dependent.} 
-In line with van Akens proposal~\cite{aken_management_2004}, we describe design knowledge in terms of technological rules. Such rules comprise both the context in terms of the \emph{desired effect} and \emph{the situation} and a prescription in terms of a \emph{proposed solution or intervention}. see Figure~\ref{fig:VA-template}. Furthermore we argue that technological rules can be expressed at any convenient abstraction level and that they are hierarchically related to each other. However, TRs expressed at a very high abstraction level (e.g. "To produce software of high quality apply good software engineering practices") tend to be either trivial or too bold (easy to debunk) while rules at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. Thus it is important to explicitly formulate the technological rule when presenting design science research and to be consistent with it both when arguing for its relevance and its novelty as well as when presenting the empirical (or analytical) support for the claims. 
+In line with van Akens proposal~\cite{van_aken_management_2004}, we describe design knowledge in terms of technological rules. Such rules comprise both the context in terms of the \emph{desired effect} and \emph{the situation} and a prescription in terms of a \emph{proposed solution or intervention}. see Figure~\ref{fig:VA-template}. Furthermore we argue that technological rules can be expressed at any convenient abstraction level and that they are hierarchically related to each other. However, TRs expressed at a very high abstraction level (e.g. "To produce software of high quality apply good software engineering practices") tend to be either trivial or too bold (easy to debunk) while rules at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. Thus it is important to explicitly formulate the technological rule when presenting design science research and to be consistent with it both when arguing for its relevance and its novelty as well as when presenting the empirical (or analytical) support for the claims. 
 
 Hevner et al. do not emphasise generality of the contribution as such but consider the instances of problems-artefact-utility as the research contribution. Instead generalisability or external validity is discussed as a quality attribute of such contribution~\cite{hevner_design_2004}. Gregor and Hevner, on the other hand do put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. Also Wieringa discusses design theory, defining it as theories of artefacts in context~\cite{wieringa_design_2009}. Wieringa and Daneva address generalisability of design theory ~\cite{wieringa_six_2015} and argue that there is no such thing as general design theories, instead they emphasise the utility of middle-ranged theory, defined as theories lacking universal scope. One could argue that useful technological rules are such middle-ranged theory constructs.
 
 \subsubsection{Technological rules mature through increments of problem understanding, solution design and evaluation of the solution applied to the problem} 
 
-Design knowledge is gained through studying real-world problem-solution pairs. We agree with Wieringa that we cannot provide evidence for general design theory~\cite{wieringa_six_2015}. Still, general technological rules are the actionable outcome of our research and should be formulated (without evidence). However, of course we may and should provide empirical and analytical support for the technolgical rules we put forward. van Aken describes the typical design science strategy to be the multiple case study~\cite{aken_management_2004}, which could be compared with clinical research alpha- and beta testing, i.e. first case and succeeding cases. We agree with this and stress the need to study the real world instance of the problem and the implementation of the solution as a whole.
+Design knowledge is gained through studying real-world problem-solution pairs. We agree with Wieringa that we cannot provide evidence for general design theory~\cite{wieringa_six_2015}. Still, general technological rules are the actionable outcome of our research and should be formulated (without evidence). However, of course we may and should provide empirical and analytical support for the technolgical rules we put forward. van Aken describes the typical design science strategy to be the multiple case study~\cite{van_aken_management_2004}, which could be compared with clinical research alpha- and beta testing, i.e. first case and succeeding cases. We agree with this and stress the need to study the real world instance of the problem and the implementation of the solution as a whole.
 
 
 %\paragraph{Software engineering design problems are socio-technical}
@@ -184,37 +207,7 @@ Design knowledge is gained through studying real-world problem-solution pairs. W
 
 Our DS model covers the main constructs of DS research, see Figure~\ref{fig:VA-template}. The theoretical contribution in terms of a technological rule, its instantiation in terms of a real problem-solution pair and the empirical or theoretical support for the problem understanding, the solution design and the validity of the solution to the problem.
 
-=======
-\begin{itemize}
-\item Software engineering research aims at practically useful methods, technologies and tools to help industry to improve software engineering practice. 
-\item Discussed already when SE was defined \emph{The phrase 'software engineering' was [...] implying the need for software manufacture to be based on the types of theoretical foundations and practical disciplines, that are traditional in the established branches of engineering} \cite[p13]{Nato1968}.
-\item Lots of solution proposals have been published, be it development methods/processes, tools, languages, although not evaluated in large scale SE.
-\item With the advent of empirical SE, focus shifted towards validation of solution proposals. 
-\item Families of experiments, theory building to systematically add to the knowledge basis.
-\item Industry-academia collaboration -- methods, models -- aim to make research more relevant 
-\item Action research/technical action research -- research methods to impact practice
-\item Continuous* for engineering cycles -- applicable for research?
-\item The Design Science paradigm integrates \emph{problem understanding, solution design and evaluation}.
-\item Different methods can be used within the DS paradigm
-\end{itemize}
 
-\section{Design Science -- an overview}
-
-\subsection{Concepts of Design Science}
-\begin{itemize}
-\item Problem understanding
-\item Solution design
-\item Evaluation
-\item Technological Rule
-\end{itemize}
-
-\subsection{Variants of Design Science}
-
-Hevner \cite{hevner_design_2004}
-
-van Aken \cite{aken_management_2004}
-
-Wieringa \cite{wieringa_what_2014}
 
 
 \subsection{Design Science in Software Engineering}
