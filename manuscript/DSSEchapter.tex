@@ -279,47 +279,41 @@ Thus it is important to explicitly formulate the technological rule when present
 % outline: Technological rules are validated by in-context evaluations (investigations of instantiations of the rule)
 Design knowledge is gained through studying real-world problem-solution pairs. This is done by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Van Aken describes the typical design science strategy to be the multiple case study~\cite{van_aken_management_2004}, which could be compared with clinical research alpha- and beta testing, i.e. first case and succeeding cases.
 Another way to gain design knowledge (although within one context rather than across contexts) is through action research~\cite{wieringa_technical_2012}. Gregor and Hevner refers to the iterative process of gaining design knowledge as design cycles~\cite{gregor_positioning_2013}. Each instantiation (i.e., a case study or an iteration of action research) constitutes a unit of analysis in relation to that rule and the new knowledge is communicated and assessed from that perspective. 
-%The technological rule may be either a new proposal or an existing one that is refined or validated by the current study. 
-
-% outline: Maturity of a technological rule is increased by conducting multiple in-context evaluations.
- %We agree with Wieringa that we cannot provide evidence for general design theory~\cite{wieringa_six_2015}. Still, general technological rules are the actionable outcome of our research and should be formulated (without evidence). However, of course we may and should provide empirical and analytical support for the technolgical rules we put forward.  We agree with this and stress the need to study the real world instance of the problem and the implementation of the solution as a whole.
-
-
-
-% outline: Such knowledge may be packaged as technological rules 
----% and "principles of function" in the Jones and Gregor taxonomy~\cite{jones_anatomy_2007} \emelie{check order of authors}. 
-
-%\subsection{Design knowledge generalised to technological rules}
-%\subsubsection{Design knowledge is prescriptive and context dependent.} 
-
-
-%Hevner et al. do not emphasise generality of the contribution as such but consider the instances of problems-artefact-utility as the research contribution. Instead generalisability or external validity is discussed as a quality attribute of such contribution~\cite{hevner_design_2004}. 
-
-%\subsection{Maturation of technological rules}
-%\paragraph{Technological rules mature through increments of problem understanding, solution design and evaluation of the solution applied to the problem} 
-
-% outline: The technological rule is the core of our VA template
- 
-
-% outline: The maturity of a technological rule increases by investigating multiple instances of solutions in context
 
 
 \section{Problem understanding}
-\begin{itemize}
-\item Ultimately an act of a SE practitoner
-\item Problem understanding is the first step towards a solution design (nested model)
-\item Problem instance/stakeholders 
-\item Empirical observations of practice
-\item Literature as a sources of problem understanding?
-\end{itemize}
 
 
-\paragraph{Problem understanding is dependant on the envisioned solution.}Although we consider much of the software engineering research to be design science research, in that its uttermost goal is to provide well-informed recommendations to practitioners, not all exploratory and descriptive research provide relevant design knowledge. In order for the exploratory and descriptive knowledge to be considered design knowledge it must be described in terms of the solution to be designed. This is illustrated in Figure~\ref{fig:contributiontypes}. If for example the proposed solution is to design a visualisation system, the problem should typically be described in terms of a group of target users, their questions, and their measurements or data~\cite{meyer_nested_2015}. \emelie{I'm not sure the papers in our descriptive/problem cluster passes this criteria}
+ % Who, What, Where, When, Why and How
+
+% (Who?) Problem understanding is ultimately an act of the practitioner but could be done in collaboration between researchers and practitioners or by researchers alone
+
+In the long run, software engineering theory aims at helping practitioners designing solutions to their specific problem. Thus problem understanding is ideally an act of a software engineering practitioner and not a researcher. However, to produce such theory research is needed. In the previous section we described how design knowledge is obtained and mature through observations of real life instances of problem-solution pairs. For each such instance the problem needs to be formulated (understood) according to a conceptual lens. Such problem understanding can take place in collaboration between practitioners and researchers in for example action research or case study research or by researchers observing software engineering practice.
+
+% (What?) The outcome of the problem understanding step is a conceptualuzation of the problem instance towards an envisioned solution and thus tightly connected to a specific design approach
+
+The outcome of the problem understanding activities is a conceptuptalization of the problem instance towards an envisioned solution. If for example the proposed solution is to design a visualisation system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus the problem formulation is tightly connected to the solution design and cannot be done in isolation. Although we consider much of the software engineering research to be design science research, not all exploratory and descriptive research provide relevant design knowledge in all cases.
+
+% (What?) The research contribution is not the conceptualisation, but the identification of the problem instance (empirical support for prevalence of a conceptual problem) and potential updates of the modelling approach (new aspects of the technological rule)
+
+Furthermore, the research contribution is \emph{not} the conceptualisation as such since this is connected to the instance of the problem and not the class of problems. Instead the research contribution is the empirical support for new, existing or refined technological rules. A research contribution from the problem understanding step could for example be the identification of problem instances -- confirming the prevalence of a general problem -- or updates of the conceptualisation approach -- i.e. the design constructs of a general solution.
+
+% (When?) Problem understanding is the first step towards a solution design.
+
+Problem understanding is the first step towards a solution design. However, depending on the type of the solution, problem understanding may need to be repeated at several abstraction levels starting with the stakeholder's problem description and for example in case of a tool implementation reaching to the level of implementation details (such as  choice of algorithm). If this is the case different types of technological rules are used and validated at different abstraction levels. It is important to be aware of which these rules are and ensure that the validation of a solution takes place at all these levels and that the validations are mapped to the correct technological rules. 
+
+% (Where?) Problem understanding must originate in empirical observations of practice
+Software engineering is a discipline, in which conditions are rapidly changing. To provide relevant recommendations -- technological rules -- problem understanding must originate in empirical observations of practice -- i.e. real life problem instances. Furthermore, software engineering is a socio-technical endeavor implying that stakeholders need to be involved in both problem understanding and solution validation at least for technological rules at the higher abstraction levels. Lower level technological rules may be investigated in isolation but must be related to the higher level rules to be of relevance. 
+
+% (How?) Problem understanding should build on prior work
+
+Ideally problem understanding can be guided by theory -- i.e. prior technological rules and conceptualisation approaches. 
+
+
 
 \per{A solution searching the problem?}
 
-\paragraph{Software engineering design problems are socio-technical}
-Problems are described as improvement problems and/or construction problems, wicked problems, socio-technical, involving stakeholders. 
+\per{Problems are described as improvement problems and/or construction problems, wicked problems, socio-technical, involving stakeholders.} 
 
 
 
