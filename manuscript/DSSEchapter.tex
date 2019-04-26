@@ -210,18 +210,20 @@ Gregor and Hevner also refer to design science as a paradigm~\cite{gregor_positi
 
 
 \subsection{Software Engineering Research as Design Science}
-\per{\begin{itemize}
-\item Industry-academia collaboration
-\item Paper example Jonsson \cite{JonssonBug15} from \cite{StoreyESEM17}, or something different.
-\item Method examples? Gorschek? \cite{GorschekSW2006} Hevner, Action research.
-\item Units of publication -- not necessarily one paper/study. Connection to technological rule.
-\end{itemize}}
 
 \subsubsection{Design Science Studies}
 In their practitioner article on industry--academia collaboration in software engineering, Carver and Prikladnicki stress the importance of a synergistic relationship between software practitioners and software engineering researchers.
 \begin{quote}Practitioners could obtain more relevant research results, and researchers could better understand the type and scope of problems to examine.'' \cite{CarverIEEESW2018}
 \end{quote} 
-These practitioner--researcher synergies resonate well with the design science paradigm, as illustrated in one of their examples, introducing automated bug assignment to handle a large inflow of bug reports \cite{JonssonBug15}. We have used the same example to illustrate our visual abstract \cite{StoreyESEM17}.
+These practitioner--researcher synergies resonate well with the design science paradigm, as illustrated in one of their examples, introducing automated bug assignment to handle a large inflow of bug reports \cite{JonssonBug15}. We have used the same example to illustrate our visual abstract \cite{StoreyESEM17}, see Figure \ref{fig:BugAssignment}.
+
+\begin{figure*}[t]
+\begin{center}
+\includegraphics[width=\columnwidth, trim={7mm 30mm 7mm 30mm },clip]{Figures/VATemplateJonsson.pdf}
+\caption{Visual abstract for the paper on automated bug assignment \cite{JonssonBug15}.}
+\label{fig:BugAssignment}
+\end{center}
+\end{figure*}
 
 The automated bug assignment research was not originally presented through the design science lens. However, like much software engineering research it is implicitly conducted as design science research \cite{Engstrom19arxiv}. 
 The scientific knowledge gained from the work can be phrased as a \emph{technological rule}:
@@ -237,13 +239,15 @@ The \emph{relevance} of the research is ensured by being anchored in the literat
 \subsubsection{Empirical Software Engineering and Design Science}
 The empirical components of research depend on the research paradigm. The formal sciences are ``empirically void'' as they primarily aim to build internally consistent systems \cite{van_aken_management_2004}. However, both explanatory sciences and design sciences have empirical components. Explanatory sciences observe `natural' phenomena to explain and predict future behavior, while design sciences use empirical methods, both to understand the problem at hand, and to validate the proposed solution and intervention in context. 
 
-Purely observational studies, which aim to characterize the status of a field of software engineering practice, primarily have the characteristic of explanatory sciences as they aim to explore the current, `natural' \emelie{I don't understand the concept of 'natural' state of practice}\per{I tried a footnote -- perhaps integrate with the text.} state of practice\footnote{This does not refer to `natural' in the sense of natural sciences, as software and its engineering are designed artifacts. However, the phenomena can be studied with respect to properties that are considered emergent from the phenomena, independently of their design variations.}. Observational studies, which aim to understand a problem, with the purpose of developing or improving an intervention to address the problem, may be viewed as a part of the design sciences paradigm. \emelie{I think this definition of problem understanding fit in to the explanatory sciences as well. Maybe we should distinguish between problem understanding and problem conceptualisation instead? Should we propose a similar theory distinction for SE as van Aken does for Organisation and Management theory (Software Engineering theory and Software Process Improvement Theory ...)? Maybe we need a section on design theory or changed the heading of the TR section to SE design theory ...} 
+Purely observational studies, which aim to characterize the status of a field of software engineering practice, primarily have the characteristic of explanatory sciences as they aim to explore the current, `natural' \emelie{I don't understand the concept of 'natural' state of practice}\per{I tried a footnote -- perhaps integrate with the text.} state of practice\footnote{This does not refer to `natural' in the sense of natural sciences, as software and its engineering are designed artifacts. However, the phenomena can be studied with respect to properties that are considered emergent from the phenomena, independently of their design variations.}. Observational studies, which aim to understand a problem, with the purpose of developing or improving an intervention to address the problem, may be viewed as a part of the design sciences paradigm. 
+\emelie{I think this definition of problem understanding fit in to the explanatory sciences as well.} \per{I think the distinction is the purpose.}
+\emelie{Maybe we should distinguish between problem understanding and problem conceptualisation instead? Should we propose a similar theory distinction for SE as van Aken does for Organisation and Management theory (Software Engineering theory and Software Process Improvement Theory ...)?} \per{No, see 2.2}
 
-\per{Move/delete the following? Repeated from above?} \emelie{I think we can remove it}
-\paragraph{The design science lens provides a holistic view on a research contribution.} 
+%\per{Move/delete the following? Repeated from above?} \emelie{I think we can remove it}
+%\paragraph{The design science lens provides a holistic view on a research contribution.} 
 
-Any design science research contribution should be viewed in its context, which includes both a problem formulation and a solution proposal and, in case of an empirical contribution, instances of both, see Figure~\ref{fig:contributiontypes}. Thus a problem conceptualisation must be presented in terms of the envisioned solution, and a solution validation in terms of the problem formulation. 
-Just like Gregor and Hevner~\cite{gregor_positioning_2013}, Wieringa emphasises that it is the artefact in context being the object of study in design science~\cite{wieringa_design_2009}.
+%Any design science research contribution should be viewed in its context, which includes both a problem formulation and a solution proposal and, in case of an empirical contribution, instances of both, see Figure~\ref{fig:contributiontypes}. Thus a problem conceptualisation must be presented in terms of the envisioned solution, and a solution validation in terms of the problem formulation. 
+%Just like Gregor and Hevner~\cite{gregor_positioning_2013}, Wieringa emphasises that it is the artefact in context being the object of study in design science~\cite{wieringa_design_2009}.
 
 The empirical contributions under the design sciences include both the problem understanding and the empirical insights from the design of the intervention in its context. Series of studies may be used to extend the scope of the technological rule. The design science paradigm builds primarily on theoretical/analytical generalisation, in contrast to explanatory sciences, which rely more on statistical generalization \cite[p. 30]{Runeson12Case}. The empirical insights may also be extended into design theories, for example following procedures proposed by Sj{\o}berg at al.~\cite{sjoberg2008building}.
 
@@ -255,6 +259,7 @@ The empirical contributions under the design sciences include both the problem u
 %\item iterations of problem-solution implementations
 %\item Publication units
 %\end{itemize}
+\emelie{Maybe we need a section on design theory or changed the heading of the TR section to SE design theory ...} 
 
 \emelie{moved from sec 2}
  \per{Elaborate on exemplars here or in TA section?} \emelie{I suggest that we move the definition and add examples in the TA section} A technological rule is typically expressed in the following form: 
