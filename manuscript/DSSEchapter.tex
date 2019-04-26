@@ -123,11 +123,7 @@ Design science does not prescribe a specific methodology nor specific method ste
 , another may report the complete chain from problem identification to validated solution. Studies focusing on one aspect of design science may contain research contributions that build on or constitute basis for other research under the design science paradigm.
 
 %Technological rules
-The scientific knowledge, emanating from design science research, is typically captured in \emph{technological rules}. This means ``field-tested and grounded'' examplars of how a problem can be solved~\cite{van_aken_management_2004}. \per{Elaborate on exemplars here or in TA section?} \emelie{I suggest that we move the definition and add examples in the TA section} A technological rule is typically expressed in the following form: 
-
-\begin{quote}{To achieve <effect/change> in <situation/context> apply <solution/intervention>}\end{quote}
-
-
+The scientific knowledge, emanating from design science research, is typically captured in \emph{technological rules}. This means ``field-tested and grounded'' examplars of how a problem can be solved~\cite{van_aken_management_2004}.
 %Technological rules may be defined at different levels of abstraction. Very high level rules, of the type:
 %\begin{quote}{To produce software of high quality apply good software engineering practices}\end{quote} are either trivial or too bold. On the other hand, too detailed rules, highly specialized for the specific problem instance under study is not possible to generalize.
 
@@ -147,7 +143,7 @@ The outcome of a design science research endeavor is ultimately that \emph{desig
 \per{Something more on design approach?}
 
 % Validation
- The primary goal of \emph{validation} is to assess whether the solution proposal is feasible for the problem instance. However, the scope of the design knowledge gained, can be extended by systematically extending the scope of the validation.  \emelie{move the rest of this paragraph to methodology?} Stol and Fitzgerald adapted McGrath's framework for research strategies, to guide balancing generalizability, precision and realism in designing validation studies \cite{StolABC18}, which may be useful in choosing research strategies in relation to the goals of the research endeavor.
+ The primary goal of \emph{validation} is to assess whether the solution proposal is feasible for the problem instance. However, the scope of the design knowledge gained, can be extended by systematically extending the scope of the validation. 
 
 
 %Design Science as a Lens
@@ -196,11 +192,11 @@ Gregor and Hevner also refer to design science as a paradigm~\cite{gregor_positi
 
 %\paragraph{Design science is more than action research.}
 
-\emelie{move to TR section?} In another, similar field of research, van Aken proposes to distinguish \emph{management theory}, that is prescriptive, from \emph{organisational theory}, that is explanatory~\cite{van_aken_management_2005}. He focuses on the product of the research process, i.e. design knowledge, rather than research itself and introduces the notion of \emph{technological rules} as being field-tested and grounded solution-oriented knowledge. 
+
 
 \per{Add more from Simons -- science of the natural/artificial?}
 
-\emelie{move to methodology section} Action research is one way of producing and validating technological rules but it is not the only way. Action research does not explicitly aim at developing valid knowledge that can be transferred to other contexts but rather to make a change in one specific local context. Both Wieringa~\cite{wieringa_technical_2012} and Johannesson~\cite{johannesson_introduction_2014} discuss action research as one of several empirical methods that can be used to produce design knowledge.
+
 
 
 %\begin{figure*}
@@ -238,7 +234,70 @@ The general \emph{problem} on inefficient bug assignment is observed in the lite
 
 The \emph{relevance} of the research is ensured by being anchored in the literature as well as in the specific problem instances of the study. Research \emph{rigor} is ensured by structured and transparent research methods, conducted with real world data. The \emph{novelty} of the research lies both in the choice of machine learning classifiers (ensemble-based), and the ability to demonstrate a system of automated bug assignment which precision is on par with the existing manual procedures.
 
-\subsubsection{Research Methods in Design Science} \emelie{I think this should be a main section after the TR section and before the problem understanding section (problem understanding, solution design and validation could even be subsections of this one)}
+
+
+
+\subsubsection{Empirical Software Engineering and Design Science}
+The empirical components of research depend on the research paradigm. The formal sciences are ``empirically void'' \cite{van_aken_management_2004} as they primarily aim to build internally consistent systems. However, both explanatory sciences and design sciences have empirical components. Explanatory sciences observe `natural' phenomena to explain and predict future behavior, while design sciences use empirical methods, both to understand the problem at hand, and to validate the proposed solution and intervention in context. 
+
+Purely observational studies, which aim to characterize the status of a field of software engineering practice, primarily have the characteristic of exploratory \emelie{explanatory?} sciences as they aim to explore the current, `natural' \emelie{I don't understand the concept of 'natural' state of practice} state of practice. Observational studies, which aim to understand a problem, with the purpose of developing or improving an intervention to address the problem, may be viewed as a part of the design sciences paradigm. \emelie{I think this definition of problem understanding fit in to the explanatory sciences as well. Maybe we should distinguish between problem understanding and problem conceptualisation instead? Should we propose a similar theory distinction for SE as van Aken does for Organisation and Management theory (Software Engineering theory and Software Process Improvement Theory ...)? Maybe we need a section on design theory or changed the heading of the TR section to SE design theory ...} 
+
+\per{Move/delete the following? Repeated from above?} \emelie{I think we can remove it}
+\paragraph{The design science lens provides a holistic view on a research contribution.} 
+
+Any design science research contribution should be viewed in its context, which includes both a problem formulation and a solution proposal and, in case of an empirical contribution, instances of both, see Figure~\ref{fig:contributiontypes}. Thus a problem conceptualisation must be presented in terms of the envisioned solution, and a solution validation in terms of the problem formulation. 
+Just like Gregor and Hevner~\cite{gregor_positioning_2013}, Wieringa emphasises that it is the artefact in context being the object of study in design science~\cite{wieringa_design_2009}.
+
+The empirical contributions under the design sciences include both the problem understanding and the empirical insights from the design of the intervention in its context. Series of studies may be used to extend the scope of the technological rule. The design science paradigm builds primarily on theoretical/analytical generalisation, in contrast to explanatory sciences, which rely more on statistical generalization \cite[p. 30]{Runeson12Case}. The empirical insights may also be extended into design theories, for example following procedures proposed by Sj{\o}berg at al.~\cite{sjoberg2008building}.
+
+\section{Technological rules}
+\label{sec:technologicalrules}
+%\begin{itemize}
+%\item Definition
+%\item Theoretization/maturation
+%\item iterations of problem-solution implementations
+%\item Publication units
+%\end{itemize}
+
+\emelie{moved from sec 2}
+ \per{Elaborate on exemplars here or in TA section?} \emelie{I suggest that we move the definition and add examples in the TA section} A technological rule is typically expressed in the following form: 
+
+\begin{quote}{To achieve <effect/change> in <situation/context> apply <solution/intervention>}\end{quote}
+
+\emelie{from sec 2} In another, similar field of research, van Aken proposes to distinguish \emph{management theory}, that is prescriptive, from \emph{organisational theory}, that is explanatory~\cite{van_aken_management_2005}. He focuses on the product of the research process, i.e. design knowledge, rather than research itself and introduces the notion of \emph{technological rules} as being field-tested and grounded solution-oriented knowledge. 
+
+
+% outline: The technological rule is the theoretical contribution of design science research also referred to as design knowledge.
+The technological rule is the theoretical contribution of design science research, also referred to as \emph{design knowledge}. It captures generalized knowledge about mappings between instances of problems and solutions (i.e. in-context validations) and is thus a means to transfer knowledge between contexts. Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. 
+
+In a technological rule the solution (or intervention) may refer to the use of a specific tool or the application of a more general approach. The scope of validity of the solution is described in terms of a desired effect in a situation.  Also Wieringa discusses design theory, defining it as theories of artefacts in context~\cite{wieringa_design_2009}. The design knowledge within the technological rule aims to help software engineering professionals design customized solutions to their specific problems. Ideally it is a general recommendation based on current state of art including the new additional contribution of a piece of research.
+
+% outline: It can typically be expressed as: 'To achieve <desired effect> in <context> apply <intervention>
+Technological rules comprise both the context in terms of the \emph{desired effect} and \emph{the situation} and a prescription in terms of a \emph{proposed intervention}. That way it frames the research product in terms of desired effects and interventions rather than in terms of a solution to a problem. The term \emph{technological rule} originates from Bunge~\cite{bunge_philosophy_1998} and corresponds to `methods' in Gregor and Hevner's work~\cite{gregor_positioning_2013}. Our visual abstract template,  see Figure~\ref{fig:VA-template}, emphasizes technological rules as the main takeaway of design science within software engineering research. A technological rule can typically be expressed in the form: 
+
+\begin{center}{\emph{To achieve \textless Effect \textgreater ~ in \textless Situation \textgreater~apply \textless Intervention\textgreater}.} 
+\newline
+\end{center}
+
+Here, a class of software engineering problems are generalized to a stakeholder's desired effect of applying a potential intervention in a specified situation. 
+Making this problem generalization explicit helps the researcher identify and communicate the different value-creating aspects of a research study or program.
+
+
+% outline: The abstraction level may vary
+Wieringa and Daneva address generalisability of design theory~\cite{wieringa_six_2015} and argue that there is no such thing as general design theories. Instead they emphasise the utility of \emph{middle-ranged theory}, defined as theories lacking universal scope. 
+Technological rules are examples of such middle-ranged theory that can be expressed at any convenient abstraction level. However, technological rules expressed at a very high abstraction level (e.g. "To produce software of high quality apply good software engineering practices") tend to be either trivial or too bold (easy to debunk) while rules at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. One single instance of a problem-solution pair can generate multiple technological rules that are hierarchically related to each other. Similarly there are hierarchical relationships with prior related technological rules to which a specific contribution is compared.
+Thus it is important to explicitly formulate the technological rule when presenting design science research and to be consistent with it both when arguing for its relevance and its novelty as well as when presenting the empirical (or analytical) support for the claims.  A research contribution may refine any of the three constituents of an existing rule, add empirical support for the rule as a whole or propose a new rule.
+
+% outline: Technological rules are validated by in-context validations (investigations of instantiations of the rule)
+Design knowledge is gained through studying real-world problem-solution pairs. This is done by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Van Aken describes the typical design science strategy to be the multiple case study~\cite{van_aken_management_2004}, which could be compared with clinical research alpha- and beta testing, i.e. first case and succeeding cases.
+Another way to gain design knowledge (although within one context rather than across contexts) is through action research~\cite{wieringa_technical_2012}. Gregor and Hevner refers to the iterative process of gaining design knowledge as design cycles~\cite{gregor_positioning_2013}. Each instantiation (i.e., a case study or an iteration of action research) constitutes a unit of analysis in relation to that rule and the new knowledge is communicated and assessed from that perspective. 
+
+
+
+\section{Methodology}
+
+\emelie{moved from sec 2}
+\subsection{Research Methods in Design Science} \emelie{I think this should be a main section after the TR section and before the problem understanding section (problem understanding, solution design and validation could even be subsections of this one)}
 
 Design science as a paradigm may embrace a multitude of research methods to be used. For the \emph{problem understanding} and \emph{validation} of problem--solution pairs, empirical research methods are used. Methods supporting realism and natural settings~\cite{StolABC18}, are preferred as the problem in its context is in focus for design science research. 
 
@@ -270,55 +329,8 @@ The example study of automated bug assignment was conducted in several steps, su
 \per{Add generalization}
 
 
-\subsubsection{Empirical Software Engineering and Design Science}
-The empirical components of research depend on the research paradigm. The formal sciences are ``empirically void'' \cite{van_aken_management_2004} as they primarily aim to build internally consistent systems. However, both explanatory sciences and design sciences have empirical components. Explanatory sciences observe `natural' phenomena to explain and predict future behavior, while design sciences use empirical methods, both to understand the problem at hand, and to validate the proposed solution and intervention in context. 
-
-Purely observational studies, which aim to characterize the status of a field of software engineering practice, primarily have the characteristic of exploratory \emelie{explanatory?} sciences as they aim to explore the current, `natural' \emelie{I don't understand the concept of 'natural' state of practice} state of practice. Observational studies, which aim to understand a problem, with the purpose of developing or improving an intervention to address the problem, may be viewed as a part of the design sciences paradigm. \emelie{I think this definition of problem understanding fit in to the explanatory sciences as well. Maybe we should distinguish between problem understanding and problem conceptualisation instead? Should we propose a similar theory distinction for SE as van Aken does for Organisation and Management theory (Software Engineering theory and Software Process Improvement Theory ...)? Maybe we need a section on design theory or changed the heading of the TR section to SE design theory ...} 
-
-\per{Move/delete the following? Repeated from above?} \emelie{I think we can remove it}
-\paragraph{The design science lens provides a holistic view on a research contribution.} 
-
-Any design science research contribution should be viewed in its context, which includes both a problem formulation and a solution proposal and, in case of an empirical contribution, instances of both, see Figure~\ref{fig:contributiontypes}. Thus a problem conceptualisation must be presented in terms of the envisioned solution, and a solution validation in terms of the problem formulation. 
-Just like Gregor and Hevner~\cite{gregor_positioning_2013}, Wieringa emphasises that it is the artefact in context being the object of study in design science~\cite{wieringa_design_2009}.
-
-The empirical contributions under the design sciences include both the problem understanding and the empirical insights from the design of the intervention in its context. Series of studies may be used to extend the scope of the technological rule. The design science paradigm builds primarily on theoretical/analytical generalisation, in contrast to explanatory sciences, which rely more on statistical generalization \cite[p. 30]{Runeson12Case}. The empirical insights may also be extended into design theories, for example following procedures proposed by Sj{\o}berg at al.~\cite{sjoberg2008building}.
-
-\section{Technological rules}
-\label{sec:technologicalrules}
-%\begin{itemize}
-%\item Definition
-%\item Theoretization/maturation
-%\item iterations of problem-solution implementations
-%\item Publication units
-%\end{itemize}
-
-% outline: The technological rule is the theoretical contribution of design science research also referred to as design knowledge.
-The technological rule is the theoretical contribution of design science research, also referred to as \emph{design knowledge}. It captures generalized knowledge about mappings between instances of problems and solutions (i.e. in-context validations) and is thus a means to transfer knowledge between contexts. Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. 
-
-In a technological rule the solution (or intervention) may refer to the use of a specific tool or the application of a more general approach. The scope of validity of the solution is described in terms of a desired effect in a situation.  Also Wieringa discusses design theory, defining it as theories of artefacts in context~\cite{wieringa_design_2009}. The design knowledge within the technological rule aims to help software engineering professionals design customized solutions to their specific problems. Ideally it is a general recommendation based on current state of art including the new additional contribution of a piece of research.
-
-% outline: It can typically be expressed as: 'To achieve <desired effect> in <context> apply <intervention>
-Technological rules comprise both the context in terms of the \emph{desired effect} and \emph{the situation} and a prescription in terms of a \emph{proposed intervention}. That way it frames the research product in terms of desired effects and interventions rather than in terms of a solution to a problem. The term \emph{technological rule} originates from Bunge~\cite{bunge_philosophy_1998} and corresponds to `methods' in Gregor and Hevner's work~\cite{gregor_positioning_2013}. Our visual abstract template,  see Figure~\ref{fig:VA-template}, emphasizes technological rules as the main takeaway of design science within software engineering research. A technological rule can typically be expressed in the form: 
-
-\begin{center}{\emph{To achieve \textless Effect \textgreater ~ in \textless Situation \textgreater~apply \textless Intervention\textgreater}.} 
-\newline
-\end{center}
-
-Here, a class of software engineering problems are generalized to a stakeholder's desired effect of applying a potential intervention in a specified situation. 
-Making this problem generalization explicit helps the researcher identify and communicate the different value-creating aspects of a research study or program.
-
-
-% outline: The abstraction level may vary
-Wieringa and Daneva address generalisability of design theory~\cite{wieringa_six_2015} and argue that there is no such thing as general design theories. Instead they emphasise the utility of \emph{middle-ranged theory}, defined as theories lacking universal scope. 
-Technological rules are examples of such middle-ranged theory that can be expressed at any convenient abstraction level. However, technological rules expressed at a very high abstraction level (e.g. "To produce software of high quality apply good software engineering practices") tend to be either trivial or too bold (easy to debunk) while rules at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. One single instance of a problem-solution pair can generate multiple technological rules that are hierarchically related to each other. Similarly there are hierarchical relationships with prior related technological rules to which a specific contribution is compared.
-Thus it is important to explicitly formulate the technological rule when presenting design science research and to be consistent with it both when arguing for its relevance and its novelty as well as when presenting the empirical (or analytical) support for the claims.  A research contribution may refine any of the three constituents of an existing rule, add empirical support for the rule as a whole or propose a new rule.
-
-% outline: Technological rules are validated by in-context validations (investigations of instantiations of the rule)
-Design knowledge is gained through studying real-world problem-solution pairs. This is done by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Van Aken describes the typical design science strategy to be the multiple case study~\cite{van_aken_management_2004}, which could be compared with clinical research alpha- and beta testing, i.e. first case and succeeding cases.
-Another way to gain design knowledge (although within one context rather than across contexts) is through action research~\cite{wieringa_technical_2012}. Gregor and Hevner refers to the iterative process of gaining design knowledge as design cycles~\cite{gregor_positioning_2013}. Each instantiation (i.e., a case study or an iteration of action research) constitutes a unit of analysis in relation to that rule and the new knowledge is communicated and assessed from that perspective. 
-
-
-\section{Problem understanding}
+ \emelie{moved from sec 2} Action research is one way of producing and validating technological rules but it is not the only way. Action research does not explicitly aim at developing valid knowledge that can be transferred to other contexts but rather to make a change in one specific local context. Both Wieringa~\cite{wieringa_technical_2012} and Johannesson~\cite{johannesson_introduction_2014} discuss action research as one of several empirical methods that can be used to produce design knowledge.
+\subsection{Problem understanding}
 
 
  % Who, What, Where, When, Why and How
@@ -354,7 +366,7 @@ Ideally problem understanding can be guided by theory -- i.e. prior technologica
 
 
 
-\section{Solution design}
+\subsection{Solution design}
 
 \begin{itemize}
 \item Ultimately an act of a SE practitioner
@@ -402,7 +414,7 @@ Solutions are described as interventions/artefacts and prescriptions
 
 
 
-\section{Validation}
+\subsection{Validation}
 \begin{itemize}
 \item Problem--solution pair \emph{in context}
 \item Widening scope by widening validation context. 
@@ -412,7 +424,8 @@ Solutions are described as interventions/artefacts and prescriptions
 \item Easterbrook \cite{easterbrook_selecting_2008}
 \end{itemize}
 
-
+ \emelie{moved from sec 2} Stol and Fitzgerald adapted McGrath's framework for research strategies, to guide balancing generalizability, precision and realism in designing validation studies \cite{StolABC18}, which may be useful in choosing research strategies in relation to the goals of the research endeavor.
+ 
 
 %Design science has been conceptualised by several researchers in software engineering and other disciplines, such as information systems~\cite{gregor_positioning_2013}. Our conceptualisation that is presented in this paper and on which our analysis is based have been formed through a thorough review of this literature and a series of workshops on the topic. Below we position our view of design science in software engineering.
 
