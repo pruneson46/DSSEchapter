@@ -262,19 +262,47 @@ The empirical contributions under the design sciences include both the problem u
 \section{Design theory}
 In another, similar field of research, van Aken proposes to distinguish \emph{management theory}, that is prescriptive, from \emph{organisational theory}, that is explanatory~\cite{van_aken_management_2005}. We have observed that a similar distinction could be useful when discussing software engineering theory. In this section we elaborate on how to articulate and mature prescriptive software engineering theory that is the product of design science research. 
 
+\subsection{Outputs from design science research}
+\label{sec:outputs}
+Outputs from design science research may of be of many different kinds. Vaishnavi et al \cite{Vaishnavi} synthesized different kinds of output in information systems, based on \cite{March1995} \cite{gregor_positioning_2013}, as reported in Table~\ref{tab:output}. We have added a tools category, which often embeds design knowledge in software engineering design science studies. 
+\begin{table}[t]
+\caption{Outputs from design science research, by Vaishnavi et al \cite{Vaishnavi} based on \cite{March1995} \cite{gregor_positioning_2013}}
+\begin{center}
+\begin{tabular}{lp{8cm}}
+\textbf{Output}& \textbf{Description}\\
+\hline
+Constructs & The conceptual vocabulary of a domain\\
+Models & Sets of propositions or statements expressing relationships between constructs\\
+Frameworks & Real or conceptual guides to serve as support or guide\\
+Architectures & High level structures of systems\\
+Design principles & Core principles and concepts to guide design\\
+Methods & Sets of steps to perform tasks -- how-to knowledge\\
+Instantiations & Situated implementations in certain environments that do or do not operationalize constructs, models, metods and other abstract artifacts; in the latter case such knowledge remains tacit.\\
+Design theories& A prescriptive set of statements on how to achieve a certain objective. A theory usually includes other abstract artifacts such as constructs, models, frameworks, architectures, design principles, and methods.\\
+Tools?&TBD\\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:output}
+\end{table}%
+
+
+
+
+\subsection{Technological rules}
+\label{sec:technologicalrules}
+
+
+
+% outline: The technological rule is the theoretical contribution of design science research also referred to as design knowledge.
+As illustrated in Figure~\ref{fig:DS_model}, the technological rule is the theoretical contribution of design science research, also referred to as \emph{design knowledge}. It captures generalized knowledge about mappings between instances of problems and solutions (i.e. in-context validations) and is thus a means to transfer knowledge between contexts. The Technological rule spans both a problem domain and a solution domain and is formulated based on constructs (e.g. conceptual models and taxonomies) in both domains. 
+
 \begin{figure}
   \includegraphics[width=0.7\textwidth]{Figures/DS_model.pdf}
 % figure caption is below the figure
 \caption{Model for design science contributions in software engineering. \cite{engstrom2019}.}
 \label{fig:DS_model}       % Give a unique label
 \end{figure}
-
-%\subsection{Technological rules}
-\label{sec:technologicalrules}
-
-
-% outline: The technological rule is the theoretical contribution of design science research also referred to as design knowledge.
-As illustrated in Figure~\ref{fig:DS_model}, the technological rule is the theoretical contribution of design science research, also referred to as \emph{design knowledge}. It captures generalized knowledge about mappings between instances of problems and solutions (i.e. in-context validations) and is thus a means to transfer knowledge between contexts. The Technological rule spans both a problem domain and a solution domain and is formulated based on constructs (e.g. conceptual models and taxonomies) in both domains. 
 
 Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. 
 In a technological rule the solution (or intervention) may refer to the use of a specific tool or the application of a more general approach. The scope of validity of the solution is described in terms of a desired effect in a situation.  Also Wieringa discusses design theory, defining it as theories of artefacts in context~\cite{wieringa_design_2009}. The design knowledge within the technological rule aims to help software engineering professionals design customized solutions to their specific problems. Ideally it is a general recommendation based on current state of art including the new additional contribution of a piece of research.
@@ -374,42 +402,30 @@ Ideally problem understanding can be guided by theory -- i.e. prior technologica
 \subsection{Solution design}
 
 \outline{
-\begin{itemize}
-\item Ultimately an act of a SE practitioner
-\item Solution design begins with problem understanding (nested model)
-\item May include several levels of design/evaluation and validation 
-\item Creative process/alternative solutions should be considered/design decisions reported
-\item Building on previous work/technological rule	
-\end{itemize}
-}
+%\begin{itemize}
+%\item Ultimately an act of a SE practitioner
+%\item Solution design begins with problem understanding (nested model)
+%\item May include several levels of design/evaluation and validation 
+%\item Creative process/alternative solutions should be considered/design decisions reported
+%\item Building on previous work/technological rule	
+%\end{itemize}
+%}
 
 
-\paragraph{Design science is more than artefact design.}
 
-Design science comprises both creation and validation of design knowledge, i.e. prescriptive and context dependant knowledge. Such knowledge can be achieved by investigating real world instances of problem-solution pairs. We have identified three different knowledge creating activities of which the \emph{solution design} is one. The other two are the \emph{problem understanding} and the \emph{empirical validation} of the solution to the problem in context, see Figure~\ref{fig:VA-template}.
 
-Outputs from design science research may of of many different kinds. Vaishnavi et al \cite{Vaishnavi} synthesized different kinds of output in information systems, based on \cite{March1995} \cite{gregor_positioning_2013}, as reported in Table~\ref{tab:output}. We have added a tools category, which often embeds design knowledge in software engineering design science studies. 
-\begin{table}[t]
-\caption{Outputs from design science research, by Vaishnavi et al \cite{Vaishnavi} based on \cite{March1995} \cite{gregor_positioning_2013}}
-\begin{center}
-\begin{tabular}{lp{8cm}}
-\textbf{Output}& \textbf{Description}\\
-\hline
-Constructs & The conceptual vocabulary of a domain\\
-Models & Sets of propositions or statements expressing relationships between constructs\\
-Frameworks & Real or conceptual guides to serve as support or guide\\
-Architectures & High level structures of systems\\
-Design principles & Core principles and concepts to guide design\\
-Methods & Sets of steps to perform tasks -- how-to knowledge\\
-Instantiations & Situated implementations in certain environments that do or do not operationalize constructs, models, metods and other abstract artifacts; in the latter case such knowledge remains tacit.\\
-Design theories& A prescriptive set of statements on how to achieve a certain objective. A theory usually includes other abstract artifacts such as constructs, models, frameworks, architectures, design principles, and methods.\\
-Tools?&TBD\\
-\hline
-\end{tabular}
-\end{center}
-\label{tab:output}
-\end{table}%
+%Ultimately an act of a SE practitioner
+Just like problem understanding, the act of designing solutions to software engineering problem is ultimately an act of a software engineering practitioner and not a researcher. Guided by existing technological rules, see~\ref{sec:technologicalrules} and other research outputs~\ref{sec:outputs} as described
 
+%Solution design begins with problem understanding (nested model)
+
+%May include several levels of design/evaluation and validation 
+
+%Creative process/alternative solutions should be considered/design decisions reported
+
+%Building on previous work/technological rule
+
+Design science comprises both creation and validation of design knowledge, i.e. prescriptive and context dependant knowledge. Such knowledge can be achieved by investigating real world instances of problem-solution pairs. We have identified three different knowledge creating activities of which the \emph{solution design} is one. The other two are the \emph{problem understanding} and the \emph{empirical validation} of the solution to the problem in context, see Figure~\ref{fig:VA-template}
 
 Wieringa describes design science as an act of producing knowledge by designing useful things~\cite{wieringa_design_2009} and makes a distinction between knowledge problems and practical problems. Similarily, Gregor and Hevner emphasise the dual focus on the artefact and its design~\cite{gregor_positioning_2013} in information systems, and argues for an iterative design process where validation of the artefact provides feedback information to improve both the design process and the artefact. Although such an approach may be relevant for designing software engineering artefacts too, there is an important difference between the two research domains: while information systems refers to a solution domain, software engineering research originates in a problem domain with a plethora of more or less sophisticated solutions, not necessarily artefacts. Thus the empirical contribution to problem understanding is of higher importance in the software engineering context while the reflection on the design as such is of less value compared to research contributions in a typical solution domain such as information systems. Still, in both cases it is design knowledge that is produced as the aim is to produce prescriptive knowledge for practitioners in their respective domain. 
 
