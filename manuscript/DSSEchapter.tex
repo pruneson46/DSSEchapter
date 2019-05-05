@@ -321,11 +321,10 @@ Another way to gain design knowledge (although within one context rather than ac
 
 \subsection{Research Methods in Design Science} 
 
-Design science as a paradigm may embrace a multitude of research methods to be used. For the \emph{problem understanding}\emelie{How to use the terms problem understanding, problem conceptualization, problem characterization?} and \emph{validation} of problem--solution pairs, empirical research methods are used. Methods supporting realism and natural settings~\cite{StolABC18}, are preferred as the problem in its context is in focus for design science research. 
+Design science as a paradigm may embrace a multitude of research methods to be used. For the \emph{problem understanding} and \emph{validation} of problem--solution pairs, empirical research methods are used. Methods supporting realism and natural settings~\cite{StolABC18}, are preferred as the problem in its context is in focus for design science research. 
 
-The typical research methodology to study and test technological rules is multiple case studies, according to van Aken \cite{van_aken_management_2004}. In the case studies, a series of problems of the same class is adressed. Design knowledge is built up through the empirical validation of the solution in context. Case study methodology is well established in software engineering \cite{Runeson12Case} and fits thus well into the design science paradigm. Methods for data collection and analysis can be selected from the rich plethora of options available for such studies, for example, interviews, focus groups, observational studies, archival data, and software metrics. Action research is another way of producing and validating technological rules. However action research does not explicitly aim at developing knowledge that can be transferred to other contexts but rather to make a change in one specific local context. Both Wieringa~\cite{wieringa_technical_2012} and Johannesson~\cite{johannesson_introduction_2014} discuss action research as one of several empirical methods that can be used to produce design knowledge.
+The typical research methodology used to study and test technological rules is multiple case studies, according to van Aken \cite{van_aken_management_2004}. In the case studies, a series of problems of the same class is adressed. Design knowledge is built up through the empirical validation of the solution in context. Case study methodology is well established in software engineering \cite{Runeson12Case} and fits thus well into the design science paradigm. Methods for data collection and analysis can be selected from the rich plethora of options available for such studies, for example, interviews, focus groups, observational studies, archival data, and software metrics. Action research is another way of producing and validating technological rules. However action research does not explicitly aim at developing knowledge that can be transferred to other contexts but rather to make a change in one specific local context. Both Wieringa~\cite{wieringa_technical_2012} and Johannesson~\cite{johannesson_introduction_2014} discuss action research as one of several empirical methods that can be used to produce design knowledge.
 
-Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \cite{GorschekSW2006} focussing on industry--academia collaboration, which has some elements of design science, see Figure \ref{fig:GorschekModel}.
 
 \begin{figure}
   \includegraphics[width=0.9\textwidth]{Figures/GorschekModel.pdf}
@@ -334,12 +333,13 @@ Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \
 \label{fig:GorschekModel}       % Give a unique label
 \end{figure}
 
-The model, which prescribes conceptual steps in solving a problem in an industry-academia collaboration setting, has elements of problem identification and formulation. The design of solutions involve studying the literature (state of the art) and selection of a candidate solution. This solution is validated in three steps, in academia, statically, and dynamically, before it is released into operations. 
+Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \cite{GorschekSW2006} focussing on industry--academia collaboration, which has some elements of design science, see Figure \ref{fig:GorschekModel}. The model, which prescribes conceptual steps in solving a problem in an industry-academia collaboration setting, has elements of problem identification and formulation. The design of solutions involve studying the literature (state of the art) and selection of a candidate solution. This solution is validated in three steps, in academia, statically, and dynamically, before it is released into operations. 
 
 All these elements fit into the design science lens, although the model (by intention) focuses primarily on the artifact and specific context, rather than the generalized knowledge and technological rule, which are significant element of design science research. Further, when taking the generalization of knowledge and iterative knowledge building is stressed, it becomes clear that industry--academia collaboration is not a one-way transfer of technology, but a mutual interaction between the two.
 
-The example study of automated bug assignment was conducted in several steps, summarized from an industry--academia collaboration point of view, which can be mapped onto the above model \cite{CarverIEEESW2018}:
+Our example study of automated bug assignment was conducted in several steps, summarized from an industry--academia collaboration point of view, which can be mapped onto the above model \cite{CarverIEEESW2018}:
 \begin{itemize}
+\item \{emph{Problem/issue}: Manual assignment of bugs to teams is costly and error prone
 \item \emph{Problem formulation}: Indepth studies of defect reports and their links to other information elements and activities
 \item \emph{Study state of the art}: A mapping study was performed of trace-link research, identifying the theoretical foundation \cite{Borg2013EMSE}
 \item \emph{Candidate solution}: Development of experimental tools, supporting multiple algorithms
@@ -348,6 +348,7 @@ The example study of automated bug assignment was conducted in several steps, su
 \item \emph{Release solution}: Incorporation of a simplified version of the wools in to the company's toolset
 \end{itemize} 
 
+In this case, we performed no static validation as we had the opportunity to make a dynamic off-line validation with real industry data.
 
 
 \subsection{Problem understanding}
@@ -357,13 +358,13 @@ The example study of automated bug assignment was conducted in several steps, su
 
 % (Who?) Problem understanding is ultimately an act of the practitioner but could be done in collaboration between researchers and practitioners or by researchers alone
 
-In the long run, software engineering theory aims at helping practitioners designing solutions to their specific problem. Thus problem understanding is ideally an act of a software engineering practitioner and not a researcher. However, to produce such theory research is needed. In the previous section we described how design knowledge is obtained and mature through observations of real life instances of problem-solution pairs. For each such instance the problem needs to be formulated (understood) according to a conceptual lens. Such problem understanding can take place in collaboration between practitioners and researchers in, for example, action research or case study research, or by researchers observing software engineering practice.
+In the long run, software engineering theory aims at helping practitioners designing solutions to their specific problem. Thus problem understanding is ideally an act of a software engineering practitioner and not a researcher. However, to produce such theory research is needed. In the previous section we described how design knowledge is obtained and matures through observations of real life instances of problem-solution pairs. For each such instance the problem needs to be formulated (understood) according to a conceptual lens. Such problem understanding can take place in collaboration between practitioners and researchers in, for example, action research or case study research, or by researchers observing software engineering practice.
 
 % (What?) The outcome of the problem understanding step is a conceptualuzation of the problem instance towards an envisioned solution and thus tightly connected to a specific design approach
 
-The outcome of the problem understanding activities is a conceptuptalization of the problem instance towards an envisioned solution. If for example the proposed solution is to design a visualisation system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus the problem formulation is tightly connected to the solution design and cannot be done in isolation. Although we consider much of the software engineering research to be design science research, not all exploratory and descriptive research provide relevant design knowledge in all cases.
+The outcome of the problem understanding activities is a conceptuptalization of the problem instance towards an envisioned solution. If, for example, the proposed solution is to design a visualisation system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus the problem formulation is tightly connected to the solution design and cannot be done in isolation. Although we consider much of the software engineering research to be design science research, not all exploratory and descriptive research provide relevant design knowledge in all cases.
 
-\per{Add here? A behavioral scientist would make a different problem description of a software project, compared to a software engineering researcher, and different software engineering researchers are influence by their background as well. This implies that the problem understanding is intertwined with the solution design.
+\per{Add here? The problem understanding is to large extent in the eye of the beholder. A behavioral scientist would, for example,  make a different problem description of a software project, compared to a software engineering researcher, and different software engineering researchers are influence by their background as well. This implies that the problem understanding is intertwined with the solution design.
 }
 
 % (What?) The research contribution is not the conceptualisation, but the identification of the problem instance (empirical support for prevalence of a conceptual problem) and potential updates of the modelling approach (new aspects of the technological rule)
@@ -372,7 +373,7 @@ Furthermore, the research contribution is \emph{not} the conceptualisation as su
 
 % (When?) Problem understanding is the first step towards a solution design.
 
-Problem understanding is the first step towards a solution design. However, depending on the type of the solution, problem understanding may need to be repeated at several abstraction levels starting with the stakeholder's problem description and for example in case of a tool implementation reaching to the level of implementation details (such as  choice of algorithm). If this is the case different types of technological rules are used and validated at different abstraction levels. It is important to be aware of which these rules are and ensure that the validation of a solution takes place at all these levels and that the validations are mapped to the correct technological rules. 
+Problem understanding is the first step towards a solution design. However, depending on the type of the solution, problem understanding may need to be repeated at several abstraction levels starting with the stakeholder's problem description and, for example, in case of a tool implementation reaching to the level of implementation details (such as  choice of algorithm). If this is the case, different types of technological rules are used and validated at different abstraction levels. It is important to be aware of which these rules are and ensure that the validation of a solution takes place at all these levels and that the validations are mapped to the correct technological rules. 
 
 % (Where?) Problem understanding must originate in empirical observations of practice
 Software engineering is a discipline, in which conditions are rapidly changing. To provide relevant recommendations -- technological rules -- problem understanding must originate in empirical observations of practice -- i.e. real life problem instances. Furthermore, software engineering is a socio-technical endeavor implying that stakeholders need to be involved in both problem understanding and solution validation at least for technological rules at the higher abstraction levels. Lower level technological rules may be investigated in isolation but must be related to the higher level rules to be of relevance. 
@@ -380,12 +381,6 @@ Software engineering is a discipline, in which conditions are rapidly changing. 
 % (How?) Problem understanding should build on prior work
 
 Ideally problem understanding can be guided by theory -- i.e. prior technological rules and conceptualisation approaches. 
-
-
-
-\per{A solution searching the problem?}
-
-\per{Problems are described as improvement problems and/or construction problems, wicked problems, socio-technical, involving stakeholders.} 
 
 
 
@@ -407,27 +402,17 @@ While the solution design is a creative activity, the design knowledge it produc
 
 
 %Reflections on the design process less important in the SE domain than in the IS domain
-Wieringa describes design science as an act of producing knowledge by designing useful things~\cite{wieringa_design_2009} and makes a distinction between knowledge problems and practical problems. Similarily, Gregor and Hevner emphasise the dual focus on the artefact and its design~\cite{gregor_positioning_2013} in information systems, and argues for an iterative design process where validation of the artefact provides feedback information to improve both the design process and the artefact. Although such an approach may be relevant for designing software engineering artefacts too, there is an important difference between the two research domains: while information systems refers to a solution domain, software engineering research originates in a problem domain with a plethora of more or less sophisticated solutions, not necessarily artefacts. Thus the empirical contribution to problem understanding is of higher importance in the software engineering context while the reflection on the design as such is of less value compared to research contributions in a typical solution domain such as information systems. Still, in both cases it is design knowledge that is produced as the aim is to produce prescriptive knowledge for practitioners in their respective domain. 
+Wieringa describes design science as an act of producing knowledge by designing useful things~\cite{wieringa_design_2009} and makes a distinction between \emph{knowledge} problems and \emph{practical} problems. Similarily, Gregor and Hevner emphasise the dual focus on the artefact and its design~\cite{gregor_positioning_2013} in information systems, and argues for an iterative design process where validation of the artefact provides feedback information to improve both the design process and the artefact. Although such an approach may be relevant for designing software engineering artefacts too, there is an important difference between the two research domains: while information systems refers to a solution domain, software engineering research originates in a problem domain with a plethora of more or less sophisticated solutions, not necessarily artefacts. Thus the empirical contribution to problem understanding is of higher importance in the software engineering context while the reflection on the design as such is of less value compared to research contributions in a typical solution domain such as information systems. Still, in both cases it is design knowledge that is produced as the aim is to produce prescriptive knowledge for practitioners in their respective domain. 
 
  
 
 \subsection{Validation \per{and generalization?}}
-\outline{
-\begin{itemize}
-\item Problem--solution pair \emph{in context}
-\item Widening scope by widening validation context. 
-\item theoretical/analytical generalization rather than statistical 
-\item All kinds of empirical studies \cite{easterbrook_selecting_2008}\cite{Runeson12Case,WohlinExpBook12}
-\item Refer to ABC \cite{StolABC18} for strategic choise of method vs validation goal 
-\item Easterbrook \cite{easterbrook_selecting_2008}
-\end{itemize}
-}
 
 Validation of research under the design science paradigm is always about a problem--solution pair in \emph{context}. The technological rule specifies implicitly the validation activities; the intervention is the object of study, the situation defines the context, and the expected effect defines the validation criteria. This points to the `in vivo' software engineering context as the ultimate validation context for design science research. Several authors consequently propose multiple case studies as the natural research strategy in design science \cite{van_aken_management_2004}\per{add more}. However, practical limitations can prevent the research endeavor from taking place in real, operational environments. 
 
-The risks related to validating interventions in business critical contexts may be high. If the intervention does not deliver the effect as expected, the outcome of the software engineering activity as a whole may be endangered. Further, the costs related to implementing the intervention may also be high -- for example changing a work flow or adapting the information infrastructure to a new tool. Thus, validation procedures may be used, which gradually extend the evaluation scope for the intervention.
+The risks related to validating interventions in business critical contexts may be high. If the intervention does not deliver the effect as expected, the outcome of the software engineering activity as a whole may be endangered. Further, the costs related to implementing the intervention may also be high -- for example changing a work flow or adapting the information infrastructure to a new tool. Thus, validation procedures may be used, which gradually extend the validation scope for the intervention.
 
-On the other hand, reducing the scope and complexity of the evaluation context too much may take away the realism which is essential for addressing a relevant problem with a feasible solution. `In vitro' studies may be useful to validate specific mechanisms, but they are not feasible for complex systems studies.  
+On the other hand, reducing the scope and complexity of the validation context too much may take away the realism which is essential for addressing a relevant problem with a feasible solution. `In vitro' studies may be useful to validate specific mechanisms, but they are not feasible for complex systems studies.  
 
 Stol and Fitzgerald adapted Runkel and McGrath's framework for research strategies, to guide balancing generalizability, precision and realism in designing validation studies \cite{StolABC18}. This framework may be useful in choosing research strategies in relation to the goals of the research endeavor. The framework defines two dimensions of i) universality/specificity of context and systems, and ii) level of obtrusiveness. Maximum potential realism is achieved with specific contexts and systems, and more or less obtrusive research, depending on the perspective of explanatory research (field study) or design science (field experiments). \per{Expand to explain more or remove?} 
 
