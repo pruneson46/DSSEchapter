@@ -243,33 +243,43 @@ Purely observational studies, which aim to characterize the status of a field of
 The empirical contributions under the design sciences include both the problem understanding and the empirical insights from the design of the intervention in its context. Series of studies may be used to extend the scope of the technological rule. The empirical insights may also be extended into design theories, for example following procedures proposed by Sj{\o}berg at al.~\cite{sjoberg2008building}.
 
 \section{Design theory}
-\emelie{This section partly repeats and partly contradicts sec 2.2, remove?} In another, similar field of research, van Aken proposes to distinguish \emph{management theory}, that is prescriptive, from \emph{organisational theory}, that is explanatory~\cite{van_aken_management_2005}. We have observed that a similar distinction could be useful when discussing software engineering theory. In this section we elaborate on how to articulate and mature prescriptive software engineering theory that is the product of design science research. 
+%\emelie{This section partly repeats and partly contradicts sec 2.2, remove?} In another, similar field of research, van Aken proposes to distinguish \emph{management theory}, that is prescriptive, from \emph{organisational theory}, that is explanatory~\cite{van_aken_management_2005}. We have observed that a similar distinction could be useful when discussing software engineering theory. In this section we elaborate on how to articulate and mature prescriptive software engineering theory that is the product of design science research. 
 
-\subsection{Outputs from design science research}
+Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. This is also illustrated in our model of design science contributions, see Figure~\ref{fig:DS_model}, where the practical contribution (e.g. the actual problem solving) is visualised in the two bottom quadrants as instances of both the problem and the solution and the theoretical contribution (e.g. generalisation and scope definition) is visualised in the two top quadrants in terms of technological rules and their constructs. The arrows in the figure illustrates knowledge creating activities that can be performed by both practitioners and researchers. 
 
-\emelie{Skip this section? Maybe we confuse people with this list of outcomes more than help (At least it confuses me). The outcomes do not really map to the VA-template nor the DS-model (The constructs and design theories are covered). They are also seem to be specific to information systems (architecture, frameworks, design principles...) and not software engineering (processes, practices, tools...} \per{Agree on removing table, but add examples of outcomes.}. 
-\label{sec:outputs}
-Outputs from design science research may be of many different kinds. Vaishnavi et al \cite{Vaishnavi} synthesized different kinds of output in information systems, based on \cite{March1995} \cite{gregor_positioning_2013}, as reported in Table~\ref{tab:output}. We have added a tools category, which often embeds design knowledge in software engineering design science studies. 
-\begin{table}[t]
-\caption{Outputs from design science research, by Vaishnavi et al \cite{Vaishnavi} based on \cite{March1995} \cite{gregor_positioning_2013}}
-\begin{center}
-\begin{tabular}{lp{8cm}}
-\textbf{Output}& \textbf{Description}\\
-\hline
-Constructs & The conceptual vocabulary of a domain\\
-Models & Sets of propositions or statements expressing relationships between constructs\\
-Frameworks & Real or conceptual guides to serve as support or guide\\
-Architectures & High level structures of systems\\
-Design principles & Core principles and concepts to guide design\\
-Methods & Sets of steps to perform tasks -- how-to knowledge\\
-Instantiations & Situated implementations in certain environments that do or do not operationalize constructs, models, metods and other abstract artifacts; in the latter case such knowledge remains tacit.\\
-Design theories& A prescriptive set of statements on how to achieve a certain objective. A theory usually includes other abstract artifacts such as constructs, models, frameworks, architectures, design principles, and methods.\\
-Tools?&TBD\\
-\hline
-\end{tabular}
-\end{center}
-\label{tab:output}
-\end{table}%
+%where the instance of the problem. As illustrated in Figure~\ref{fig:DS_model} there are mainly two types of theoretical contributions of design science research, 1) prescriptive statements on how to achieve a certain objective (i.e. Technological rules) 2) and constructs
+\begin{figure}
+  \includegraphics[width=0.7\textwidth]{Figures/DS_model.pdf}
+% figure caption is below the figure
+\caption{Model of design science contributions in software engineering~\cite{Engstrom19arxiv}. The boxes represents theoretical and practical contributions of design science research and the arrows represent knowledge creating activities that can be performed by both practitioners and researchers.}
+\label{fig:DS_model}       % Give a unique label
+\end{figure}
+
+%\subsection{Outputs from design science research}
+
+%\emelie{Skip this section? Maybe we confuse people with this list of outcomes more than help (At least it confuses me). The outcomes do not really map to the VA-template nor the DS-model (The constructs and design theories are covered). They are also seem to be specific to information systems (architecture, frameworks, design principles...) and not software engineering (processes, practices, tools...} \per{Agree on removing table, but add examples of outcomes.}. 
+%\label{sec:outputs}
+%Outputs from design science research may be of many different kinds. Vaishnavi et al \cite{Vaishnavi} synthesized different kinds of output in information systems, based on \cite{March1995} \cite{gregor_positioning_2013}, as reported in Table~\ref{tab:output}. We have added a tools category, which often embeds design knowledge in software engineering design science studies. 
+%\begin{table}[t]
+%\caption{Outputs from design science research, by Vaishnavi et al \cite{Vaishnavi} based on \cite{March1995} \cite{gregor_positioning_2013}}
+%\begin{center}
+%\begin{tabular}{lp{8cm}}
+%\textbf{Output}& \textbf{Description}\\
+%\hline
+%Constructs & The conceptual vocabulary of a domain\\
+%Models & Sets of propositions or statements expressing relationships between constructs\\
+%Frameworks & Real or conceptual guides to serve as support or guide\\
+%Architectures & High level structures of systems\\
+%Design principles & Core principles and concepts to guide design\\
+%Methods & Sets of steps to perform tasks -- how-to knowledge\\
+%Instantiations & Situated implementations in certain environments that do or do not operationalize constructs, models, metods and other abstract artifacts; in the latter case such knowledge remains tacit.\\
+%Design theories& A prescriptive set of statements on how to achieve a certain objective. A theory usually includes other abstract artifacts such as constructs, models, frameworks, architectures, design principles, and methods.\\
+%Tools?&TBD\\
+%\hline
+%\end{tabular}
+%\end{center}
+%\label{tab:output}
+%\end{table}%
 
 
 
@@ -280,20 +290,12 @@ Tools?&TBD\\
 
 
 % outline: The technological rule is the theoretical contribution of design science research also referred to as design knowledge.
-As illustrated in Figure~\ref{fig:DS_model}, the technological rule is the theoretical contribution of design science research, also referred to as \emph{design knowledge}. It captures generalized knowledge about mappings between instances of problems and solutions (i.e. in-context validations) and is thus a means to transfer knowledge between contexts. The Technological rule spans both a problem domain and a solution domain and is formulated based on constructs (e.g. conceptual models and taxonomies) in both domains. 
+The technological rule captures generalized knowledge about mappings between instances of problems and solutions (i.e. in-context validations) and is thus a means to transfer knowledge between contexts. The Technological rule spans both a problem domain and a solution domain and is formulated based on constructs in both domains. 
 
-\begin{figure}
-  \includegraphics[width=0.7\textwidth]{Figures/DS_model.pdf}
-% figure caption is below the figure
-\caption{Model for design science contributions in software engineering. \cite{engstrom2019}.}
-\label{fig:DS_model}       % Give a unique label
-\end{figure}
-
-Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. 
 In a technological rule the solution (or intervention) may refer to the use of a specific tool or the application of a more general approach. The scope of validity of the solution is described in terms of a desired effect in a situation.  Also Wieringa discusses design theory, defining it as theories of artefacts in context~\cite{wieringa_design_2009}. The design knowledge within the technological rule aims to help software engineering professionals design customized solutions to their specific problems. Ideally it is a general recommendation based on current state of art including the new additional contribution of a piece of research.
 
 % outline: It can typically be expressed as: 'To achieve <desired effect> in <context> apply <intervention>
-Technological rules comprise both the context in terms of the \emph{desired effect} and \emph{the situation} and a prescription in terms of a \emph{proposed intervention}. That way it frames the research product in terms of desired effects and interventions rather than in terms of a solution to a problem. The term \emph{technological rule} originates from Bunge~\cite{bunge_philosophy_1998} and corresponds to `methods' in Gregor and Hevner's work~\cite{gregor_positioning_2013}. Our visual abstract template,  see Figure~\ref{fig:VA-template}, emphasizes technological rules as the main takeaway of design science within software engineering research. A technological rule can typically be expressed in the form: 
+Technological rules comprise both the context in terms of the \emph{desired effect} and \emph{the situation} and a prescription in terms of a \emph{proposed intervention}. That way it frames the research product in terms of desired effects and interventions rather than in terms of a solution to a problem. The term \emph{technological rule} originates from Bunge~\cite{bunge_philosophy_1998} and corresponds to `design theories' in Gregor and Hevner's work~\cite{gregor_positioning_2013}. Our visual abstract template,  see Figure~\ref{fig:VA-template}, emphasizes technological rules as the main takeaway of design science within software engineering research. A technological rule can typically be expressed in the form: 
 
 \begin{center}{\emph{To achieve \textless Effect \textgreater ~ in \textless Situation \textgreater~apply \textless Intervention\textgreater}.} 
 \newline
@@ -306,20 +308,27 @@ Making this problem generalization explicit helps the researcher identify and co
 
 % outline: The abstraction level may vary
 Wieringa and Daneva address generalisability of design theory~\cite{wieringa_six_2015} and argue that there is no such thing as general design theories. Instead they emphasise the utility of \emph{middle-ranged theory}, defined as theories lacking universal scope. 
-Technological rules are examples of such middle-ranged theory that can be expressed at any convenient abstraction level. However, technological rules expressed at a very high abstraction level (e.g. ``To produce software of high quality apply good software engineering practices'') tend to be either trivial or too bold (easy to debunk) while rules at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. 
+Technological rules are examples of such middle-ranged theory that can be expressed at any convenient abstraction level. However, technological rules expressed at a very high abstraction level (e.g. ``To produce software of high quality apply good software engineering practices'') tend to be either trivial or too bold (easy to debunk) while rules at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. How the intervention in a technological rule is formulated may vary. It could for example refer to the use of a tool or articulate abstractions of the knowledge embedded in the tool, it could also refer to the application of a practice, a technique, a framework or a set of guidelines. Examples of technological rules were extracted from a set of distinguished ICSE-papers from 2014--2018~\cite{Engstrom19arxiv}. These are available online at dsse.org.
 
 One single instance of a problem-solution pair can generate multiple technological rules that are hierarchically related to each other. Similarly there are hierarchical relationships with prior related technological rules to which a specific contribution is compared.
 Thus it is important to explicitly formulate the technological rule when presenting design science research and to be consistent with it both when arguing for its relevance and its novelty as well as when presenting the empirical (or analytical) support for the claims.  A research contribution may refine any of the three constituents of an existing rule, add empirical support for the rule as a whole or propose a new rule.
 
 % outline: Technological rules are validated by in-context validations (investigations of instantiations of the rule)
-Design knowledge is gained through studying real-world problem-solution pairs. This is done by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Van Aken describes the typical design science strategy to be the multiple case study~\cite{van_aken_management_2004}, which could be compared with clinical research alpha- and beta testing, i.e. first case and succeeding cases.
-Another way to gain design knowledge (although within one context rather than across contexts) is through action research~\cite{wieringa_technical_2012}. Gregor and Hevner refer to the iterative process of gaining design knowledge as design cycles~\cite{gregor_positioning_2013}. Each instantiation (i.e., a case study or an iteration of action research) constitutes a unit of analysis in relation to that rule and the new knowledge is communicated and assessed from that perspective. 
 
+
+\subsection{Problem and design elements/ constructs}
+
+Another type of theoretical knowledge that is produced in design science is the 
+constructs on which we build technological rules, that is the conceptualisation of the problem domain and the solution domain respectively.  
+A construct can for example refer to a taxonomy that is used to articulate a technological rule or to classify a set of technological rules in a research review. Taxonomies provide means to relate different technological rules to each other. The different constituents of a technological rule may belong to different taxonomies. A construct can also refer to a conceptual model or a conceptualisation approach that helps describing a problem in terms of an envisioned solution.
+
+Design knowledge is gained by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Each instantiation (e.g., a case study or an iteration of action research) constitutes a unit of analysis in relation to the technological rule and the new knowledge is communicated and assessed from that perspective. 
 
 
 \section{Methodology}
 
 \subsection{Research Methods in Design Science} 
+
 
 Design science as a paradigm may embrace a multitude of research methods to be used. For the \emph{problem understanding} and \emph{validation} of problem--solution pairs, empirical research methods are used. Methods supporting realism and natural settings~\cite{StolABC18}, are preferred as the problem in its context is in focus for design science research. 
 
