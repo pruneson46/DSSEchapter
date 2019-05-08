@@ -111,7 +111,7 @@ We provide an overview of the design science paradigm in Section \ref{sec:overvi
 \label{sec:overview}
 %Design science is a paradigm not a method}
 
-\subsection{Design Science as a Paradigm}
+%\subsection{Design Science as a Paradigm}
 
 There are three major research paradigms, according to van Aken~\cite{van_aken_management_2004}, referring to ``the combination of types of research questions asked, the research methodologies allowed to answer them and the nature of the pursued research products'':
 \begin{itemize}
@@ -155,39 +155,6 @@ Design science is a paradigm used in many different research fields, and it is i
 
 
 
-\subsection{Software Engineering Research as Design Science}
-
-%Design Science Studies
-In their practitioner article on industry--academia collaboration in software engineering, Carver and Prikladnicki stress the importance of a synergistic relationship between software practitioners and software engineering researchers.
-\begin{quote}Practitioners could obtain more relevant research results, and researchers could better understand the type and scope of problems to examine.~\cite{CarverIEEESW2018}
-\end{quote} 
-
-\begin{figure}[t]
-% Use the relevant command to insert your figure file.
-% For example, with the graphicx package use
-  \includegraphics[width=1.0\textwidth]{Figures/GenericVA.png}
-% figure caption is below the figure
-\caption{Visual abstract template including the core constructs in the design science paradigm.}
-\label{fig:VA-template}       % Give a unique label
-\end{figure}
-
-\per{Better bridge here?}
-%Design Science as a Lens
-We designed a \emph{visual abstract template} to help identifying the design science constructs in software engineering research \cite{StoreyESEM17}, and further extended the template with survey questions, to help analyze software engineering literature from a design science perspective \cite{Engstrom19arxiv} see Figure~\ref{fig:VA-template}. The template aims to capture the key takeaway from a research study to help researchers assess the research contribution, build knowledge iteratively, and communicate research to practitioners. %Note connections to chapter 5.
-
-Our design science template covers the main constructs of design science research: The theoretical contribution in terms of a \emph{technological rule}; its instantiation in terms of a real \emph{problem--solution} pair;  the empirical or theoretical support for the \emph{problem} understanding, the \emph{solution} design. Further, the bottom three boxes address the \emph{relevance} of the research, the \emph{rigor} of the research activities,  and a statement about what makes the technological rule \emph{novel} in relation to the underpinning research, be it with focus on a refined problem conceptualization a new or improved solution design, or a validation of the the technological rule in a new context. 
-
-
-These practitioner--researcher synergies resonate well with the design science paradigm. \per{More?}
-
-
-
-%Empirical Software Engineering and Design Science
-%The \emph{empirical components} of research are different for different research paradigms. The formal sciences are ``empirically void'' as they primarily aim to build internally consistent systems \cite{van_aken_management_2004}. However, both explanatory sciences and design sciences have empirical components. Explanatory sciences observe `natural' phenomena to explain and predict future behavior, while design sciences use empirical methods, both to understand the problem at hand, and to validate the proposed solution and intervention in context. 
-
-
-
-The empirical contributions under the design sciences include both the problem understanding and the empirical insights from the design of the intervention in its context. Series of studies may be used to extend the scope of the technological rule. The empirical insights may also be extended into design theories, for example following procedures proposed by Sj{\o}berg at al.~\cite{sjoberg2008building}.
 
 \section{Design theory}
 %\emelie{This section partly repeats and partly contradicts sec 2.2, remove?} In another, similar field of research, van Aken proposes to distinguish \emph{management theory}, that is prescriptive, from \emph{organisational theory}, that is explanatory~\cite{van_aken_management_2005}. We have observed that a similar distinction could be useful when discussing software engineering theory. In this section we elaborate on how to articulate and mature prescriptive software engineering theory that is the product of design science research. 
@@ -366,12 +333,45 @@ The design science paradigm builds primarily on theoretical/analytical generaliz
 
 
 \section{Using the Design Science Frame in Software Engineering}
-\per{Add reference to \cite{Engstrom19arxiv} }
 
+In their practitioner article on industry--academia collaboration in software engineering, Carver and Prikladnicki stress the importance of a synergistic relationship between software practitioners and software engineering researchers.
+\begin{quote}Practitioners could obtain more relevant research results, and researchers could better understand the type and scope of problems to examine.~\cite{CarverIEEESW2018}
+\end{quote} 
+
+These practitioner--researcher synergies resonate well with the design science paradigm. \per{More?}
+%Empirical Software Engineering and Design Science
+%The \emph{empirical components} of research are different for different research paradigms. The formal sciences are ``empirically void'' as they primarily aim to build internally consistent systems \cite{van_aken_management_2004}. However, both explanatory sciences and design sciences have empirical components. Explanatory sciences observe `natural' phenomena to explain and predict future behavior, while design sciences use empirical methods, both to understand the problem at hand, and to validate the proposed solution and intervention in context. 
+%The empirical contributions under the design sciences include both the problem understanding and the empirical insights from the design of the intervention in its context. Series of studies may be used to extend the scope of the technological rule. The empirical insights may also be extended into design theories, for example following procedures proposed by Sj{\o}berg at al.~\cite{sjoberg2008building}.
+\per{Add reference to \cite{Engstrom19arxiv} }
 \per {Change example}
-We suggest three direct uses of the design science paradigm as a frame for software engineering research, which we illustrate through an example. Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section \ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section \ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section \ref{sec:communication}).
+We suggest three direct uses of the design science paradigm as a frame for software engineering research, which we illustrate through two examples (Section~\ref{sec:examples}). Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section \ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section \ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section \ref{sec:communication}). The examples and uses of the design science lens in software engineering are all described through a visual abstract template (Section~\ref{sec:VA_template}) that was designed to communicate the design science aspects of software engineering research . 
+
+\subsection{A template to pinpoint the design science constructs in software engineering}
+\label{sec:VA_template}
+
+%Design Science Studies
+
+
+\begin{figure}[t]
+% Use the relevant command to insert your figure file.
+% For example, with the graphicx package use
+  \includegraphics[width=1.0\textwidth]{Figures/GenericVA.png}
+% figure caption is below the figure
+\caption{Visual abstract template including the core constructs in the design science paradigm.}
+\label{fig:VA-template}       % Give a unique label
+\end{figure}
+
+\per{Better bridge here?}
+%Design Science as a Lens
+We designed a \emph{visual abstract template} to help identifying the design science constructs in software engineering research \cite{StoreyESEM17}, and further extended the template with survey questions, to help analyze software engineering literature from a design science perspective \cite{Engstrom19arxiv} see Figure~\ref{fig:VA-template}. The template aims to capture the key takeaway from a research study to help researchers assess the research contribution, build knowledge iteratively, and communicate research to practitioners. %Note connections to chapter 5.
+
+Our design science template covers the main constructs of design science research: The theoretical contribution in terms of a \emph{technological rule}; its instantiation in terms of a real \emph{problem--solution} pair;  the empirical or theoretical support for the \emph{problem} understanding, the \emph{solution} design. Further, the bottom three boxes address the \emph{relevance} of the research, the \emph{rigor} of the research activities,  and a statement about what makes the technological rule \emph{novel} in relation to the underpinning research, be it with focus on a refined problem conceptualization a new or improved solution design, or a validation of the the technological rule in a new context. 
+
+
+
 
 \subsection{Design Science Examples}
+\label{sec:examples}
 \subsubsection{Automated Bug Assignment}
 \per{rewrite intro}, as illustrated in one of their examples, introducing automated bug assignment to handle a large inflow of bug reports \cite{JonssonBug15}. We have used the same example to illustrate our visual abstract \cite{StoreyESEM17}, see Figure \ref{fig:BugAssignment}.
 
