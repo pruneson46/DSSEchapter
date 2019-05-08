@@ -290,19 +290,6 @@ Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \
 
 All these elements fit into the design science lens, although the model (by intention) focuses primarily on the artifact and specific context, rather than the generalized knowledge and technological rule, which are significant element of design science research. Further, when taking the generalization of knowledge and iterative knowledge building is stressed, it becomes clear that industry--academia collaboration is not a one-way transfer of technology, but a mutual interaction between the two.
 
-\per{Move to section 5?}
-Our example study of automated bug assignment was conducted in several steps, summarized from an industry--academia collaboration point of view, which can be mapped onto the above model \cite{CarverIEEESW2018}:
-\begin{itemize}
-\item \emph{Problem/issue}: Manual assignment of bugs to teams is costly and error prone
-\item \emph{Problem formulation}: Indepth studies of defect reports and their links to other information elements and activities
-\item \emph{Study state of the art}: A mapping study was performed of trace-link research, identifying the theoretical foundation \cite{Borg2013EMSE}
-\item \emph{Candidate solution}: Development of experimental tools, supporting multiple algorithms
-\item \emph{Validation in academia}: Comparison of algorithm performance in academic research \cite{BorgESEM13}
-\item \emph{Dynamic validation}: Training and cross-validation of tool on real data sets \cite{JonssonBug15}
-\item \emph{Release solution}: Incorporation of a simplified version of the wools in to the company's toolset
-\end{itemize} 
-
-In this case, we performed no static validation as we had the opportunity to make a dynamic off-line validation with real industry data.
 
 
 \subsection{Problem understanding}
@@ -362,7 +349,7 @@ Wieringa describes design science as an act of producing knowledge by designing 
 
 \subsection{Validation \per{and generalization?}}
 
-Validation of research under the design science paradigm is always about a problem--solution pair in \emph{context}. The technological rule specifies implicitly the validation activities; the intervention is the object of study, the situation defines the context, and the expected effect defines the validation criteria. This points to the `in vivo' software engineering context as the ultimate validation context for design science research. Several authors consequently propose multiple case studies as the natural research strategy in design science \cite{van_aken_management_2004}\per{add more}. However, for some design problems, the characteristics of the context may be resembled in `in vitro' settings for the validation. In other cases, practical limitations can prevent the research endeavor from taking place in real, operational environments, and thus scaled down validation contexts may be used in the reserach. 
+Validation of research under the design science paradigm is always about a problem--solution pair in \emph{context}. The technological rule specifies implicitly the validation activities; the intervention is the object of study, the situation defines the context, and the expected effect defines the validation criteria. This points to the `in vivo' software engineering context as the ultimate validation context for design science research. Several authors consequently propose multiple case studies as the natural research methodology in design science \cite{van_aken_management_2004}\per{add more}. However, for some design problems, the characteristics of the context may be resembled in `in vitro' settings for the validation. In other cases, practical limitations can prevent the research endeavor from taking place in real, operational environments, and thus scaled down validation contexts may be used in the reserach. 
 
 The risks related to validating interventions in business critical contexts may be high. If the intervention does not deliver the effect as expected, the outcome of the software engineering activity as a whole may be endangered. Further, the costs related to implementing the intervention may also be high -- for example changing a work flow or adapting the information infrastructure to a new tool. Thus, validation procedures may be used, which gradually extend the validation scope for the intervention.
 
@@ -381,7 +368,8 @@ The design science paradigm builds primarily on theoretical/analytical generaliz
 \per {Change example}
 We suggest three direct uses of the design science paradigm as a frame for software engineering research, which we illustrate through an example. Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section \ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section \ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section \ref{sec:communication}).
 
-\section{Design Science Example}
+\subsection{Design Science Examples}
+\subsubsection{Automated Bug Assignment}
 \per{rewrite intro}, as illustrated in one of their examples, introducing automated bug assignment to handle a large inflow of bug reports \cite{JonssonBug15}. We have used the same example to illustrate our visual abstract \cite{StoreyESEM17}, see Figure \ref{fig:BugAssignment}.
 
 \begin{figure*}[t]
@@ -400,21 +388,39 @@ The general \emph{problem} on inefficient bug assignment is observed in the lite
 
 The \emph{relevance} of the research is ensured by being anchored in the literature as well as in the specific problem instances of the study. Research \emph{rigor} is ensured by structured and transparent research methods, conducted with real world data. The \emph{novelty} of the research lies in the technological rule, embedding the choice of machine learning classifiers (ensemble-based), validating the ability to demonstrate a system of automated bug assignment which precision is on par with the existing manual procedures.
 
+\per{Present here in relation to Fig 3 or skip?}
+Our example study of automated bug assignment was conducted in several steps, summarized from an industry--academia collaboration point of view, which can be mapped onto the above model \cite{CarverIEEESW2018}:
+\begin{itemize}
+\item \emph{Problem/issue}: Manual assignment of bugs to teams is costly and error prone
+\item \emph{Problem formulation}: Indepth studies of defect reports and their links to other information elements and activities
+\item \emph{Study state of the art}: A mapping study was performed of trace-link research, identifying the theoretical foundation \cite{Borg2013EMSE}
+\item \emph{Candidate solution}: Development of experimental tools, supporting multiple algorithms
+\item \emph{Validation in academia}: Comparison of algorithm performance in academic research \cite{BorgESEM13}
+\item \emph{Dynamic validation}: Training and cross-validation of tool on real data sets \cite{JonssonBug15}
+\item \emph{Release solution}: Incorporation of a simplified version of the wools in to the company's toolset
+\end{itemize} 
 
-\subsection{Assessment of contributions}
-\label{sec:assessment}
-
-\peggy{not sure you will like that I associate relevance, rigor and novelty with proactive, prospective and retrospective phases here... feel free to delete if you don't like it}
-Assessment of research contributions can be conducted proactively (when relevance may be a primary concern for consideration before the research is executed), prospectively (as the research is ongoing and when rigor should be carefully considered). or retrospectively (where novelty of the design knowledge produced may become more evident).
-Below, we discuss assessments of contributions and refer to a concrete example of a research study by Shi \emph{et al.}~\cite{Shi2017} that we frame using the design science lens, see Figure~\ref{fig:VA-example}. 
+In this case, we performed no static validation as we had the opportunity to make a dynamic off-line validation with real industry data.
 
 
+\subsubsection{Regression Test Selection}
+
+... concrete example of a research study by Shi \emph{et al.}~\cite{Shi2017} that we frame using the design science lens, see Figure~\ref{fig:VA-example}. 
 \begin{figure*}
   \includegraphics[width=1.0\textwidth]{Figures/Shi2017.png}
 % figure caption is below the figure
 \caption{Visual abstract for the ICSE paper by Shi et a., 2017. \emelie{'Many' in the problem instance box indicates that it is a general or class of problems rather than an instance of it. The text in the 'Solution design approach' describes the design rather than the approach. The results (84\% acceptance rate) of the validation approach could maybe be moved to the rigor box? Could the positioning to previous work be clearer in the novelty box?}}
 \label{fig:VA-example}       % Give a unique label
 \end{figure*}
+
+
+\subsection{Assessment of contributions}
+\label{sec:assessment}
+
+\peggy{not sure you will like that I associate relevance, rigor and novelty with proactive, prospective and retrospective phases here... feel free to delete if you don't like it}
+Assessment of research contributions can be conducted proactively (when relevance may be a primary concern for consideration before the research is executed), prospectively (as the research is ongoing and when rigor should be carefully considered). or retrospectively (where novelty of the design knowledge produced may become more evident).
+Below, we discuss assessments of contributions and refer to the examples above.
+
 
 
 % Peggy:  not sure what to do with this...
