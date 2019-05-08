@@ -86,7 +86,7 @@
 \abstract*{Each chapter should be preceded by an abstract (no more than 200 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter.
 Please use the 'starred' version of the \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
 
-\abstract{Software engineering research aims to contribute to improved real-world practice. With the adoption of empirical software engineering research methods, the understanding of real-world needs and validation of proposals have evolved, while a systematic approach to design or improvement is less advanced in the community.   The \emph{design science paradigm} offers a frame for software engineering research, embracing both improvement and validation in its constituents of \emph{problem understanding, solution (or artefact) design}, and \emph{validation}, with the practical recommendations phrased as \emph{technological rules}. We elaborate these constructs, with a focus on software engineering, relate them to different conceptualizations of design science, and provide examples of research methods to be used. We outline how both industry-academia communication and theoretical knowledge building may be supported by the design science paradigm, and provide examples of software engineering research, presented through a design science lens.} 
+\abstract{Software engineering research aims to contribute to improved real-world practice. With the adoption of empirical software engineering research methods, the understanding of real-world needs and validation of proposals have evolved, while a systematic approach to design or practice improvement is less advanced in the community.   The \emph{design science paradigm} offers a frame for software engineering research, embracing both improvement and validation in its constituents of \emph{problem understanding, solution (or artefact) design}, and \emph{validation}, with the practical recommendations phrased as \emph{technological rules}. We elaborate these constructs, with a focus on software engineering, relate them to different conceptualizations of design science, and provide examples of research methods to be used. We outline how both industry-academia communication and theoretical knowledge building may be supported by the design science paradigm, and provide examples of software engineering research, presented through a design science lens.} 
 
 \section{Introduction}
 \label{sec:intro}
@@ -100,11 +100,11 @@ Software engineering research aims at developing and validating practically usef
 
 Lots of solution proposals to software engineering problems have been invented and published during the decades -- be it development methods and processes, tools, frameworks, taxonomies, or languages -- but they are rarely systematically based on problem instances, nor validated in large scale software practice.
 
-With the advent of empirical~\cite{Basili86} and evidence-based software engineering~\cite{Kitchenham04}, the research focus shifted towards validation of solution proposals. Empirical methods were inherited and adapted from various research fields, particularly medicine and social sciences, and the knowledge basis was build up systematically by families of experiments \cite{Basili99} and systematic literature reviews \cite{Kitchenham15}. \per{New text: However, the methodological advancements are rarely set into an explicit research paradigm frame, and thus it is sometime unclear what the research contribution is and how to relate to it.} %However, in contrast to the significant methodological advancement of the validation side, the design of interventions or solutions to address the software engineering problems are not given the same attention. \emelie{I don't think DS will change that as its focus is on articulating technological rules and their empirical support (validation). There is not much practical guidance on how to do regarding any of the three activities: problem understanding, solution design and validation.}
+With the advent of empirical~\cite{Basili86} and evidence-based software engineering~\cite{Kitchenham04}, the research focus shifted towards validation of solution proposals. Empirical methods were inherited and adapted from various research fields, particularly medicine and social sciences, and the knowledge basis was build up systematically by families of experiments \cite{Basili99} and systematic literature reviews \cite{Kitchenham15}. However, the methodological advancements are rarely set into an explicit research paradigm frame, and thus it is sometime unclear what the research contribution is and how to relate to it. 
 
-In this chapter, we introduce the \emph{design science paradigm} as a frame for software engineering. The design science paradigm integrates \emph{problem understanding, solution design} and \emph{validation}, and this fits well as a frame for empirical software engineering and its aim to provide practical solutions for real-world software engineering challenges. Particularly, multiple case studies are proposed as the typical research method in design science \cite{van_aken_management_2004}, which fits with the widespread use of case studies in software engineering.
+In this chapter, we introduce the \emph{design science paradigm} as a frame for software engineering. The design science paradigm integrates \emph{problem understanding, solution design} and \emph{validation}, and this fits well as a frame for empirical software engineering and its aim to provide practical solutions for real-world software engineering challenges. Particularly, multiple case studies are proposed as the typical research methododology in design science \cite{van_aken_management_2004}, which fits with the widespread use of case studies in software engineering.
 
-We provide an overview of the design science paradigm in Section \ref{sec:overview} TBD outline
+We provide an overview of the design science paradigm in Section \ref{sec:overview} \per{TBD outline}
 
 \section{Design Science -- An Overview}
 \label{sec:overview}
@@ -119,9 +119,13 @@ There are three major research paradigms, according to van Aken~\cite{van_aken_m
 \item \emph{design sciences} (e.g.\ engineering sciences and medical sciences).  
 \end{itemize}
 
-We consider design science as a \emph{paradigm}, that helps framing research, aiming towards improving an area of practice. In our case, the engineering of software is the practice area in focus. The practice is not homogenous over all kinds of software engineering, neither are the potential improvements the same for all instances of practice. Thus, design science addresses a general problem by studying  specific \emph{problem instances}, which constitute the \emph{research contexts}.  There the research activities of \emph{problem understanding}, \emph{solution design} and \emph{validation} take place. \per{Mention Wieringa's cycles?}
+In this chapter, we view design science as a \emph{paradigm}, that helps framing research, aiming towards improving an area of practice. In our case, the engineering of software is the practice area in focus. The practice is not homogenous over all kinds of software engineering, neither are the potential improvements the same for all instances of practice. Thus, design science addresses a general problem by studying  specific \emph{problem instances}, which constitute the \emph{research contexts}.  There the research activities of \emph{problem understanding}, \emph{solution design} and \emph{validation} take place. \per{Mention Hevners's cycles!}
 
-Design science does not prescribe a specific methodology nor specific method steps to be conducted in a single research study. The above mentioned activities are constituents of  a research process, that may be instantiated in different ways. Different methodologies -- empirical, analytical, and  design methodologies -- may be used within the frame of design science. Further, a single study or research paper may or may not contain all the constituents of the design science paradigm; one study may be focused on, for example,  problem understanding towards finding a solution, another may report the complete chain from problem understanding to validated solution. Studies focusing on one aspect of design science may contain research contributions that build on, or constitute, the basis for other research under the design science paradigm.
+Design science may alternatively be considered a methodology \cite{Wohlin2015}. \per{expand?}
+
+As a paradigm, design science does not prescribe a specific methodology nor specific method steps to be conducted in a single research study. The above mentioned activities are constituents of  a research process, that may be instantiated in different ways. However, the multiple case study methodology is brought forward as the typical and most common research methodology under the design science paradigm.
+
+Different methods for data collection, analysis and design may be used within the frame of design science. Further, a single study or research paper may or may not contain all the constituents of the design science paradigm; one study may be focused on, for example,  problem understanding towards finding a solution, another may report the complete chain from problem understanding to validated solution. Studies focusing on one aspect of design science may contain research contributions that build on, or constitute, the basis for other research under the design science paradigm.
 
 %Technological rules
 The scientific knowledge, emanating from design science research, is typically captured in \emph{technological rules}. This means ``field-tested and grounded'' exemplars \per{use the word or not?} of how a problem can be solved~\cite{van_aken_management_2004}.
@@ -129,7 +133,7 @@ The scientific knowledge, emanating from design science research, is typically c
 %\begin{quote}{To produce software of high quality apply good software engineering practices}\end{quote} are either trivial or too bold. On the other hand, too detailed rules, highly specialized for the specific problem instance under study is not possible to generalize.
 
 % Problem understanding
-Design science research aims to address real practice problems, and thus \emph{problem understanding} is a core constituent of the research. There is a large battery of empirical methods available for problem understanding -- case studies \cite{Runeson12Case}, surveys, data mining \cite{MenziesDataMining2016}, ethnography studies \cite{SharpEthnography2016}, etc. -- that can be used for the purpose. 
+Design science research aims to address real practice problems, and thus \emph{problem understanding} is a core constituent of the research. There is a large battery of empirical methods available for problem understanding -- surveys, data mining \cite{MenziesDataMining2016}, ethnography studies \cite{SharpEthnography2016}, etc. -- that can be used for the purpose. 
 
 Problem understanding is typically, but not necessarily, the first step in a design science research endeavor. Understanding a general problem, present in one or more concrete problem instances, is a basis for understanding how this general problem may be solved.  While exploring a specific problem instance,   it may become clearer what the core of the problem is, and thus focussing the potential solution design to these areas. 
 
@@ -139,64 +143,13 @@ While problem understanding is a basis for the research activity, it is not a pu
 The outcome of a design science research endeavor is ultimately that \emph{design knowledge} is produced, that is, empirically grounded knowledge about how to design solutions to specific problems. The knowledge is gained while solving the identified problem at hand, and abstracted as general knowledge. 
 
 % Validation
- The primary goal of \emph{validation} is to assess whether the solution proposal is feasible for the problem instance. \emelie{Next sentence is hard to understand, maybe move to validation section?} \per{Somewhat extended:} However, the scope of the design knowledge gained in a study, can be extended by systematically extending the scope of the validation in subsequent studies, thus adding to the knowledge base. 
+ The primary goal of \emph{validation} is to assess whether the solution proposal is feasible for the problem instance. However, the scope of the design knowledge gained in a study, can be extended by systematically extending the scope of the validation in subsequent studies, thus adding to the knowledge base. 
 
-
-\begin{figure}[t]
-% Use the relevant command to insert your figure file.
-% For example, with the graphicx package use
-  \includegraphics[width=1.0\textwidth]{Figures/GenericVA.png}
-% figure caption is below the figure
-\caption{Visual abstract template including the core constructs in the design science paradigm.}
-\label{fig:VA-template}       % Give a unique label
-\end{figure}
-%Design Science as a Lens
-We designed a \emph{visual abstract template} to help identifying the design science constructs in software engineering research \cite{StoreyESEM17}, and further extended the template with survey questions, to help analyze software engineering literature from a design science perspective \cite{Engstrom19arxiv} see Figure~\ref{fig:VA-template}. 
-%\per{Include the following or not?}\emelie{I think not, (but we should refer to the arxiv paper rather than the ESEM paper above). Instead we could explain the benefits of using it.} We further extended the template with survey questions, the helped analyze software engineering literature from a design science perspective \cite{Engstrom19arxiv}. Based on an analysis of 38 papers, selected as `best papers' from five years of the ICSE conference (2014--2018 inclusive), we conclude that the design science paradigm is not explicitly used as a frame for the research, although the constructs of design science research are present implicitly. 
-
-Our design science template covers the main constructs of design science research: The theoretical contribution in terms of a \emph{technological rule}; its instantiation in terms of a real \emph{problem--solution} pair;  the empirical or theoretical support for the \emph{problem} understanding, the \emph{solution} design. Further, the bottom three boxes address the \emph{relevance} of the research, the \emph{rigor} of the research activities,  and a statement about what makes the technological rule \emph{novel} in relation to the underpinning research, be it with focus on a refined problem conceptualization a new or improved solution design, or a validation of the the technological rule in a new context. 
 
 
 Design science is a paradigm used in many different research fields, and it is instantiated in many variants.  The above summary reflects what we have found suitable in software engineering, and some of our rationale and alternative instantiations are discussed below.
 
 
-\subsection{Design Science and Empirical Studies \per{Find better title}}
-
-The formal sciences do not relate to empirical research as their primary goal is to build systems that are internally consistent. The explanatory sciences aim to describe, explain, and possibly predict phenomena in their field of study, and are thus empirical. The design sciences aim to develop knowledge for the design of artifacts or improvement of existing entities, i.e.\ solving \emph{construction problems} or  \emph{improvement problems}, and thus include both empirical and design constituents. 
-
-The Nobel Prize laureate in Economics, Herbert A.\ Simon, used other terms for the distinction between explanatory and design sciences~\cite{Simons69}. Design sciences are referred to as the ``science of the artificial'', in contrast to explanatory science, as the ``science of the natural''. The latter refers not only to natural sciences in the narrow sense, but to other phenomena that seem to appear `naturally'. %In this broader sense, we may find both `natural' and `artificial' phenomena in software engineering, and thus may frame the research in different paradigms, depending on the phenomenon under study. 
-\emelie{Not sure this distinction helps, are there any natural laws that we rely on or build on in software engineering?} \per{This distinction helped a lot in conveying the message at my EASE keynote}
-
-
-As a research paradigm design science contains a set of beliefs regarding both the type and nature of knowledge as well as on how it can be validated. Although none of the design science advocates in the software engineering community would disagree with this claim, design science is often discussed as if it was a specific methodology to be selected among other empirical methods. For example, Wohlin and Aurum acknowledge that design science may be considered a paradigm or a method, and choose to view it as a method in their context \cite{Wohlin2015}.
-
-The philosophical stance behind design science is what is characterized as pragmatism~\cite{easterbrook_selecting_2008}%\emelie{it is a philosophical tradition from 1870 not sure what reference to use...}
-, referring to a view that all knowledge is approximate and valued by its usefulness for solving practical problems. Hevner \emph{et al.} express this in terms of utility: 
-
-\begin{quote}
-	That is the essence of design science. Contribution arises from utility. If the artifact does not solve the problem (search, implementability), it has no utility. If utility is not demonstrated (evaluation), then there is no basis upon which to accept the claims that it provides any contribution (contribution).~\cite[p. 91]{hevner_design_2004}
-\end{quote}
-
-%\emelie{Skip this section?}Pragmatists strive to reach consensus over evidence, why access to stakeholders' perceptions are necessary in the validation of design knowledge. Since such stance is less dogmatic than other philosophical stances, our emphasis when framing empirical software engineering as design science, is on the type and nature of the produced knowledge rather than on the methodology applied. Various methods may be used to gain insights into a problem. 
-
-Gregor and Hevner also refer to design science as a paradigm~\cite{gregor_positioning_2013}. Johannesson, on the other hand, disagrees with this and argues that design science refers to the objective of changing the world\per{action research?}, in contrast to describing it, and that this is done primarily by creating artefacts not knowledge~\cite{johannesson_introduction_2014}. Our stance is that design science is a paradigm for software engineering research and as researchers our primary goal is to create knowledge to be applied by practitioners in the field. Furthermore, we consider artefacts as embedding design knowledge. 
-
-
-
-%\paragraph{Design science is more than action research.}
-
-
-%\begin{figure*}
-%% Use the relevant command to insert your figure file.
-%% For example, with the graphicx package use
-%  \includegraphics[width=0.75\textwidth]{Figures/DS_model.pdf}
-%% figure caption is below the figure
-%\caption{Contribution types in design science research}
-%\label{fig:contributiontypes}       % Give a unique label
-%\end{figure*}
-
-
-%Compare to action research and other empirical methodologies case studies and experiments.
 
 
 \subsection{Software Engineering Research as Design Science}
@@ -206,39 +159,30 @@ In their practitioner article on industry--academia collaboration in software en
 \begin{quote}Practitioners could obtain more relevant research results, and researchers could better understand the type and scope of problems to examine.~\cite{CarverIEEESW2018}
 \end{quote} 
 
-These practitioner--researcher synergies resonate well with the design science paradigm, as illustrated in one of their examples, introducing automated bug assignment to handle a large inflow of bug reports \cite{JonssonBug15}. We have used the same example to illustrate our visual abstract \cite{StoreyESEM17}, see Figure \ref{fig:BugAssignment}.
+\begin{figure}[t]
+% Use the relevant command to insert your figure file.
+% For example, with the graphicx package use
+  \includegraphics[width=1.0\textwidth]{Figures/GenericVA.png}
+% figure caption is below the figure
+\caption{Visual abstract template including the core constructs in the design science paradigm.}
+\label{fig:VA-template}       % Give a unique label
+\end{figure}
 
-\begin{figure*}[t]
-\begin{center}
-\includegraphics[width=\columnwidth, trim={7mm 30mm 7mm 30mm },clip]{Figures/VATemplateJonsson.pdf}
-\caption{Visual abstract for the paper on automated bug assignment \cite{JonssonBug15}.}
-\label{fig:BugAssignment}
-\end{center}
-\end{figure*}
+\per{Better bridge here?}
+%Design Science as a Lens
+We designed a \emph{visual abstract template} to help identifying the design science constructs in software engineering research \cite{StoreyESEM17}, and further extended the template with survey questions, to help analyze software engineering literature from a design science perspective \cite{Engstrom19arxiv} see Figure~\ref{fig:VA-template}. The template aims to capture the key takeaway from a research study to help researchers assess the research contribution, build knowledge iteratively, and communicate research to practitioners. %Note connections to chapter 5.
 
-The automated bug assignment research was not originally presented through the design science lens. However, like much software engineering research it is implicitly conducted as design science research \cite{Engstrom19arxiv}. 
-The scientific knowledge gained from the work can be phrased as a \emph{technological rule}:
-\begin{quote}{To achieve more effective assignment of bugs to teams in large scale industrial contexts use ensemble-based machine learning to automate bug assignment. \cite{StoreyESEM17}}\end{quote}
+Our design science template covers the main constructs of design science research: The theoretical contribution in terms of a \emph{technological rule}; its instantiation in terms of a real \emph{problem--solution} pair;  the empirical or theoretical support for the \emph{problem} understanding, the \emph{solution} design. Further, the bottom three boxes address the \emph{relevance} of the research, the \emph{rigor} of the research activities,  and a statement about what makes the technological rule \emph{novel} in relation to the underpinning research, be it with focus on a refined problem conceptualization a new or improved solution design, or a validation of the the technological rule in a new context. 
 
-The general \emph{problem} on inefficient bug assignment is observed in the literature as well as in the specific industrial contexts, where this research was conducted. With a solution in mind to use machine learning techniques to assign bugs to teams, the characteristics of the defect data and the organizational context were explored, to identify the characteristics of the \emph{problem instance}. Related work on bug classification as well as on machine learning techniques, underpinned the \emph{design decisions} for the proposed solution. The machine learning solutions were implemented in the Weka framework \cite{hall_weka_2009}, and trained and \emph{validated} on real data from five projects across two companies/domains, on 50 000 bug reports. For the specific companies, a design artifact was produced, namely the bug assignment tool built on top of Weka.
 
-The \emph{relevance} of the research is ensured by being anchored in the literature as well as in the specific problem instances of the study. Research \emph{rigor} is ensured by structured and transparent research methods, conducted with real world data. The \emph{novelty} of the research lies in the technological rule, embedding the choice of machine learning classifiers (ensemble-based), validating the ability to demonstrate a system of automated bug assignment which precision is on par with the existing manual procedures.
+These practitioner--researcher synergies resonate well with the design science paradigm. \per{More?}
+
 
 
 %Empirical Software Engineering and Design Science
 %The \emph{empirical components} of research are different for different research paradigms. The formal sciences are ``empirically void'' as they primarily aim to build internally consistent systems \cite{van_aken_management_2004}. However, both explanatory sciences and design sciences have empirical components. Explanatory sciences observe `natural' phenomena to explain and predict future behavior, while design sciences use empirical methods, both to understand the problem at hand, and to validate the proposed solution and intervention in context. 
 
-In the field of research with organizations as their study objects, van Aken proposed to make a distinction between explanatory and design sciences by dividing the research into two fields: 
-\begin{itemize}
-\item Organization Theory as description-driven research under the explanatory research paradigm, observing how organizations behave `naturally', and 
-\item Management Theory as prescription-driven research under the design sciences paradigm, designing interventions to manage organization~\cite{van_aken_management_2004}.  
-\end{itemize}
 
-We do not propose a corresponding distinction for software engineering, but call researchers to awareness of the existence of the different paradigmatic perspectives, and their implications for choice of research methodology and the knowledge building.
-
-Purely observational studies, which aim to characterize the status of a field of software engineering practice, primarily have the characteristic of explanatory sciences as they aim to explore the current, `natural' \emelie{I don't understand the concept of 'natural' state of practice}\per{I tried to explain:} state of practice. This does not refer to `natural' in the sense of natural sciences, as software and its engineering are designed artifacts. However, the phenomena can be studied with respect to properties that are considered emergent from the phenomena, independently of their design variations. Observational studies, which aim to understand a problem, with the purpose of developing or improving an intervention to address the problem, may be viewed as a part of the design sciences paradigm. 
-\emelie{I think this definition of problem understanding fit in to the explanatory sciences as well.} \per{I think the distinction is the purpose.}
-\emelie{Maybe we should distinguish between problem understanding and problem conceptualisation instead?} 
 
 The empirical contributions under the design sciences include both the problem understanding and the empirical insights from the design of the intervention in its context. Series of studies may be used to extend the scope of the technological rule. The empirical insights may also be extended into design theories, for example following procedures proposed by Sj{\o}berg at al.~\cite{sjoberg2008building}.
 
@@ -346,6 +290,7 @@ Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \
 
 All these elements fit into the design science lens, although the model (by intention) focuses primarily on the artifact and specific context, rather than the generalized knowledge and technological rule, which are significant element of design science research. Further, when taking the generalization of knowledge and iterative knowledge building is stressed, it becomes clear that industry--academia collaboration is not a one-way transfer of technology, but a mutual interaction between the two.
 
+\per{Move to section 5?}
 Our example study of automated bug assignment was conducted in several steps, summarized from an industry--academia collaboration point of view, which can be mapped onto the above model \cite{CarverIEEESW2018}:
 \begin{itemize}
 \item \emph{Problem/issue}: Manual assignment of bugs to teams is costly and error prone
@@ -417,7 +362,7 @@ Wieringa describes design science as an act of producing knowledge by designing 
 
 \subsection{Validation \per{and generalization?}}
 
-Validation of research under the design science paradigm is always about a problem--solution pair in \emph{context}. The technological rule specifies implicitly the validation activities; the intervention is the object of study, the situation defines the context, and the expected effect defines the validation criteria. This points to the `in vivo' software engineering context as the ultimate validation context for design science research. Several authors consequently propose multiple case studies as the natural research strategy in design science \cite{van_aken_management_2004}\per{add more}. However, practical limitations can prevent the research endeavor from taking place in real, operational environments. 
+Validation of research under the design science paradigm is always about a problem--solution pair in \emph{context}. The technological rule specifies implicitly the validation activities; the intervention is the object of study, the situation defines the context, and the expected effect defines the validation criteria. This points to the `in vivo' software engineering context as the ultimate validation context for design science research. Several authors consequently propose multiple case studies as the natural research strategy in design science \cite{van_aken_management_2004}\per{add more}. However, for some design problems, the characteristics of the context may be resembled in `in vitro' settings for the validation. In other cases, practical limitations can prevent the research endeavor from taking place in real, operational environments, and thus scaled down validation contexts may be used in the reserach. 
 
 The risks related to validating interventions in business critical contexts may be high. If the intervention does not deliver the effect as expected, the outcome of the software engineering activity as a whole may be endangered. Further, the costs related to implementing the intervention may also be high -- for example changing a work flow or adapting the information infrastructure to a new tool. Thus, validation procedures may be used, which gradually extend the validation scope for the intervention.
 
@@ -434,7 +379,27 @@ The design science paradigm builds primarily on theoretical/analytical generaliz
 \per{Add reference to \cite{Engstrom19arxiv} }
 
 \per {Change example}
-We suggest three direct uses of the design science paradigm as a frame for software engineering research. Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section \ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section \ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section \ref{sec:communication}).
+We suggest three direct uses of the design science paradigm as a frame for software engineering research, which we illustrate through an example. Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section \ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section \ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section \ref{sec:communication}).
+
+\section{Design Science Example}
+\per{rewrite intro}, as illustrated in one of their examples, introducing automated bug assignment to handle a large inflow of bug reports \cite{JonssonBug15}. We have used the same example to illustrate our visual abstract \cite{StoreyESEM17}, see Figure \ref{fig:BugAssignment}.
+
+\begin{figure*}[t]
+\begin{center}
+\includegraphics[width=\columnwidth, trim={7mm 30mm 7mm 30mm },clip]{Figures/VATemplateJonsson.pdf}
+\caption{Visual abstract for the paper on automated bug assignment \cite{JonssonBug15}.}
+\label{fig:BugAssignment}
+\end{center}
+\end{figure*}
+
+The automated bug assignment research was not originally presented through the design science lens. However, like much software engineering research it is implicitly conducted as design science research \cite{Engstrom19arxiv}. 
+The scientific knowledge gained from the work can be phrased as a \emph{technological rule}:
+\begin{quote}{To achieve more effective assignment of bugs to teams in large scale industrial contexts use ensemble-based machine learning to automate bug assignment. \cite{StoreyESEM17}}\end{quote}
+
+The general \emph{problem} on inefficient bug assignment is observed in the literature as well as in the specific industrial contexts, where this research was conducted. With a solution in mind to use machine learning techniques to assign bugs to teams, the characteristics of the defect data and the organizational context were explored, to identify the characteristics of the \emph{problem instance}. Related work on bug classification as well as on machine learning techniques, underpinned the \emph{design decisions} for the proposed solution. The machine learning solutions were implemented in the Weka framework \cite{hall_weka_2009}, and trained and \emph{validated} on real data from five projects across two companies/domains, on 50 000 bug reports. For the specific companies, a design artifact was produced, namely the bug assignment tool built on top of Weka.
+
+The \emph{relevance} of the research is ensured by being anchored in the literature as well as in the specific problem instances of the study. Research \emph{rigor} is ensured by structured and transparent research methods, conducted with real world data. The \emph{novelty} of the research lies in the technological rule, embedding the choice of machine learning classifiers (ensemble-based), validating the ability to demonstrate a system of automated bug assignment which precision is on par with the existing manual procedures.
+
 
 \subsection{Assessment of contributions}
 \label{sec:assessment}
@@ -518,6 +483,39 @@ We are currently in the process of getting feedback from industry partners.  For
 
 %\section{Examples}
 %Either we choose examples that illustrate the different aspects of DS, or we choose three examples that are good examples of DS -- candidates from the ICSE best papers, or our own papers?
+
+\section{Alternative Views on Design Science}
+\per{Moved here from former section 2.2. Possibly keep the chapter as a container for relating to other's views.}
+The formal sciences do not relate to empirical research as their primary goal is to build systems that are internally consistent. The explanatory sciences aim to describe, explain, and possibly predict phenomena in their field of study, and are thus empirical. The design sciences aim to develop knowledge for the design of artifacts or improvement of existing entities, i.e.\ solving \emph{construction problems} or  \emph{improvement problems}, and thus include both empirical and design constituents. 
+
+The Nobel Prize laureate in Economics, Herbert A.\ Simon, used other terms for the distinction between explanatory and design sciences~\cite{Simons69}. Design sciences are referred to as the ``science of the artificial'', in contrast to explanatory science, as the ``science of the natural''. The latter refers not only to natural sciences in the narrow sense, but to other phenomena that seem to appear `naturally'. %In this broader sense, we may find both `natural' and `artificial' phenomena in software engineering, and thus may frame the research in different paradigms, depending on the phenomenon under study. 
+\emelie{Not sure this distinction helps, are there any natural laws that we rely on or build on in software engineering?} \per{This distinction helped a lot in conveying the message at my EASE keynote}
+
+
+As a research paradigm design science contains a set of beliefs regarding both the type and nature of knowledge as well as on how it can be validated. Although none of the design science advocates in the software engineering community would disagree with this claim, design science is often discussed as if it was a specific methodology to be selected among other empirical methods. For example, Wohlin and Aurum acknowledge that design science may be considered a paradigm or a method, and choose to view it as a method in their context \cite{Wohlin2015}.
+
+The philosophical stance behind design science is what is characterized as pragmatism~\cite{easterbrook_selecting_2008}%\emelie{it is a philosophical tradition from 1870 not sure what reference to use...}
+, referring to a view that all knowledge is approximate and valued by its usefulness for solving practical problems. Hevner \emph{et al.} express this in terms of utility: 
+
+\begin{quote}
+	That is the essence of design science. Contribution arises from utility. If the artifact does not solve the problem (search, implementability), it has no utility. If utility is not demonstrated (evaluation), then there is no basis upon which to accept the claims that it provides any contribution (contribution).~\cite[p. 91]{hevner_design_2004}
+\end{quote}
+
+%\emelie{Skip this section?}Pragmatists strive to reach consensus over evidence, why access to stakeholders' perceptions are necessary in the validation of design knowledge. Since such stance is less dogmatic than other philosophical stances, our emphasis when framing empirical software engineering as design science, is on the type and nature of the produced knowledge rather than on the methodology applied. Various methods may be used to gain insights into a problem. 
+
+Gregor and Hevner also refer to design science as a paradigm~\cite{gregor_positioning_2013}. Johannesson, on the other hand, disagrees with this and argues that design science refers to the objective of changing the world\per{action research?}, in contrast to describing it, and that this is done primarily by creating artefacts not knowledge~\cite{johannesson_introduction_2014}. Our stance is that design science is a paradigm for software engineering research and as researchers our primary goal is to create knowledge to be applied by practitioners in the field. Furthermore, we consider artefacts as embedding design knowledge. 
+
+\subsection{Observational studies which are not design science }
+In the field of research with organizations as their study objects, van Aken proposed to make a distinction between explanatory and design sciences by dividing the research into two fields: 
+\begin{itemize}
+\item Organization Theory as description-driven research under the explanatory research paradigm, observing how organizations behave `naturally', and 
+\item Management Theory as prescription-driven research under the design sciences paradigm, designing interventions to manage organization~\cite{van_aken_management_2004}.  
+\end{itemize}
+
+We do not propose a corresponding distinction for software engineering, but call researchers to awareness of the existence of the different paradigmatic perspectives, and their implications for choice of research methodology and the knowledge building.
+
+Purely observational studies, which aim to characterize the status of a field of software engineering practice, primarily have the characteristic of explanatory sciences as they aim to explore the current, `natural'  state of practice. This does not refer to `natural' in the sense of natural sciences, as software and its engineering are designed artifacts. However, the phenomena can be studied with respect to properties that are considered emergent from the phenomena, independently of their design variations. Observational studies, which aim to understand a problem, with the purpose of developing or improving an intervention to address the problem, may be viewed as a part of the design sciences paradigm. 
+
 
 
 
