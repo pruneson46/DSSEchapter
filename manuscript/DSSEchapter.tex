@@ -156,10 +156,14 @@ Design science is a paradigm used in many different research fields, and it is i
 
 
 
-\section{Design theory}
+\section{Design Science Research}
 %\emelie{This section partly repeats and partly contradicts sec 2.2, remove?} In another, similar field of research, van Aken proposes to distinguish \emph{management theory}, that is prescriptive, from \emph{organisational theory}, that is explanatory~\cite{van_aken_management_2005}. We have observed that a similar distinction could be useful when discussing software engineering theory. In this section we elaborate on how to articulate and mature prescriptive software engineering theory that is the product of design science research. 
 
-Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. This is also illustrated in our model of design science contributions, see Figure~\ref{fig:DS_model}. The practical contribution (e.g. the actual problem solving) is visualised in the two bottom quadrants as instances of both the problem and the solution. The theoretical contribution (e.g. generalisation and scope definition) is visualised in the two top quadrants in terms of technological rules and their constructs. \emelie{Can we move the rest of this section to mathodology instead?}The arrows in the figure illustrates knowledge creating activities that can be performed by both practitioners and researchers. \emph{Problem conceptualization} refers to the activity of describing the problem in terms of the envisioned solution, \emph{Abstraction} refers to the activity of identifying the key design decisions for a defined scope of validity of a solution, \emph{Solution design} refers to the activity of mapping a problem to a general solution, \emph{Instantiation} refers to the activity of implementing the solution in context and finally \emph{Empirical validation} refers to an evaluation of how well the implemented solution addresses the problem.\per{One sentence about each arrow} 
+Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. This is also illustrated in our model of design science contributions, see Figure~\ref{fig:DS_model}. \per{Describe models in2-3 sentences}
+
+The practical contribution (e.g. the actual problem solving) is visualised in the two bottom quadrants as instances of both the problem and the solution. The theoretical contribution (e.g. generalisation and scope definition) is visualised in the two top quadrants in terms of technological rules and their constructs. 
+
+The arrows in Figure~\ref{fig:DS_model} illustrate knowledge creating activities that can be performed by both practitioners and researchers. \emph{Problem conceptualization} refers to the activity of describing the problem in terms of the envisioned solution, \emph{Abstraction} refers to the activity of identifying the key design decisions for a defined scope of validity of a solution, \emph{Solution design} refers to the activity of mapping a problem to a general solution, \emph{Instantiation} refers to the activity of implementing the solution in context and finally \emph{Empirical validation} refers to an evaluation of how well the implemented solution addresses the problem.
 
 %where the instance of the problem. As illustrated in Figure~\ref{fig:DS_model} there are mainly two types of theoretical contributions of design science research, 1) prescriptive statements on how to achieve a certain objective (i.e. Technological rules) 2) and constructs
 \begin{figure}
@@ -169,33 +173,6 @@ Gregor and Hevner put forward design theory as the result of generalising from a
 \label{fig:DS_model}       % Give a unique label
 \end{figure}
 
-%\subsection{Outputs from design science research}
-
-%\emelie{Skip this section? Maybe we confuse people with this list of outcomes more than help (At least it confuses me). The outcomes do not really map to the VA-template nor the DS-model (The constructs and design theories are covered). They are also seem to be specific to information systems (architecture, frameworks, design principles...) and not software engineering (processes, practices, tools...} \per{Agree on removing table, but add examples of outcomes.}. 
-%\label{sec:outputs}
-%Outputs from design science research may be of many different kinds. Vaishnavi et al \cite{Vaishnavi} synthesized different kinds of output in information systems, based on \cite{March1995} \cite{gregor_positioning_2013}, as reported in Table~\ref{tab:output}. We have added a tools category, which often embeds design knowledge in software engineering design science studies. 
-%\begin{table}[t]
-%\caption{Outputs from design science research, by Vaishnavi et al \cite{Vaishnavi} based on \cite{March1995} \cite{gregor_positioning_2013}}
-%\begin{center}
-%\begin{tabular}{lp{8cm}}
-%\textbf{Output}& \textbf{Description}\\
-%\hline
-%Constructs & The conceptual vocabulary of a domain\\
-%Models & Sets of propositions or statements expressing relationships between constructs\\
-%Frameworks & Real or conceptual guides to serve as support or guide\\
-%Architectures & High level structures of systems\\
-%Design principles & Core principles and concepts to guide design\\
-%Methods & Sets of steps to perform tasks -- how-to knowledge\\
-%Instantiations & Situated implementations in certain environments that do or do not operationalize constructs, models, metods and other abstract artifacts; in the latter case such knowledge remains tacit.\\
-%Design theories& A prescriptive set of statements on how to achieve a certain objective. A theory usually includes other abstract artifacts such as constructs, models, frameworks, architectures, design principles, and methods.\\
-%Tools?&TBD\\
-%\hline
-%\end{tabular}
-%\end{center}
-%\label{tab:output}
-%\end{table}%
-
-
 
 
 \subsection{Technological rules}
@@ -204,7 +181,7 @@ Gregor and Hevner put forward design theory as the result of generalising from a
 
 
 % outline: The technological rule is the theoretical contribution of design science research also referred to as design knowledge.
-The technological rule captures generalized knowledge about mappings between instances of problems and solutions (i.e. in-context validations) and is thus a means to transfer knowledge between contexts. The Technological rule spans both a problem domain and a solution domain and is formulated based on constructs in both domains. 
+The technological rule captures generalized knowledge about mappings between instances of problems and solutions (i.e. in-context validations) and is thus a means to transfer knowledge between contexts. The technological rule spans both a problem domain and a solution domain and is formulated based on constructs in both domains. 
 
 In a technological rule the solution (or intervention) may refer to the use of a specific tool or the application of a more general approach. The scope of validity of the solution is described in terms of a desired effect in a situation.  Also Wieringa discusses design theory, defining it as theories of artefacts in context~\cite{wieringa_design_2009}. The design knowledge within the technological rule aims to help software engineering professionals design customized solutions to their specific problems. Ideally it is a general recommendation based on current state of art including the new additional contribution of a piece of research.
 
@@ -239,32 +216,8 @@ A construct can for example refer to a taxonomy that is used to articulate a tec
 Design knowledge is gained by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Each instantiation (e.g., a case study or an iteration of action research) constitutes a unit of analysis in relation to the technological rule and the new knowledge is communicated and assessed from that perspective. 
 
 
-\section{Methodology}
 
-\subsection{Research Methods in Design Science} 
-
-
-Design science %as a paradigm 
-may embrace a multitude of research methods to be used. For the \emph{problem understanding} and \emph{validation} of problem--solution pairs, empirical research methods are used. Methods supporting realism and natural settings~\cite{StolABC18}, are preferred as the problem in its context is in focus for design science research. 
-
-The typical research methodology used to study and test technological rules is multiple case studies, according to van Aken \cite{van_aken_management_2004}. In the case studies, a series of problems of the same class is adressed. Design knowledge is built up through the empirical validation of the solution in context. Case study methodology is well established in software engineering \cite{Runeson12Case} and fits thus well into the design science paradigm. Methods for data collection and analysis can be selected from the rich plethora of options available for such studies, for example, interviews, focus groups, observational studies, archival data, and software metrics. Action research is another way of producing and validating technological rules. However action research does not explicitly aim at developing knowledge that can be transferred to other contexts but rather to make a change in one specific local context. Both Wieringa~\cite{wieringa_technical_2012} and Johannesson~\cite{johannesson_introduction_2014} discuss action research as one of several empirical methods that can be used to produce design knowledge.
-
-
-\begin{figure}
-  \includegraphics[width=0.9\textwidth]{Figures/GorschekModel.pdf}
-% figure caption is below the figure
-\caption{Model for technology transfer in practice' \cite{GorschekSW2006}.}
-\label{fig:GorschekModel}       % Give a unique label
-\end{figure}
-
-Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \cite{GorschekSW2006} focussing on industry--academia collaboration, which has some elements of design science, see Figure \ref{fig:GorschekModel}. The model, which prescribes conceptual steps in solving a problem in an industry-academia collaboration setting, has elements of problem identification and formulation. The design of solutions involve studying the literature (state of the art) and selection of a candidate solution. This solution is validated in three steps, in academia, statically, and dynamically, before it is released into operations. 
-
-All these elements fit into the design science lens, although the model (by intention) focuses primarily on the artifact and specific context, rather than the generalized knowledge and technological rule, which are significant element of design science research. Further, when taking the generalization of knowledge and iterative knowledge building is stressed, it becomes clear that industry--academia collaboration is not a one-way transfer of technology, but a mutual interaction between the two.
-
-
-
-\subsection{Problem understanding}
-\emelie{in the DS-model we talk about 5 knowledge creating activities: problem conceptualisation, solution design, Instantiation and abstraction and validation. Should we use the same headings here?}
+\subsection{Problem Characterization and Solution Design}
 
  % Who, What, Where, When, Why and How
 
@@ -287,14 +240,12 @@ Problem understanding is the first step towards a solution design. However, depe
 
 % (Where?) Problem understanding must originate in empirical observations of practice
 Software engineering is a discipline, in which conditions are rapidly changing. To provide relevant recommendations -- technological rules -- problem understanding must originate in empirical observations of practice -- i.e. real life problem instances. Furthermore, software engineering is a socio-technical endeavor implying that stakeholders need to be involved in both problem understanding and solution validation at least for technological rules at the higher abstraction levels. Lower level technological rules may be investigated in isolation but must be related to the higher level rules to be of relevance. 
-
 % (How?) Problem understanding should build on prior work
-
 Ideally problem understanding can be guided by theory -- i.e. prior technological rules and conceptualisation approaches. 
 
 
 
-\subsection{Solution design}
+%\subsection{Solution design}
 
 
 %Solution design is one out of three knowledgecreating activities in the software engineering design cycle
@@ -316,7 +267,8 @@ Wieringa describes design science as an act of producing knowledge by designing 
 
  
 
-\subsection{Validation \per{and generalization?}\emelie{see my comment in sec 4.2}}
+\subsection{Validation, Instantiation and Abstraction}
+\per{Emelie: Add more on instantiation and abstraction, including Tamaras' model. Add bridge to section subsection}
 
 Validation of research under the design science paradigm is always about a problem--solution pair in \emph{context}. The technological rule specifies implicitly the validation activities; the intervention is the object of study, the situation defines the context, and the expected effect defines the validation criteria. This points to the `in vivo' software engineering context as the ultimate validation context for design science research. Several authors consequently propose multiple case studies as the natural research methodology in design science \cite{van_aken_management_2004}\per{add more}. However, for some design problems, the characteristics of the context may be resembled in `in vitro' settings for the validation. In other cases, practical limitations can prevent the research endeavor from taking place in real, operational environments, and thus scaled down validation contexts may be used in the research. 
 
@@ -324,11 +276,31 @@ The risks related to validating interventions in business critical contexts may 
 
 On the other hand, reducing the scope and complexity of the validation context too much may take away the realism which is essential for addressing a relevant problem with a feasible solution. `In vitro' studies may be useful to validate specific mechanisms, but they are not feasible for complex systems studies.  
 
-Stol and Fitzgerald adapted Runkel and McGrath's framework for research strategies, to guide balancing generalizability, precision and realism in designing validation studies \cite{StolABC18}. This framework may be useful in choosing research strategies in relation to the goals of the research endeavor. The framework defines two dimensions of i) universality/specificity of context and systems, and ii) level of obtrusiveness. Maximum potential realism is achieved with specific contexts and systems, and more or less obtrusive research, depending on the perspective of explanatory research (field study) or design science (field experiments). \per{Expand to explain more or remove?} 
+Stol and Fitzgerald adapted Runkel and McGrath's framework for research strategies, to guide balancing generalizability, precision and realism in designing validation studies \cite{StolABC18}. This framework may be useful in choosing research strategies in relation to the goals of the research endeavor. The framework defines two dimensions of i) universality/specificity of context and systems, and ii) level of obtrusiveness. Maximum potential realism is achieved with specific contexts and systems, and more or less obtrusive research, depending on the perspective of explanatory research (field study) or design science (field experiments). \per{Expand to explain more?} 
 
 The specific choice of methods for the validation depends on the research question. Easterbrook \emph{et al.} provide guidance to the selection of methods and conclude for the philosophical stand behind design science: ``Pragmatists use any available methods, and strongly prefer mixed methods research, where several methods are used to shed light on the issue under study'' \cite{easterbrook_selecting_2008}.
 
 The design science paradigm builds primarily on theoretical/analytical generalization, in contrast to explanatory sciences, which rely more on statistical generalization \cite[p. 30]{Runeson12Case}. Extending the scope of validity for a technological rule is done by applying the intervention to new contexts or by reasoning about the validity to another context, by comparing key characteristics of the contexts. This is referred to as case-based generalization \cite{Wieringa2015}. 
+
+\subsection{Research Methods in Design Science} 
+
+
+Design science %as a paradigm 
+may embrace a multitude of research methods to be used. For the \emph{problem understanding} and \emph{validation} of technological rules, empirical research methods are used. Methods supporting realism and natural settings~\cite{StolABC18}, are preferred as the problem in its context is in focus for design science research. 
+
+The typical research methodology used to study and test technological rules is multiple case studies, according to van Aken \cite{van_aken_management_2004}. In the case studies, a series of problems of the same class is adressed. Design knowledge is built up through the empirical validation of the solution in context. Case study methodology is well established in software engineering \cite{Runeson12Case} and fits thus well into the design science paradigm. Methods for data collection and analysis can be selected from the rich plethora of options available for such studies, for example, interviews, focus groups, observational studies, archival data, and software metrics. Action research is another way of producing and validating technological rules. However action research does not explicitly aim at developing knowledge that can be transferred to other contexts but rather to make a change in one specific local context. Both Wieringa~\cite{wieringa_technical_2012} and Johannesson~\cite{johannesson_introduction_2014} discuss action research as one of several empirical methods that can be used to produce design knowledge.
+
+
+\begin{figure}
+  \includegraphics[width=0.9\textwidth]{Figures/GorschekModel.pdf}
+% figure caption is below the figure
+\caption{Model for technology transfer in practice' \cite{GorschekSW2006}.}
+\label{fig:GorschekModel}       % Give a unique label
+\end{figure}
+
+Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \cite{GorschekSW2006} focussing on industry--academia collaboration, which has some elements of design science, see Figure \ref{fig:GorschekModel}. The model, which prescribes conceptual steps in solving a problem in an industry-academia collaboration setting, has elements of problem identification and formulation. The design of solutions involve studying the literature (state of the art) and selection of a candidate solution. This solution is validated in three steps, in academia, statically, and dynamically, before it is released into operations. 
+
+All these elements fit into the design science lens, although the model (by intention) focuses primarily on the artifact and specific context, rather than the generalized knowledge and technological rule, which are significant element of design science research. Further, when taking the generalization of knowledge and iterative knowledge building is stressed, it becomes clear that industry--academia collaboration is not a one-way transfer of technology, but a mutual interaction between the two.
 
 
 \section{Using the Design Science Frame in Software Engineering}
