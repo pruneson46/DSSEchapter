@@ -304,19 +304,12 @@ All these elements fit into the design science lens, although the model (by inte
 
 
 \section{Using the Design Science Frame in Software Engineering}
-
+\per {Change example}
 In their practitioner article on industry--academia collaboration in software engineering, Carver and Prikladnicki stress the importance of a synergistic relationship between software practitioners and software engineering researchers.
 \begin{quote}Practitioners could obtain more relevant research results, and researchers could better understand the type and scope of problems to examine.~\cite{CarverIEEESW2018}
 \end{quote} 
 
-These practitioner--researcher synergies resonate well with the design science paradigm. \per{More?}
-%Empirical Software Engineering and Design Science
-%The \emph{empirical components} of research are different for different research paradigms. The formal sciences are ``empirically void'' as they primarily aim to build internally consistent systems \cite{van_aken_management_2004}. However, both explanatory sciences and design sciences have empirical components. Explanatory sciences observe `natural' phenomena to explain and predict future behavior, while design sciences use empirical methods, both to understand the problem at hand, and to validate the proposed solution and intervention in context. 
-%The empirical contributions under the design sciences include both the problem understanding and the empirical insights from the design of the intervention in its context. Series of studies may be used to extend the scope of the technological rule. The empirical insights may also be extended into design theories, for example following procedures proposed by Sj{\o}berg at al.~\cite{sjoberg2008building}.
-\per{Add reference to \cite{Engstrom19arxiv} }
-\per {Change example}
-We suggest three direct uses of the design science paradigm as a frame for software engineering research, which we illustrate through two examples (Section~\ref{sec:examples}). Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section \ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section \ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section \ref{sec:communication}). The examples and uses of the design science lens in software engineering are all described through a visual abstract template (Section~\ref{sec:VA_template}) that was designed to communicate the design science aspects of software engineering research . 
-
+These practitioner--researcher synergies resonate well with the design science paradigm.  We use a \emph{visual abstract template} as a tool to analyze design science constructs in software engineering research, as presented in Section~\ref{sec:VA_template}. We suggest three direct uses of the design science paradigm as a frame for software engineering research, which we illustrate through two examples (Section~\ref{sec:examples}). Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section \ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section \ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section \ref{sec:communication}). 
 \subsection{A template to pinpoint the design science constructs in software engineering}
 \label{sec:VA_template}
 
@@ -333,6 +326,7 @@ We suggest three direct uses of the design science paradigm as a frame for softw
 \end{figure}
 
 \per{Better bridge here?}
+\per{Emelie: update VA graphical template}
 %Design Science as a Lens
 We designed a \emph{visual abstract template} to help identifying the design science constructs in software engineering research \cite{StoreyESEM17}, and further extended the template with survey questions, to help analyze software engineering literature from a design science perspective \cite{Engstrom19arxiv} see Figure~\ref{fig:VA-template}. The template aims to capture the key takeaway from a research study to help researchers assess the research contribution, build knowledge iteratively, and communicate research to practitioners. %Note connections to chapter 5.
 
@@ -341,9 +335,8 @@ Our design science template covers the main constructs of design science researc
 
 
 
-\subsection{Design Science Examples}
+\subsection{Design Science Example}
 \label{sec:examples}
-\subsubsection{Automated Bug Assignment}
 \per{rewrite intro}, as illustrated in one of their examples, introducing automated bug assignment to handle a large inflow of bug reports \cite{JonssonBug15}. We have used the same example to illustrate our visual abstract \cite{StoreyESEM17}, see Figure \ref{fig:BugAssignment}.
 
 \begin{figure*}[t]
@@ -362,7 +355,7 @@ The general \emph{problem} on inefficient bug assignment is observed in the lite
 
 The \emph{relevance} of the research is ensured by being anchored in the literature as well as in the specific problem instances of the study. Research \emph{rigor} is ensured by structured and transparent research methods, conducted with real world data. The \emph{novelty} of the research lies in the technological rule, embedding the choice of machine learning classifiers (ensemble-based), validating the ability to demonstrate a system of automated bug assignment which precision is on par with the existing manual procedures.
 
-\per{Present here in relation to Fig 3 or skip?}
+\per{Present here in relation to Fig 3}
 Our example study of automated bug assignment was conducted in several steps, summarized from an industry--academia collaboration point of view, which can be mapped onto the above model \cite{CarverIEEESW2018}:
 \begin{itemize}
 \item \emph{Problem/issue}: Manual assignment of bugs to teams is costly and error prone
@@ -371,27 +364,17 @@ Our example study of automated bug assignment was conducted in several steps, su
 \item \emph{Candidate solution}: Development of experimental tools, supporting multiple algorithms
 \item \emph{Validation in academia}: Comparison of algorithm performance in academic research \cite{BorgESEM13}
 \item \emph{Dynamic validation}: Training and cross-validation of tool on real data sets \cite{JonssonBug15}
-\item \emph{Release solution}: Incorporation of a simplified version of the wools in to the company's toolset
+\item \emph{Release solution}: Incorporation of a simplified version of the tools in to the company's toolset
 \end{itemize} 
 
 In this case, we performed no static validation as we had the opportunity to make a dynamic off-line validation with real industry data.
 
 
-\subsubsection{Regression Test Selection}
-
-... concrete example of a research study by Shi \emph{et al.}~\cite{Shi2017} that we frame using the design science lens, see Figure~\ref{fig:VA-example}. 
-\begin{figure*}
-  \includegraphics[width=1.0\textwidth]{Figures/Shi2017.png}
-% figure caption is below the figure
-\caption{Visual abstract for the ICSE paper by Shi et a., 2017. \emelie{'Many' in the problem instance box indicates that it is a general or class of problems rather than an instance of it. The text in the 'Solution design approach' describes the design rather than the approach. The results (84\% acceptance rate) of the validation approach could maybe be moved to the rigor box? Could the positioning to previous work be clearer in the novelty box?}}
-\label{fig:VA-example}       % Give a unique label
-\end{figure*}
-
 
 \subsection{Assessment of contributions}
 \label{sec:assessment}
 
-\peggy{not sure you will like that I associate relevance, rigor and novelty with proactive, prospective and retrospective phases here... feel free to delete if you don't like it}
+\per{Emelie: Shorten subsection titles}
 Assessment of research contributions can be conducted proactively (when relevance may be a primary concern for consideration before the research is executed), prospectively (as the research is ongoing and when rigor should be carefully considered). or retrospectively (where novelty of the design knowledge produced may become more evident).
 Below, we discuss assessments of contributions and refer to the examples above.
 
@@ -431,35 +414,23 @@ The technological rules that emerge can at best be considered as theory fragment
 But our hope is that linking technological rules that are related (perhaps in hierarchical form) may over time help our community arrive at theories that may be more general, and that can be refined and improved over time. 
 For example, Shi \emph{et al.}'s research on reducing wasteful text executions can be related to other test minimization technological rules which together may be more generalizable. 
 
-\peggy{ not sure what you wanted from these bullets, guessing...see above}
-\outline{
-\begin{itemize}
-\item Technological rule -- as a means for knowledge summary
-\item Theory building
-\item Continuous learning and improvement
-\item Generalization
-\end{itemize}
-}
-
 \subsection{Research communication}
 \label{sec:communication}
 
 As we discussed above, building design knowledge in software engineering requires a close partnership and relies on tight collaborations with practitioners. 
 Practitioners play a participatory role in our research by confirming and eliciting problems to be solved, as well as by designing practical solutions using design knowledge, and then validating them in context (on real problem instances). 
 Consequently, how we communicate our research to practitioners is critical to this participatory research approach. 
+
 We feel the technological rules will be valuable in communicating our findings to industry and that the visual abstract may also appeal to some practitioners wanting to quickly gain a bigger picture of the research that is behind the design knowledge embodied by the technological rule. 
 We are currently in the process of getting feedback from industry partners.  For example, see \url{http://dsse.org} for a collection of visual abstracts we authored based on the distinguished papers from ICSE from 2014 to 2018.  
 
-\per{@Emelie, anything from Sergio's work?}
+Other examples include Petersen and Engstr\"om's framework, SERP taxonomy architecture~\cite{petersen_finding_2014} including the constructs of a technological rule  
+(i.e. desired effect, context and intervention), to support the mapping of practical problems with research. 
+This framework has then been used to develop a taxonomy to establish a common understanding between practitioners and researchers in software testing~\cite{engstrom_SERP-test_2017} and to review regression testing literature from a relevance point of view~\cite{ali_search_2019} leading to generalized recommendations in terms of technological rules. 
 
-\peggy{ not sure what you wanted from these bullets, guessing...see above}
-\per{Also relate to evidence briefings~\cite{cartaxo_evidence_2016}.}
-\outline{
-\begin{itemize}
-\item Technological rule -- as a means for communication
-\item Visual abstracts
-\end{itemize}
-}
+Another attempt to make evidence available to practitioners is presented by Cartaxo et al. \cite{Cartaxo2016}. 
+They present the concept of ``evidence briefings'', which is a way to summarize Systematic Literature Reviews in a one-page format. 
+They used accepted information design principles to design the structure of the one-page briefing. The format and content were positively validated the by both practitioners and researchers. While evidence briefings may provide an effective way to synthesize evidence from several studies our visual abstract template provides a means to effectively summarize the contribution of one study or research program from a design science perspective.
 
 %\section{Examples}
 %Either we choose examples that illustrate the different aspects of DS, or we choose three examples that are good examples of DS -- candidates from the ICSE best papers, or our own papers?
