@@ -327,13 +327,13 @@ All these elements fit into the design science lens, although the model (by inte
 
 \section{Using the Design Science Frame in Software Engineering}
 \label{sec:UsingDSinSE}
-\per {Peggy: Change/add example}
 
-Software engineering research aims at improving practice, which implies needs for various kinds of collaboration between researchers and practitioners. In their practitioner article on industry--academia collaboration in software engineering, Carver and Prikladnicki stress the importance of a synergistic relationship between software practitioners and software engineering researchers.
+
+In this chapter, we focus on how the design science paradigm can be used as a frame for software engineering research. Software engineering research aims at improving practice, which implies needs for various kinds of collaboration between researchers and practitioners. In their practitioner article on industry--academia collaboration in software engineering, Carver and Prikladnicki stress the importance of a synergistic relationship between software practitioners and software engineering researchers.
 \begin{quote}Practitioners could obtain more relevant research results, and researchers could better understand the type and scope of problems to examine.~\cite{CarverIEEESW2018}
 \end{quote} 
 
-These practitioner--researcher synergies resonate well with the design science paradigm.  We use a \emph{visual abstract template} as a tool to analyze design science constructs in software engineering research (Section~\ref{sec:VA_template}). We suggest three direct uses of the design science paradigm as a frame for software engineering research, which we illustrate through two examples (Section~\ref{sec:examples}). Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section~\ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section~\ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section~\ref{sec:communication}). 
+These practitioner--researcher synergies resonate well with the design science paradigm.  We use a \emph{visual abstract template} as a tool to analyze design science constructs in software engineering research (Section~\ref{sec:VA_template}). We suggest three direct uses of the design science paradigm as a frame for software engineering research, which we illustrate through \per{an example/two examples}(Section~\ref{sec:examples}). Firstly, it can help in assessing contributions in research, both for the research community and during the planning and design of a research project (Section~\ref{sec:assessment}). Secondly, design science, particularly the technological rule, can be used in knowledge building, synthesizing and advancing the theoretical knowledge in the software engineering field (Section~\ref{sec:knowledge}). Thirdly, the design science frame may help in communicating research across the community and with industry (Section~\ref{sec:communication}). 
 
 
 \subsection{A template to highlight design science constructs in software engineering}
@@ -351,10 +351,8 @@ These practitioner--researcher synergies resonate well with the design science p
 \end{figure}
 
 
-\per{Emelie: update VA graphical template}
-
 %Design Science as a Lens
-In an analysis of software engineering research, we concluded that the design science perspective fits well with the field, the design science perspective is rarely used explicitly to design and present software engineering research. We therefore designed a \emph{visual abstract template} to help identifying the design science constructs in software engineering research \cite{StoreyESEM17}, and further extended the template with survey questions, to help analyze software engineering literature from a design science perspective \cite{Engstrom19arxiv} see Figure~\ref{fig:VA-template}. The template aims to capture the key takeaway from a research study to help researchers assess the research contribution, build knowledge iteratively, and communicate research to practitioners. %Note connections to chapter 5.
+In an analysis of software engineering research, we concluded that the design science perspective fits well with the field, the design science perspective is rarely used explicitly to design and present software engineering research. We therefore designed a \emph{visual abstract template} to help identifying the design science constructs in software engineering research \cite{StoreyESEM17}, see Figure~\ref{fig:VA-template}. We further extended the template with survey questions, to help analyze software engineering literature from a design science perspective \cite{Engstrom19arxiv}. The template aims to capture the key takeaway from a research study to help researchers assess the research contribution, build knowledge iteratively, and communicate research to practitioners. %Note connections to end of this chapter
 
 Our design science template covers the main constructs of design science research: The theoretical contribution in terms of a \emph{technological rule}; its instantiation in terms of a real \emph{problem--solution} pair;  the empirical or theoretical support for the \emph{problem} understanding, the \emph{solution} design. Further, the bottom three boxes address the \emph{relevance} of the research, the \emph{rigor} of the research activities,  and a statement about what makes the technological rule \emph{novel} in relation to the underpinning research, be it with focus on a refined problem conceptualization a new or improved solution design, or a validation of the the technological rule in a new context. 
 
@@ -367,7 +365,7 @@ To illustrate the use of the design science lens for software engineering resear
 
 \begin{figure*}[t]
 \begin{center}
-\includegraphics[width=\columnwidth, trim={7mm 30mm 7mm 30mm },clip]{Figures/VATemplateJonsson.pdf}
+\includegraphics[width=\columnwidth, trim={5mm 20mm 5mm 20mm },clip]{Figures/VATemplateJonsson.pdf}
 \caption{Visual abstract for the paper on automated bug assignment \cite{JonssonBug15}.}
 \label{fig:BugAssignment}
 \end{center}
@@ -377,30 +375,29 @@ The automated bug assignment research was not originally presented through the d
 The scientific knowledge gained from the work can be phrased as a \emph{technological rule}:
 \begin{quote}{To achieve more effective assignment of bugs to teams in large scale industrial contexts use ensemble-based machine learning to automate bug assignment. \cite{StoreyESEM17}}\end{quote}
 
-The general \emph{problem} on inefficient bug assignment is observed in the literature as well as in the specific industrial contexts, where this research was conducted. With a solution in mind to use machine learning techniques to assign bugs to teams, the characteristics of the defect data and the organizational context were explored, to identify the characteristics of the \emph{problem instance}. Related work on bug classification as well as on machine learning techniques, underpinned the \emph{design decisions} for the proposed solution. The machine learning solutions were implemented in the Weka framework \cite{hall_weka_2009}, and trained and \emph{validated} on real data from five projects across two companies/domains, on 50 000 bug reports. For the specific companies, a design artifact was produced, namely the bug assignment tool built on top of Weka.
+The general \emph{problem} on inefficient bug assignment is observed in the literature as well as in the specific industrial contexts, where this research was conducted. With a solution in mind to use machine learning techniques to assign bugs to teams, the characteristics of the defect data and the organizational context were explored. We thus identified the characteristics of the \emph{problem instance}. Related work on bug classification, as well as on machine learning techniques, underpinned the \emph{design decisions} for the proposed solution. The machine learning solutions were implemented in the Weka framework \cite{hall_weka_2009}, and trained and several alternative solution instances were \emph{validated} on real data from five projects across two companies/domains, on 50~000 bug reports. For the specific companies, a design artifact was produced, namely the bug assignment tool built on top of Weka.
 
 The \emph{relevance} of the research is ensured by being anchored in the literature as well as in the specific problem instances of the study. Research \emph{rigor} is ensured by structured and transparent research methods, conducted with real world data. The \emph{novelty} of the research lies in the technological rule, embedding the choice of machine learning classifiers (ensemble-based), validating the ability to demonstrate a system of automated bug assignment which precision is on par with the existing manual procedures.
 
 Our example study of automated bug assignment was conducted in several steps, which can be described in terms of the technology transfer model in Figure \ref{fig:GorschekModel}:
 \begin{itemize}
-\item \emph{Problem/issue}: Manual assignment of bugs to teams is costly and error prone
-\item \emph{Problem formulation}: Indepth studies of defect reports and their links to other information elements and activities
-\item \emph{Study state of the art}: A mapping study was performed of trace-link research, identifying the theoretical foundation \cite{Borg2013EMSE}
+\item \emph{Problem/issue}: Overall problem phrased as manual assignment of bugs to teams being costly and error prone
+\item \emph{Problem formulation}: Indepth studies of defect reports and their links to other information elements and activities helped characterize the problem
+\item \emph{Study state of the art}: A systematic mapping study was performed of trace-link research, identifying the theoretical foundation \cite{Borg2013EMSE}
 \item \emph{Candidate solution}: Development of experimental tools, supporting multiple algorithms
 \item \emph{Validation in academia}: Comparison of algorithm performance in academic research \cite{BorgESEM13}
 \item \emph{Dynamic validation}: Training and cross-validation of tool on real data sets \cite{JonssonBug15}
 \item \emph{Release solution}: Incorporation of a simplified version of the tools in to the company's toolset
 \end{itemize} 
 
-In this case, we performed no static validation as we had the opportunity to make a dynamic off-line validation with real industry data.
+In this case, we performed no static validation as we had the opportunity to make a dynamic off-line validation with real industry data. We use the example below when discussing the use of the design science as a fram to assess research contributions, build knowledge, and communicate research.
 
 
 
 \subsection{Assessment of contributions}
 \label{sec:assessment}
 
-\per{Emelie: Shorten subsection titles}
-Assessment of research contributions can be conducted proactively (when relevance may be a primary concern for consideration before the research is executed), prospectively (as the research is ongoing and when rigor should be carefully considered). or retrospectively (where novelty of the design knowledge produced may become more evident).
+Assessment of research contributions can be conducted proactively (when relevance may be a primary concern for consideration before the research is executed), prospectively (as the research is ongoing and when rigor should be carefully considered), or retrospectively (where novelty of the design knowledge produced may become more evident).
 Below, we discuss assessments of contributions and refer to the examples above.
 
 
@@ -415,23 +412,30 @@ Relevance of a design science study is described in terms of problem similarity 
 
 From an individual practitioner's point of view, the relevance of a research contribution may be assessed by comparing their specific context with the study context described in the research report. 
 A practitioner may need to consider their specific context may allow the design knowledge to applied as is, or if it should be customized in some way, or perhaps the knowledge may not apply at all to their situation or problem.
-In the example by Shi \emph{et al.}, (see Fig.~\ref{fig:VA-example}) a practitioner may similarly face the challenge of testing very larger systems and  that they too could benefit from using historical build information and test dependencies to guide which tests should be run (or not).
+%In the example by Shi \emph{et al.}, (see Fig.~\ref{fig:VA-example}) a practitioner may similarly face the challenge of testing very larger systems and  that they too could benefit from using historical build information and test dependencies to guide which tests should be run (or not).
+In the example by Jonsson \emph{et al.}, (see Figure \ref{fig:BugAssignment}) a practitioner may  similarly face the challenge of manually assigning bugs to teams and  that they too could benefit from using ensemble-based machine learning to automate the bug assignment (or not).
 
 From the research community perspective, relevance is often considered in terms of how common the studied problem is and how generalizable the produced design knowledge may be. To enable both types of assessments, relevant context factors need to be reported. Not all context factors are helpful in making this assessment but only those that are critical for either the applicability of the solution or for the potential gain of applying the solution. 
-Referring to the example by Shi \emph{et al.}, reducing wasteful test executions is a frequent topic of research in software engineering and builds on much evidence that this problem is also relevant in practice.
+%Referring to the example by Shi \emph{et al.}, reducing wasteful test executions is a frequent topic of research in software engineering and builds on much evidence that this problem is also relevant in practice.
+Referring to the example by Jonsson \emph{et al.}, applying machine learning to bud assignment is  a frequent topic of research in software engineering. They report 20 previous studies on machine-learning based bug assignment \cite[Fig.2]{JonssonBug15}, and also adds evidence that this problem is relevant in practice.
 
 \subsubsection{Rigor %of a design science study refers to the strength of the added support for the technological rule.
 } 
 Rigor of a design science study refers to the strength of the added support for the technological rule. It may be assessed in all of the three knowledge creating activities (problem understanding, design and solution validation). 
 Rigor should be considered when the research project is designed, as well as throughout the project and afterwards to reflect on possible threats to validity. 
-It is worth noting that the solution design activity is by nature a creative process and does not necessarily have to add to the rigor of the research overall. One aspect of rigor in the design activity could be the extent to which a solution is built on prior design knowledge, and in such cases consideration of alternative solutions can be taken in to account. 
-Alternative, rigor in the problem understanding phase (which is the case of the research by Shi \emph{et al.}) can be used to guide a solution design which is what happened in the case of the research by Shi \emph{et al.} as their mathematical formulation of wasteful test executions guided them towards the solution to consider test movements based on historical build information and actual dependencies of tests. 
 
-The other two activities, i.e. problem understanding and solution validation, are on the other hand based on common empirical methods on which relevant validity criteria can be applied. For example, the study by Shi \emph{et al.} can be considered high in rigor as the proposed solution is validated by its application to 5 large software systems.  Furthermore, they found that developers accepted 84\% of the recommendations made by their proposed intervention (the TestOptimizer tool). 
+It is worth noting that the solution design activity is by nature a creative process and does not necessarily have to add to the rigor of the research overall. One aspect of rigor in the design activity could be the extent to which a solution is built on prior design knowledge, and in such cases consideration of alternative solutions can be taken in to account. 
+In the case by Jonsson \emph{et al.} they choose alternative classifiers from the Weka tool by reasoning about their properties, and combined them into ensembles of classifiers for evaluation.
+%Alternative, rigor in the problem understanding phase (which is the case of the research by Shi \emph{et al.}) can be used to guide a solution design which is what happened in the case of the research by Shi \emph{et al.} as their mathematical formulation of wasteful test executions guided them towards the solution to consider test movements based on historical build information and actual dependencies of tests. 
+
+The other two activities, i.e. problem understanding and solution validation, are on the other hand based on common empirical methods on which relevant validity criteria can be applied. For example, the study by Jonsson \emph{et al.} can be considered high in rigor as the proposed solution is validated by its application to 5 defect datasets from two large software systems, comprising 50~000 bugs.  Furthermore, they found that the precision in the automated bug assignment was on par with the manual industry practice, which makes it useful in practice.
+%For example, the study by Shi \emph{et al.} can be considered high in rigor as the proposed solution is validated by its application to 5 large software systems.  Furthermore, they found that developers accepted 84\% of the recommendations made by their proposed intervention (the TestOptimizer tool). 
 
 \subsubsection{Novelty %of a design science study is expressed in terms of new or refined technological rules.
 } 
-Novelty of a design science study is expressed in terms of new or refined technological rules.Technological rules may be expressed at several abstraction levels, thus it is always possible to identify an abstraction level at which a research contribution is novel, may it be at the cost of general relevance.  In the research by Shi \emph{et al.}, novelty of the intervention proposed in the technological rule is rather easy to assess, as the TestOptimizer tool (and the techniques it embodies) is a novel contribution.  
+Novelty of a design science study is expressed in terms of new or refined technological rules. Technological rules may be expressed at several abstraction levels, thus it is always possible to identify an abstraction level at which a research contribution is novel, may it be at the cost of general relevance.  In the research by Jonsson \emph{et al.}, novelty of the intervention proposed in the technological rule is not straightforward to assess, as there already existed 20 studies on machine-learning to automate bug assignment. The novel contribution here is the systematic design and evaluation of a machine learning approach, applied to a real-world context, as expressed in the technological rule.
+%In the research by Shi \emph{et al.}, novelty of the intervention proposed in the technological rule is rather easy to assess, as the TestOptimizer tool (and the techniques it embodies) is a novel contribution.  
+
 However, novelty may not always be a priority in a given research effort.
 To optimize rigor, novelty and relevance of reported research, the researchers should strive to express the technological rule at the highest possible abstraction level, at which it is novel, the provided evidence give strong support and are not debunked by previous studies (or common sense). However, adding empirical support for existing, but under-validated, technological rules have a value of its own, which makes novelty less important than the rigor and relevance criteria.
 
@@ -442,7 +446,9 @@ To optimize rigor, novelty and relevance of reported research, the researchers s
 Articulating the knowledge that is produced by our research in a more uniform way may help in building and synthesizing related knowledge in our community. 
 The technological rules that emerge can at best be considered as theory fragments that prescribe and predict how a certain intervention for a particular context will lead to a proposed change. 
 But our hope is that linking technological rules that are related (perhaps in hierarchical form) may over time help our community arrive at theories that may be more general, and that can be refined and improved over time. 
-For example, Shi \emph{et al.}'s research on reducing wasteful text executions can be related to other test minimization technological rules which together may be more generalizable. 
+
+%For example, Shi \emph{et al.}'s research on reducing wasteful text executions can be related to other test minimization technological rules which together may be more generalizable. 
+For example, Jonsson \emph{et al.}'s research on automated bug assignment is related to previous bug assignment research, although it is hard to compare due to lack of detail and non-standardized validation practice. If the contributions were clearly expressed as technological rules with corresponding validation, the outcomes together would be more generalizable. 
 
 \subsection{Research communication}
 \label{sec:communication}
@@ -456,7 +462,7 @@ We are currently in the process of getting feedback from industry partners.  For
 
 Other examples include Petersen and Engstr\"om's framework, SERP taxonomy architecture~\cite{petersen_finding_2014} including the constructs of a technological rule  
 (i.e. desired effect, context and intervention), to support the mapping of practical problems with research. 
-This framework has then been used to develop a taxonomy to establish a common understanding between practitioners and researchers in software testing~\cite{engstrom_SERP-test_2017} and to review regression testing literature from a relevance point of view~\cite{ali_search_2019} leading to generalized recommendations in terms of technological rules. 
+This framework has then been used to develop a taxonomy to establish a common understanding between practitioners and researchers in software testing~\cite{engstrom_SERP-test_2017} and to review regression testing literature from a relevance point of view~\cite{ali_search_2019}, leading to generalized recommendations in terms of technological rules. 
 
 Another attempt to make evidence available to practitioners is presented by Cartaxo et al. \cite{Cartaxo2016}. 
 They present the concept of ``evidence briefings'', which is a way to summarize Systematic Literature Reviews in a one-page format. 
