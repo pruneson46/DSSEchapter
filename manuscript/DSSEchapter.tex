@@ -39,7 +39,7 @@
 \usepackage{color}
 \usepackage{ifthen}
 \newboolean{showcomments}
-\setboolean{showcomments}{true} % toggle to show or hide comments
+\setboolean{showcomments}{false} % toggle to show or hide comments
 \ifthenelse{\boolean{showcomments}}
     {
         \newcommand{\emelie}[1]{\textcolor{red}{{\it [Emelie says: #1]}}}
@@ -95,17 +95,15 @@ in its constituents of \emph{problem understanding, solution (or artifact) desig
 
 Software engineering research aims at developing and validating practically useful methods, technologies and tools to help industry to improve software engineering practice. This practical aspect was discussed already when the term `software engineering' was coined in the late 1960's by Margaret Hamilton\footnote{https://publications.computer.org/software-magazine/2018/06/08/margaret-hamilton-software-engineering-pioneer-apollo-11/} and later put in print in a NATO conference report~\cite{Nato1968}. 
 
-\peggy{"was [...] implying" would be better phrased as "[implied:}
 \begin{quote}
-{The phrase `software engineering' was [...] implying the need for software manufacture to be based on the types of theoretical foundations and practical disciplines, that are traditional in the established branches of engineering} \cite[p13]{Nato1968}. 
+{The phrase `software engineering'  [implied] the need for software manufacture to be based on the types of theoretical foundations and practical disciplines, that are traditional in the established branches of engineering} \cite[p13]{Nato1968}. 
 \end{quote}
 
 Numerous solution proposals to software engineering problems have been invented and published during the past few decades -- these include development methods and processes, tools, frameworks, taxonomies, or languages -- but they are rarely based on systematic investigations of real world problem instances, nor validated in large scale software practice.
 
 With the advent of empirical software engineering~\cite{Basili86} and evidence-based software engineering~\cite{Kitchenham04}, the research focus shifted towards validation of solution proposals. Empirical methods were inherited and adapted from other research fields, particularly medicine and the social sciences, and the knowledge base was built up systematically by families of experiments \cite{Basili99} and systematic literature reviews \cite{Kitchenham15}. However, the methodological advancements are rarely set into an explicit research paradigm frame, and thus it is sometimes unclear what the research contribution is and how to relate to it. 
 
-\peggy{I think Wierenga introduced this to SE? say "support" and reference him here?}
-In this chapter, we introduce the \emph{design science paradigm} as a frame for software engineering. The design science paradigm integrates \emph{problem understanding, solution design} and \emph{validation}. This paradigm fits well as a frame for empirical software engineering with its aim to provide practical solutions for real-world software engineering challenges. In particular, multiple case studies are proposed as the typical research methodology in design science \cite{van_aken_management_2004}, which aligns with the widespread use of case studies in software engineering.
+In this chapter, we support the \emph{design science paradigm} as a frame for software engineering, as earlier proposed by Wieringa \cite{wieringa_what_2014} which we merge with perspectives from van Aken \cite{van_aken_management_2004}. The design science paradigm integrates \emph{problem understanding, solution design} and \emph{validation}. This paradigm fits well as a frame for empirical software engineering with its aim to provide practical solutions for real-world software engineering challenges. In particular, multiple case studies are proposed as the typical research methodology in design science \cite{van_aken_management_2004}, which aligns with the widespread use of case studies in software engineering.
 
 We provide an overview of the design science paradigm in Section~\ref{sec:overview}, and provide a more in depth elaboration of design science concepts in Section~\ref{sec:DesignScienceResearch}. An instantiation of design science for software engineering is presented in Section~\ref{sec:UsingDSinSE}. Section~\ref{sec:reading} explores some references to work with complementary views on design science, and Section~\ref{sec:conclusion} concludes this chapter.
 
@@ -162,8 +160,8 @@ Design science is a paradigm used in many different research fields, and it is i
 
 %Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. 
 
-Design science spans two major dimensions, the \emph{problem--solution} dimension and the \emph{theory--practice} dimension. To guide our in-depth elaboration of the design science paradigm, we present a model of design science contributions, see Figure~\ref{fig:DS_model}, where research activities under the design science paradigm can be expressed as movements in this two-dimensional space.
-\peggy{I wonder if "transitions across" may be better than "movements"?}
+Design science spans two major dimensions, the \emph{problem--solution} dimension and the \emph{theory--practice} dimension. To guide our in-depth elaboration of the design science paradigm, we present a model of design science contributions, see Figure~\ref{fig:DS_model}, where research activities under the design science paradigm can be expressed as transitions across this two-dimensional space.
+%\peggy{I wonder if "transitions across" may be better than "movements"?} \per{Definitely agree. I considered that, but was not sure if that was proper English. }
 
 The \emph{practical} contribution of the research (i.e., the actual problem solving) is visualized in the two bottom quadrants as instances of both the \emph{problem} and the \emph{solution}. The \emph{theoretical} contribution (i.e., generalization and scope definition) is visualized in the two top quadrants in terms of the \emph{technological rules} and their \emph{constructs}. 
 
@@ -193,8 +191,8 @@ The arrows in Figure~\ref{fig:DS_model} illustrate knowledge creating activities
 % outline: The technological rule is the theoretical contribution of design science research also referred to as design knowledge.
 The technological rule captures generalized knowledge about mappings between instances of problems and solutions (i.e., in-context validations) and is thus a means to transfer knowledge between contexts. The technological rule spans both a problem domain and a solution domain and is formulated based on constructs in both domains. 
 
-In a technological rule, the solution (or intervention) may refer to the use of a specific tool or the application of a more general approach. 
-\peggy{general approach to what?}
+In a technological rule, the solution (or intervention) may, for example,  refer to the use of a specific tool or the application of a more general technology, embedded in a tool. 
+\peggy{general approach to what?}\per{is general technology too specific?}
 The scope of validity of the solution is described in terms of a desired effect in a particular situation.  Wieringa refers to this as \emph{design theory}, defining it as theories of artifacts in context~\cite{wieringa_design_2009}. The design knowledge within the technological rule aims to help software engineering professionals design customized solutions to their specific problems. Ideally it is a general recommendation based on current state of art including the new additional contribution of a piece of research.
 
 % outline: It can typically be expressed as: 'To achieve <desired effect> in <context> apply <intervention>
@@ -212,7 +210,7 @@ Making this problem generalization explicit helps the researcher identify and co
 
 % outline: The abstraction level may vary
 Wieringa and Daneva address generalizability of design theory~\cite{wieringa_six_2015} and argue that there is no such thing as general design theories. Instead they emphasize the utility of \emph{middle-ranged theory}, defined as theories lacking universal scope. 
-\peggy{we have a mix of north american and british english -- changing to north american but maybe you prefer british? I can change back if you like!}
+\peggy{we have a mix of north american and british english -- changing to north american but maybe you prefer british? I can change back if you like!} \per{I propose we go for north american}
 Technological rules are examples of such middle-ranged theories that can be expressed at any convenient abstraction level. However, technological rules expressed at a very high abstraction level (e.g., ``To produce software of high quality apply good software engineering practices'') tend to be either trivial or too bold (easy to debunk), while rules at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. 
 
 How the intervention in a technological rule is formulated may vary. It could, for example, refer to the use of a tool or articulate abstractions of the knowledge embedded in the tool. It could also refer to the application of a practice, a technique, a framework, or a set of guidelines. We extracted 38 examples of technological rules from a set of distinguished ICSE-papers from 2014--2018~\cite{Engstrom19arxiv}, these rules demonstrate the breadth of knowledge that can be represented using technological rules. These technological rules (and abstracts) are available online at \url{http://dsse.org}.
@@ -242,7 +240,7 @@ Design knowledge is gained by investigating one or more instances of a solution 
 In the long run, software engineering theory aims at helping practitioners design solutions to their specific problems. Thus problem understanding is ideally an act of a software engineering practitioner and not a researcher.
 \peggy{"ideally" do you mean "often"?}
  However, to produce a more general theory, research is needed. 
- \peggy{only researchers can produce theory? not sure I agree :) }
+ \peggy{only researchers can produce theory? not sure I agree :) } \per{Lets' sort this out in the next revision. I think it is an attempt to express the focus on context}
  In the previous section, we described how design knowledge is obtained and matures through observations of real life instances of problem-solution pairs. For each such instance, the problem needs to be formulated (understood) according to a conceptual lens. Such problem understanding can take place in collaboration between practitioners and researchers in, for example, action research or case study research, or by researchers observing software engineering practice.
 
 % (What?) The outcome of the problem understanding step is a conceptualuzation of the problem instance towards an envisioned solution and thus tightly connected to a specific design approach
@@ -255,7 +253,7 @@ Although we consider much of our software engineering research to be design scie
 
 Furthermore, the research contribution is \emph{not} the conceptualization as such, since this is connected to the instance of the problem and not the class of problems. Instead the research contribution is the empirical support for new, existing or refined technological rules. A research contribution from the problem understanding step could, for example, be the identification of problem instances -- confirming the prevalence of a general problem -- or updates of the conceptualization approach -- i.e., the design constructs of a general solution.
 
-\peggy{I'm feeling this is a bit long winded but I'm too close to it to suggest what to cut or how to condense -- the other reviewers may help in this regard.  We say "for example" a lot...}
+\peggy{I'm feeling this is a bit long winded but I'm too close to it to suggest what to cut or how to condense -- the other reviewers may help in this regard.  We say "for example" a lot...} \per{Yes, for next round...}
 
 % (When?) Problem understanding is the first step towards a solution design.
 
@@ -263,7 +261,7 @@ Problem understanding is the first step towards a solution design. However, depe
 
 % (Where?) Problem understanding must originate in empirical observations of practice
 Software engineering is a discipline, in which conditions are rapidly changing. To provide relevant recommendations, the technological rules,  problem understanding must originate in empirical observations of practice and within real life problem instances. Furthermore, software engineering is a socio-technical endeavour implying that stakeholders should often be involved in both problem understanding and solution validation, at least for technological rules at the higher abstraction levels. Lower level technological rules may be investigated in isolation to stakeholders but must be related to the higher level rules to be of relevance. 
-\peggy{I think it depends on what the rule is aimed at too -- if it is something that is fully automated perhaps stakeholders are not needed}
+\peggy{I think it depends on what the rule is aimed at too -- if it is something that is fully automated perhaps stakeholders are not needed} \per{I think there are stakeholders also in automated cases, e.g. reducing compile/build/test time may be addressed with a fully automated solution, but there is a stakeholder developer who would benefit from shorter turn around time.}
 % (How?) Problem understanding should build on prior work
 Ideally problem understanding can be guided by theory, i.e., prior technological rules and conceptualization approaches. 
 
@@ -326,8 +324,8 @@ Technological rules may also develop from the general to the specific. The resea
 Design science may embrace a multitude of research methods to be used. For \emph{problem understanding} and \emph{validation} of technological rules, empirical research methods are used. Methods supporting realism and natural settings~\cite{StolABC18} are preferred as the problem in context is in focus for design science research. 
 \peggy{but Stol/Fitzgerald somehow treat system and human actors as the same in terms of method selection which to me goes against the goal of knowing when stakeholders should be involved or not but this is a discussion for a different day :) }
 
-As mentioned above, the typical research methodology used to study and test technological rules is multiple case studies. In multiple case studies, a series of problems of the same class are addressed. Design knowledge is built up through the empirical validation of the solution in context. The case study methodology is well established in software engineering \cite{Runeson12Case} and fits  well into the design science paradigm. 
-\peggy{isn't this repetitive -- feels like we've said this several times}
+As mentioned above, the typical research methodology used to study and test technological rules is multiple case studies. In multiple case studies, a series of problems of the same class are addressed. Design knowledge is built up through the empirical validation of the solution in context. %The case study methodology is well established in software engineering \cite{Runeson12Case} and fits  well into the design science paradigm. 
+\peggy{isn't this repetitive -- feels like we've said this several times} \per{I cut the sentence for now. Let's check redundance in the next iteration}
 In a survey of 101 industry-academia collaboration projects, Garousi \emph{et al.} found 75 that were characterized as case studies~\cite{Garousi2019}. Further, they note that ``industrial case studies usually apply either the `exploratory' or the `improving' type, or both, rather than other case study types (descriptive, explanatory)''. Methods for data collection and analysis can be selected from the rich plethora of options available for such studies, for example, interviews, focus groups, observational studies, archival data analysis, and software metric analysis. 
 
 
