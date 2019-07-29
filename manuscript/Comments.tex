@@ -9,7 +9,8 @@
     {
         \newcommand{\emelie}[1]{\textcolor{red}{{\it [Emelie says: #1]}}}
         \newcommand{\peggy}[1]{\textcolor{blue}{{\it [Peggy says: #1]}}}
-        \newcommand{\per}[1]{\textcolor{cyan}{{\it [Per says: #1]}}}
+        \newcommand{\per}[1]{\textcolor{blue}
+        	{{\it [Per says: #1]}}}
         \newcommand{\outline}[1]{\textcolor{gray}{{\it [Outline: #1]}}}
         \newcommand{\othercomment}[1]{\textcolor{magenta}{{\it [#1]}}}
     }
@@ -47,14 +48,14 @@ I very much appreciate this contribution given the increased relevance of Design
 Main observations:
 
 - Scope: From reading the abstract and the introduction, it was not really clear to me what exactly the goal and the scope of the chapter was. My perception at the end was that the authors specifically aim to (1) raise awareness of Design Science as a research philosophy and to (2) delineate from other philosophies given the many misconceptions we still have (comparable to the overuse of the term "Grounded Theory" in SE papers). I suggest the authors to make this goal explicit at the end of the introduction.
-\per{Agree with interpretation. Clarify scope.}
+\per{Agree with interpretation. Clarify scope.}\emelie{agree}
 
 - Target audience: Related to my previous remark, the authors should highlight at the end of the introduction what the primary audience is. My impression is that the target audience is rather advanced scholars in software engineering as many key terms in empirical software engineering are used but not explained (as we would do in a classic ABC chapters).
-\per{The topic is quite advanced, still we want it to be understood by e.g. PhD students. Define key terms?}
+\per{The topic is quite advanced, still we want it to be understood by e.g. PhD students. Define key terms?}\emelie{sounds like a good idea. Which are the key terms?}
 
-- Delineation: The authors should very briefly set Design Science into context of empirical software engineering to make explicit that while (in my view) DS is a collection of principles with a rather rigid form into which different research strategies may be fitted, empirical software engineering can be rather described as a (inter-)disciplinary movement with various methods following same or similar high-level goals (theory building and / or evaluation). \per{Clarify paradigm -- methodology -- method?}
+- Delineation: The authors should very briefly set Design Science into context of empirical software engineering to make explicit that while (in my view) DS is a collection of principles with a rather rigid form into which different research strategies may be fitted, empirical software engineering can be rather described as a (inter-)disciplinary movement with various methods following same or similar high-level goals (theory building and / or evaluation). \per{Clarify paradigm -- methodology -- method?}\emelie{It's always good to calrify things but I'm not sure the reviewers' distinction btw. DS and Empirical software engineering helps here. Maybe we should avoid using the term empirical software engineering instead as it is not very distinct. I think we should stick to DS as a paradigm and explain what we mean by that.}
 
-- Related to the scope: The introduction of visual abstracts as a means to communicate research should be motivated a bit better. My personal opinion is that visual abstracts are an excellent means to especially communicate DS-based contributions, but in principle, they can be used to communicate any empirical research contribution (my understanding). When reading the chapter, I didn't expect the subsections on visual abstracts. I therefore suggest motivating them already in the introduction and explaining their relevance to the overall book chapter. \per{The VAs are a tools to communicate DS-based research. Clarify motivation}
+- Related to the scope: The introduction of visual abstracts as a means to communicate research should be motivated a bit better. My personal opinion is that visual abstracts are an excellent means to especially communicate DS-based contributions, but in principle, they can be used to communicate any empirical research contribution (my understanding). When reading the chapter, I didn't expect the subsections on visual abstracts. I therefore suggest motivating them already in the introduction and explaining their relevance to the overall book chapter. \per{The VAs are a tools to communicate DS-based research. Clarify motivation}\emelie{At least our template, but maybe not all VAs, I agree that we should clarify this.}
 
 
 Further (mostly minor) comments from here on:
@@ -67,7 +68,7 @@ Further (mostly minor) comments from here on:
 
 - Introduction (page 2, bottom part): "in depth" --> "in-depth"  \per{ok}
 
-- Section 2 (first sentence): The term "paradigm" is heavily overused in our community, often for small increments in knowledge creation; at least when comparing the term with  where the term "paradigm-shift" actually emerges from. In my understanding and as introduced by T. Kuhn, a paradigm entitles socially accepted belief systems and research procedures by which whole disciplinary communities may or may not governed (e.g. quantum mechanics). A paradigm therefore also includes a system of theories underlying whole research programmes and on basis of which scientific practices are generally built. In this context, I found the introduction as used by van Aken too simplistic and wouldn't consider DS as a paradigm but rather as a research philosophy (which may well co-exist with others in contrast to when it would be a paradigm which then is often seen as a --competing-- alternative). I might be of course wrong here, but would ask the authors to at least reflect upon the use of this term. \per{To discuss: research paradigm vs. research philosophy}
+- Section 2 (first sentence): The term "paradigm" is heavily overused in our community, often for small increments in knowledge creation; at least when comparing the term with  where the term "paradigm-shift" actually emerges from. In my understanding and as introduced by T. Kuhn, a paradigm entitles socially accepted belief systems and research procedures by which whole disciplinary communities may or may not governed (e.g. quantum mechanics). A paradigm therefore also includes a system of theories underlying whole research programmes and on basis of which scientific practices are generally built. In this context, I found the introduction as used by van Aken too simplistic and wouldn't consider DS as a paradigm but rather as a research philosophy (which may well co-exist with others in contrast to when it would be a paradigm which then is often seen as a --competing-- alternative). I might be of course wrong here, but would ask the authors to at least reflect upon the use of this term. \per{To discuss: research paradigm vs. research philosophy}\emelie{Yes, let's discuss this again ... :-). Maybe our claims are a bit bold but I think it is a paradigm and as such a competing alternative. I don't want to change to philosphy as I think it is to weak.}
 
 - Section 2: I believe that it would be useful to (at least consider) visually adding the cycle as introduced by Wieringa (book chapter 3). This would make the elaboration more accessible to the reader. \per{Wieringa's adapted cycle may be too specific, but a more general one is fine with me.}
 
@@ -103,7 +104,7 @@ SCORE: 3 (strong accept)
 
 This is very nice work and I am completely on board with the view that SE and Design Science can enjoy a very fruitful interaction, especially with a view to greater theorizing in SE.
 
-One issue I would encourage the authors to tone down, or at least acknowledge, relates to the use of technological rule. I know this comes from Bunge who sees it as underpinned by a scientific law which goes beyond craft and intuition. However, I believe the authors themselves acknowledge the need for a holistic socio-technical view. An over-emphasis on technology has implications. For example, a critique of Hevner’s model of Design Science is that it has led to too much emphasis on building and evaluating a technological artefact, thereby downplaying the socio-technical elements. \per{I think we should keep the material on the technological rule, but clarify that there typical social aspects of it. Alternatively calling it ''socio-technical rule'' in line with the discussion above on the scope of SE research?}
+One issue I would encourage the authors to tone down, or at least acknowledge, relates to the use of technological rule. I know this comes from Bunge who sees it as underpinned by a scientific law which goes beyond craft and intuition. However, I believe the authors themselves acknowledge the need for a holistic socio-technical view. An over-emphasis on technology has implications. For example, a critique of Hevner’s model of Design Science is that it has led to too much emphasis on building and evaluating a technological artefact, thereby downplaying the socio-technical elements. \per{I think we should keep the material on the technological rule, but clarify that there typical social aspects of it. Alternatively calling it ''socio-technical rule'' in line with the discussion above on the scope of SE research?}\emelie{or use "design propositions" instead. What would you say is the social aspect of a technological rule? The scope in terms of a context and effect or the open format: "To achieve" that leaves the actual decision to a person in a situation? People tend to stumble on the term "technological rule so it may be a good idea to use another term}
 
 A minor quibble would be the authors’ claim (p.5) that technological rules equate with Gregor and Hevner’s design theory.  I think it the latter are fairly clear that technological rules equate with “empirical generalizations.”  To be elevated to design theory would require an explanation of why the rule works as it does, specific conditions under which it holds, confidence levels as well as adequate testing. Certainly, the claim (p.6) that “technological rules are examples of middle range theories” is too much in my opinion. I personally believe that an increased emphasis on theory in SE is beneficial, but I would be concerned if technological rules such as “To achieve <Effect> in <Situation>, apply <Intervention>” were proposed as middle range theory. I believe the authors qualify this somewhat, e.g., (p.17) “technological rules can at best be considered as theory fragments”, but readers will not necessarily note the qualification. \per{Add the qualitifaction of theory \emph{fragments} to the first instance}
  
@@ -139,7 +140,7 @@ Pro
 + The topic is very interesting and brings in a nice contribution to the planned book.
 
 Con
-+ The chapter is well written. However, I would recommend adding some overview figures and some examples (maybe an ongoing example) to support readers who are unfamiliar with design science. \per{The risk of adding process figures is that DS is seen as methodology rather than paradigm. Adding an example is quite much work -- deadline August 22}
++ The chapter is well written. However, I would recommend adding some overview figures and some examples (maybe an ongoing example) to support readers who are unfamiliar with design science. \per{The risk of adding process figures is that DS is seen as methodology rather than paradigm. Adding an example is quite much work -- deadline August 22}\emelie{Agree, We already have an example, could it be introduced earlier in the chapter?}
 
 Comments to the authors
 
@@ -167,7 +168,7 @@ A Model of Design Science Research (3)
 
 + Citations. It needs to be clarified, whether a reference to the overall publication is sufficient of if a citation including a specific page is needed. For example on page 9 you cite [28, p.30]. \per{We should be more specific for book citations}
 
-+ 3.5. Not sure whether this sub-section fits into this section as there is also some transfer from academia to industry (the other section focus on approaches around Fig 1). It seems to be an add one without clear contribution to the section (except the title of the subsection). Maybe it would be better to have a new section 4 dealing with these type of topics? \per{We might add more examples of methods/research processes. Could that help communicating DS as a paradigm?}
++ 3.5. Not sure whether this sub-section fits into this section as there is also some transfer from academia to industry (the other section focus on approaches around Fig 1). It seems to be an add one without clear contribution to the section (except the title of the subsection). Maybe it would be better to have a new section 4 dealing with these type of topics? \per{We might add more examples of methods/research processes. Could that help communicating DS as a paradigm?}\emelie{I don't think we need to add more examples but we could make the section cleaner by removing the part on technology transfer}
 
 
 Using the Design Science Frame in Software Engineering (4)
@@ -184,8 +185,8 @@ Recommended Further Reading (5)
 
 Conclusion (6)
 
-+ The chapter introduced Design Science in general and by example in software engineering. However, I think there is the need for bringing up some limitations of the approach (e.g., also the template that has been introduced earlier) or lessons learned. \per{Acknowledge limitations}
++ The chapter introduced Design Science in general and by example in software engineering. However, I think there is the need for bringing up some limitations of the approach (e.g., also the template that has been introduced earlier) or lessons learned. \per{Acknowledge limitations} \emelie{isn't it strange to discuss limitations of a paradigm? (The norm is part of the paradigm)}
 
-Summary. The chapter is interesting but partly difficult to follow because of a set of introduced aspects in various contexts. From my perspective, it would help to add some more examples / illustrations to enable readers in better understanding and following the approaches. Especially Fig 1 and 3 could go into an overview figure that handles Design Science in Software Engineering followed by the example. \per{Possibly adding examples to illustrate abstract concepts. Definitely clarifying that we consider DS a paradigm.}
+Summary. The chapter is interesting but partly difficult to follow because of a set of introduced aspects in various contexts. From my perspective, it would help to add some more examples / illustrations to enable readers in better understanding and following the approaches. Especially Fig 1 and 3 could go into an overview figure that handles Design Science in Software Engineering followed by the example. \per{Possibly adding examples to illustrate abstract concepts. Definitely clarifying that we consider DS a paradigm.}\emelie{Agree, and remove figures and discussions on processes and approaches to avoid misunderstanding}
 
 \end{document}
