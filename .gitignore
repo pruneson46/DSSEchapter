@@ -3,7 +3,7 @@
 .blg
 .idx
 .log
-.pdf
+*.pdf
 .gz
 .thm
 *.aux
