@@ -9,15 +9,16 @@
     {
         \newcommand{\emelie}[1]{\textcolor{red}{{\it [Emelie says: #1]}}}
         \newcommand{\peggy}[1]{\textcolor{blue}{{\it [Peggy says: #1]}}}
-        \newcommand{\per}[1]{\textcolor{blue}
-        	{{\it [Per says: #1]}}}
-        \newcommand{\outline}[1]{\textcolor{gray}{{\it [Outline: #1]}}}
+        \newcommand{\per}[1]{\textcolor{cyan}{{\it [Per says: #1]}}}
+         \newcommand{\action}[1]{\textcolor{green}{{\it [Action taken: #1]}}}
+       \newcommand{\outline}[1]{\textcolor{gray}{{\it [Outline: #1]}}}
         \newcommand{\othercomment}[1]{\textcolor{magenta}{{\it [#1]}}}
     }
     {
         \newcommand{\emelie}[1]{}
         \newcommand{\peggy}[1]{}
         \newcommand{\per}[1]{}
+        \newcommand{\action}[1]{}
         \newcommand{\outline}[1]{}
         \newcommand{\othercomment}[1]{}
     }
@@ -60,7 +61,10 @@ I very much appreciate this contribution given the increased relevance of Design
 Main observations:
 
 - Scope: From reading the abstract and the introduction, it was not really clear to me what exactly the goal and the scope of the chapter was. My perception at the end was that the authors specifically aim to (1) raise awareness of Design Science as a research philosophy and to (2) delineate from other philosophies given the many misconceptions we still have (comparable to the overuse of the term "Grounded Theory" in SE papers). I suggest the authors to make this goal explicit at the end of the introduction.
-\per{Agree with interpretation. Clarify scope.}\emelie{agree}
+
+\per{Agree with interpretation. Clarify scope.}
+\emelie{agree}
+\action{Definition of paradigm moved to introduction. Influence from information systems and management theory explicitly stated.}
 
 - Target audience: Related to my previous remark, the authors should highlight at the end of the introduction what the primary audience is. My impression is that the target audience is rather advanced scholars in software engineering as many key terms in empirical software engineering are used but not explained (as we would do in a classic ABC chapters).
 \per{The topic is quite advanced, still we want it to be understood by e.g. PhD students. Define key terms?}\emelie{sounds like a good idea. Which are the key terms?}
@@ -72,13 +76,14 @@ Main observations:
 
 Further (mostly minor) comments from here on:
 
-- I found the abstract a bit too complicated to digest (wording + long sentences). Especially: I was wondering what would be new about this chapter when there is already so much literature on this topic. Later I realised well that existing literature comes indeed from information systems research and that it needs adoptions and different forms of introduction to fit the particularities of (E)SE research. I recommend, therefore, making this need already explicit in the abstract. \per{Clarify in abstract}
+- I found the abstract a bit too complicated to digest (wording + long sentences). Especially: I was wondering what would be new about this chapter when there is already so much literature on this topic. Later I realised well that existing literature comes indeed from information systems research and that it needs adoptions and different forms of introduction to fit the particularities of (E)SE research. I recommend, therefore, making this need already explicit in the abstract. \per{Clarify in abstract} \action{Abstract sentences shorted. Added a note on IS. }
 
-- Abstract (second sentence): "validation" --> "the validity"? (or "how to validate proposals") \per{Prefer: how to validate proposals}
+- Abstract (second sentence): "validation" --> "the validity"? (or "how to validate proposals") \per{Prefer: how to validate proposals} \action{Changed to: how to validate proposals}
 
-- Introduction (second page, second paragraph): "With the advent of empirical software engineering [2] and evidence-based software engineering [22], the research focus shifted towards validation of solution proposals". I wouldn't exclude problem understanding / framing from the focus of empirical software engineering. Maybe rephrase to "With the advent of empirical software engineering [2] and evidence-based software engineering [22], the research focus shifted towards empirically-informed solution proposals" (or something like that). \per{ok}
+- Introduction (second page, second paragraph): "With the advent of empirical software engineering [2] and evidence-based software engineering [22], the research focus shifted towards validation of solution proposals". I wouldn't exclude problem understanding / framing from the focus of empirical software engineering. Maybe rephrase to "With the advent of empirical software engineering [2] and evidence-based software engineering [22], the research focus shifted towards empirically-informed solution proposals" (or something like that). \per{ok} \action{ the research focus shifted towards  empirically-informed understanding of practice and solution proposals.}
 
-- Introduction (page 2, bottom part): "in depth" --> "in-depth"  \per{ok}
+- Introduction (page 2, bottom part): "in depth" --> "in-depth"  \per{ok} \action{done}
+
 
 - Section 2 (first sentence): The term "paradigm" is heavily overused in our community, often for small increments in knowledge creation; at least when comparing the term with  where the term "paradigm-shift" actually emerges from. In my understanding and as introduced by T. Kuhn, a paradigm entitles socially accepted belief systems and research procedures by which whole disciplinary communities may or may not governed (e.g. quantum mechanics). A paradigm therefore also includes a system of theories underlying whole research programmes and on basis of which scientific practices are generally built. In this context, I found the introduction as used by van Aken too simplistic and wouldn't consider DS as a paradigm but rather as a research philosophy (which may well co-exist with others in contrast to when it would be a paradigm which then is often seen as a --competing-- alternative). I might be of course wrong here, but would ask the authors to at least reflect upon the use of this term. \per{To discuss: research paradigm vs. research philosophy}\emelie{Yes, let's discuss this again ... :-). Maybe our claims are a bit bold but I think it is a paradigm and as such a competing alternative. I don't want to change to philosphy as I think it is to weak.}
 
@@ -116,9 +121,12 @@ SCORE: 3 (strong accept)
 
 This is very nice work and I am completely on board with the view that SE and Design Science can enjoy a very fruitful interaction, especially with a view to greater theorizing in SE.
 
-One issue I would encourage the authors to tone down, or at least acknowledge, relates to the use of technological rule. I know this comes from Bunge who sees it as underpinned by a scientific law which goes beyond craft and intuition. However, I believe the authors themselves acknowledge the need for a holistic socio-technical view. An over-emphasis on technology has implications. For example, a critique of Hevner’s model of Design Science is that it has led to too much emphasis on building and evaluating a technological artefact, thereby downplaying the socio-technical elements. \per{I think we should keep the material on the technological rule, but clarify that there typical social aspects of it. Alternatively calling it ''socio-technical rule'' in line with the discussion above on the scope of SE research?}\emelie{or use "design propositions" instead. What would you say is the social aspect of a technological rule? The scope in terms of a context and effect or the open format: "To achieve" that leaves the actual decision to a person in a situation? People tend to stumble on the term "technological rule so it may be a good idea to use another term}
 
-A minor quibble would be the authors’ claim (p.5) that technological rules equate with Gregor and Hevner’s design theory.  I think it the latter are fairly clear that technological rules equate with “empirical generalizations.”  To be elevated to design theory would require an explanation of why the rule works as it does, specific conditions under which it holds, confidence levels as well as adequate testing. Certainly, the claim (p.6) that “technological rules are examples of middle range theories” is too much in my opinion. I personally believe that an increased emphasis on theory in SE is beneficial, but I would be concerned if technological rules such as “To achieve <Effect> in <Situation>, apply <Intervention>” were proposed as middle range theory. I believe the authors qualify this somewhat, e.g., (p.17) “technological rules can at best be considered as theory fragments”, but readers will not necessarily note the qualification. \per{Add the qualitifaction of theory \emph{fragments} to the first instance}
+One issue I would encourage the authors to tone down, or at least acknowledge, relates to the use of technological rule. I know this comes from Bunge who sees it as underpinned by a scientific law which goes beyond craft and intuition. However, I believe the authors themselves acknowledge the need for a holistic socio-technical view. An over-emphasis on technology has implications. For example, a critique of Hevner’s model of Design Science is that it has led to too much emphasis on building and evaluating a technological artefact, thereby downplaying the socio-technical elements. \per{I think we should keep the material on the technological rule, but clarify that there typical social aspects of it. Alternatively calling it ''socio-technical rule'' in line with the discussion above on the scope of SE research?}\emelie{or use "design propositions" instead. What would you say is the social aspect of a technological rule? The scope in terms of a context and effect or the open format: "To achieve" that leaves the actual decision to a person in a situation? People tend to stumble on the term "technological rule so it may be a good idea to use another term}
+\action{We shift the term to be ´socio-technical rule' to stress the socio-technical characteristic.}
+
+
+A minor quibble would be the authors’ claim (p.5) that technological rules equate with Gregor and Hevner’s design theory.  I think it the latter are fairly clear that technological rules equate with “empirical generalizations.”  To be elevated to design theory would require an explanation of why the rule works as it does, specific conditions under which it holds, confidence levels as well as adequate testing. Certainly, the claim (p.6) that “technological rules are examples of middle range theories” is too much in my opinion. I personally believe that an increased emphasis on theory in SE is beneficial, but I would be concerned if technological rules such as “To achieve <Effect> in <Situation>, apply <Intervention>” were proposed as middle range theory. I believe the authors qualify this somewhat, e.g., (p.17) “technological rules can at best be considered as theory fragments”, but readers will not necessarily note the qualification. \per{Add the qualification of theory \emph{fragments} to the first instance} \action{Theory fragments mentioned in section2}
  
 Overall, very nice work which will be widely read and used by SE researchers.
  
@@ -169,6 +177,7 @@ Intro (1)
 Design Science – An Overview (2)
 
 + Consider providing some overview figure on the design science approach (maybe in terms of some process workflow or similar). I think it would be good having such a high-level overview in the chapter. This could be used later on for the examples as well to link individual steps to this overview. \per{Again, methodology vs paradigm... }
+\action{We added two paragraphs, explaining the three paradigms to make sure the discussion is on the conceptual level. The requested figure is Fig 1, which we clarify in the text, as proposed below.}
 
 A Model of Design Science Research (3)
 
