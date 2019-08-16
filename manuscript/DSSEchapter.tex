@@ -39,7 +39,7 @@
 \usepackage{color}
 \usepackage{ifthen}
 \newboolean{showcomments}
-\setboolean{showcomments}{false} % toggle to show or hide comments
+\setboolean{showcomments}{true} % toggle to show or hide comments
 \ifthenelse{\boolean{showcomments}}
     {
         \newcommand{\emelie}[1]{\textcolor{red}{{\it [Emelie says: #1]}}}
@@ -86,13 +86,13 @@
 \abstract*{Each chapter should be preceded by an abstract (no more than 200 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter.
 Please use the 'starred' version of the \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
 
-\abstract{Software engineering research aims to contribute to improved real-world practice. With the adoption of empirical software engineering research methods, the understanding of real-world needs and validation of solution proposals have evolved. However, the philosophical perspective on what constitutes theoretical knowledge and research contributions in software engineering is less discussed in the community.   In this chapter, we use the \emph{design science paradigm} as a frame for articulating prescriptive software engineering research contributions. %embracing both improvement and validation 
+\abstract{Software engineering research aims to contribute to improved real-world practice. With the adoption of empirical software engineering research methods, the understanding of real-world needs and validation of solution proposals have evolved. However, the philosophical perspective on what constitutes theoretical knowledge and research contributions in software engineering is less discussed in the community.   In this chapter, we use the \emph{design science paradigm} as a frame for articulating prescriptive software engineering research contributions. 
 Design science embraces \emph{problem conceptualization, solution (or artifact) design}, and how to \emph{validate} solution proposals, with recommendations for practice, phrased as \emph{design propositions}. Design science is used in related research areas, particularly information systems and management theory. We elaborate the constructs of design science for software engineering, relate them to different conceptualizations of design science, and provide examples of research methods to be used. We outline how assessment of research contributions, industry-academia communication, and theoretical knowledge building may be supported by the design science paradigm. Finally we provide examples of software engineering research presented through a design science lens.} 
 
 \section{Introduction}
 \label{sec:intro}
 
-
+%In the bginning...
 Software engineering research aims at developing and validating practically useful methods, technologies and tools to help industry improve software engineering practice. This practical aspect was discussed already when the term `software engineering' was coined in the late 1960's by Margaret Hamilton\footnote{https://publications.computer.org/software-magazine/2018/06/08/margaret-hamilton-software-engineering-pioneer-apollo-11/} and later put in print in a NATO conference report~\cite{Nato1968}. 
 
 \begin{quote}
@@ -101,22 +101,23 @@ Software engineering research aims at developing and validating practically usef
 
 Numerous solution proposals to software engineering problems have been invented and published during the past few decades -- these include development methods and processes, tools, frameworks, taxonomies, or languages -- but they are rarely based on systematic investigations of real world problem instances, nor validated in large scale software practice.
 
+%Empirical software engineering
 With the advent of empirical software engineering~\cite{Basili86} and evidence-based software engineering~\cite{Kitchenham04}, the research focus shifted towards  empirically-informed understanding of practice and solution proposals. Empirical methods were inherited and adapted from other research fields, particularly medicine and the social sciences, and the knowledge base was built up systematically by families of experiments \cite{Basili99} and systematic literature reviews \cite{Kitchenham15}. However, the methodological advancements were rarely explicitly framed in a research paradigm, and thus it is sometimes unclear what the research contribution is and how to relate to it. 
 
+%Paradigms -> design science
 A \emph{research paradigm} refers to ``the combination of types of research questions asked, the research methodologies allowed to answer them and the nature of the pursued research products''~\cite{van_aken_management_2004}. In this chapter we present \per{Which verb should be used to indicate that we do not invent the concepts (propose), but rather elaborate on what others have done?} the \emph{design science paradigm} as a frame for software engineering. The goal is to assist identification of theoretical research contributions and assess these contributions. We propose design science as a lens to view \per{Sounds weak? Analyze??} software engineering research, rather than prescriptive methods on how to conduct it. 
 Design science is earlier proposed by Wieringa \cite{wieringa_what_2014} for information systems and software engineering, which we merge with perspectives from van Aken \cite{van_aken_management_2004}, from management theory, acknowledging the interdisciplinariy character of software engineering \cite{Mendez2019}.
 
 The design science paradigm integrates \emph{problem conceptualization, solution design} and \emph{validation}. in this chapter, we demonstrate how this paradigm fits as a frame for empirical software engineering with its aim to provide practical solutions for real-world software engineering challenges. In particular, multiple case studies are proposed as the typical research methodology under the design science paradigm~\cite{van_aken_management_2004}, which aligns with the widespread use of case studies in software engineering. 
 
+% Outline
 We provide an overview of the design science paradigm in Section~\ref{sec:overview}, and a more in-depth elaboration of design science concepts in Section~\ref{sec:DesignScienceResearch}. In Section~\ref{sec:UsingDSinSE}, we discuss how  design science can be used to fram software engineering research, and present a visual abstract template to help identifying and assess theoretical contributions in software engineering. Section~\ref{sec:reading} explores some references to work with complementary views on design science, and Section~\ref{sec:conclusion} concludes this chapter.
 
 
 \section{Design Science -- An Overview}
 \label{sec:overview}
+
 %Design science is a paradigm not a method}
-
-%\subsection{Design Science as a Paradigm}
-
 There are three major research paradigms, according to van Aken~\cite{van_aken_management_2004}:
 \begin{itemize}
 \item \emph{formal sciences} %(e.g.,\ philosophy and mathematics), 
@@ -124,38 +125,32 @@ There are three major research paradigms, according to van Aken~\cite{van_aken_m
 \item \emph{design sciences}% (e.g.,\ engineering sciences and medical sciences).  
 \end{itemize}
 
-A research paradigm is a philosophical perspective on the knowledge produced within a research field, using different research methodologies to answer research questions~\cite{van_aken_management_2004}. A  paradigm  also includes the theories underpinning research \cite{Kuhn?}. 
+A research paradigm is a philosophical perspective on the knowledge produced within a research field, using different research methodologies to answer research questions~\cite{van_aken_management_2004}. \per{Comment from reviewer 1 on Kuhn: A  paradigm  also includes the theories underpinning research. }
 
 The \emph{formal sciences} (for example, philosophy and mathematics) focus on building internally consistent systems of knowledge. They are empirically void, as the systems are not related to any empirical observation nor validation. The \emph{explanatory sciences} (for example, the natural sciences and most of the social sciences) aim to describe and explain phenomena that exist, without and before any intervention. \emph{Design sciences} (for example, engineering sciences and medical sciences) aim to understand and improve human-made designs in an area of practice. The borderline between explanatory sciences and design sciences is not always clear, as a research endeavor may contain elements, explaining a naturally occurring phenomenon, for which a proposed intervention later is designed and validated. 
 
 %As a paradigm, 
-
 In this chapter, we view design science as a research paradigm that helps frame research, which aims to improve an area of practice. In our case, the engineering of software is the practice area in focus. The software itself, the tools designed to support the engineers, as well as the organizations developing it, are human-made constructs. This speaks for design science being a feasible research paradigm for software engineering. On the other hand, some of the human behavior of software engineers and their stakeholders are related to humans' intrinsic capabilities and characteristics, which would speak for the explanatory science research paradigm. Still, we argue that most of the studied phenomena in software engineering are designed, and thus the research would benefit from being viewed as design science.
 
 % Design science concepts
 The practice is not homogenous over all kinds of software engineering research, neither are the potential improvements the same for all instances of practice. Thus, design science addresses general problems by studying  specific \emph{problem instances}, which constitute the \emph{research contexts}, where the research activities of \emph{problem conceptualization}, \emph{solution design} and \emph{validation} take place. \per{Maybe include graph, as reviewers 1 and 3 propose to? This should then be leading to the model in section 3.}
 
 %design propositions
-
 The theoretical contribution of design science research, i.e., the prescriptions for practice, are context dependent. The scientific knowledge, emanating from design science research are prescriptive recommendations, typically captured in \emph{design propositions}\footnote{Van Aken~\cite{van_aken_management_2004}, following Bunge~\cite{bunge_philosophy_1998}, denotes the recommendations as `technological rules'. We choose the term `design propositions' to acknowledge that solutions may be not only technical in software engineering research, but more often socio-technical.}. This means ``field-tested and grounded'' exemplars of how a problem can be solved~\cite{van_aken_management_2004}. The research does not claim that it is an optimal solution, but since it is field tested and grounded, it is a feasible solution.
 As a consequence, the validation must be done in context~\cite{wieringa_what_2014}.  This means the  `in vivo' context or the `in vitro' context capture important characteristics of the real context\footnote{`In vivo' (in life) refers to conducting a study in the real context of practice, while `in vitro' (in glass -- the test tube metaphor) refers to en artificial context for the study.}.  
 
-Other than the relation to context, design science does not prescribe specific %methodology nor specific 
-method steps to be conducted in a research study. The above mentioned research activities are constituents of  a research process, that may be instantiated in different ways. 
-%However, the multiple case study is brought forward as the typical and most common research methodology under the design science paradigm \cite{van_aken_management_2004}, and the specific methodology of Technical Action Research is proposed as design science methodology~\cite{wieringa_technical_2012}.
-%Technological rules may be defined at different levels of abstraction. Very high level rules, of the type:
-%\begin{quote}{To produce software of high quality apply good software engineering practices}\end{quote} are either trivial or too bold. On the other hand, too detailed rules, highly specialized for the specific problem instance under study is not possible to generalize.
-%Many different methods for data collection, analysis and design may be used within the frame of design science. 
+% Methodology aspects
+Other than the relation to context, design science does not prescribe specific method steps to be conducted in a research study. The above mentioned research activities are constituents of  a research process, that may be instantiated in different ways. 
 Further, a single study or research paper may or may not contain all the constituents of the design science paradigm; one study may focus, for example,  problem conceptualization towards finding a solution, whereas another may report the complete chain from problem conceptualization to validated solution. Studies that focus on one aspect of design science may contain research contributions that build on, or constitute, the basis for other research under the design science paradigm.
 
 
-
-% Problem understanding
-Design science research aims to address real practice problems, and thus \emph{problem conceptualization} \per{changed from problem understanding to match terms in fig 1. Ok?} is a core constituent of the research. There is a large battery of empirical methods available for problem conceptualization -- surveys, data mining \cite{MenziesDataMining2016}, ethnography studies \cite{SharpEthnography2016} etc., that can be used for this purpose. 
+% Problem conceptualization
+Design science research aims to address real practice problems, and thus \emph{problem conceptualization} \per{changed from problem understanding to match terms in fig 1. Ok?} is a core constituent of the research. There is a large battery of empirical methods available for problem conceptualization -- surveys, data mining~\cite{MenziesDataMining2016}, ethnography studies \cite{SharpEthnography2016} etc., that can be used for this purpose. 
 
 Problem conceptualization is typically, but not necessarily, the first step in a design science research endeavor. Understanding a general problem, present in one or more concrete problem instances, is a basis for understanding how this general problem may be solved.  While exploring a specific problem instance,  it may become clearer what the core of the problem is, and thus focuses the potential solution design to these areas. 
 
-While problem conceptualization is a basis for the research activity, it is not a pure description of the problem. Under the design science paradigm, problems need to be conceptualized in terms of an envisioned solution. Thus, problem conceptualization is often intertwined with the creative activity \emph{solution design} where alternative solutions and previous research are considered. %are consider. In this activity, researchers take a perspective on the problem at hand, which is colored by their knowledge and experience. 
+% Towards solution design
+While problem conceptualization is a basis for the research activity, it is not a pure description of the problem. Under the design science paradigm, problems need to be conceptualized in terms of an envisioned solution. Thus, problem conceptualization is often intertwined with the creative activity \emph{solution design} where alternative solutions and previous research are considered. 
 
 % Solution design
 %The outcome of a design science research endeavor is ultimately that \emph{design knowledge} is produced, that is, empirically grounded knowledge about how to design solutions to specific problems. The knowledge is gained while solving the identified problem at hand, and abstracted as general knowledge. 
@@ -170,22 +165,24 @@ Design science is a paradigm used in many different research fields, and it is i
 
 \section{A Model of Design Science Research}
 \label{sec:DesignScienceResearch}
-%\emelie{This section partly repeats and partly contradicts sec 2.2, remove?} In another, similar field of research, van Aken proposes to distinguish \emph{management theory}, that is prescriptive, from \emph{organisational theory}, that is explanatory~\cite{van_aken_management_2005}. We have observed that a similar distinction could be useful when discussing software engineering theory. In this section we elaborate on how to articulate and mature prescriptive software engineering theory that is the product of design science research. 
 
-%Gregor and Hevner put forward design theory as the result of generalising from a problem instance to a class of problems and defining the scope of validity of a solution~\cite{gregor_positioning_2013}. 
 
 \begin{figure}[t]
-  \includegraphics[width=0.8\textwidth]{Figures/DS_model.pdf}
+\centering
+ \includegraphics[width=0.8\textwidth]{Figures/DS_model.pdf}
 % figure caption is below the figure
 \caption{Model of design science contributions in software engineering~\cite{Engstrom19arxiv}. The boxes represents theoretical and practical \emph{contributions} of design science research and the arrows represent \emph{knowledge creating activities} that can be performed by both practitioners and researchers.}
 \label{fig:DS_model}       % Give a unique label
 \end{figure}
 
+% Description of the core of the model
 Design science spans two major dimensions, the \emph{problem--solution} dimension and the \emph{theory--practice} dimension. To guide our in-depth elaboration of the design science paradigm, we present a model of design science contributions, see Figure~\ref{fig:DS_model}, where research activities under the design science paradigm can be expressed as transitions across this two-dimensional space.
-%\per{Make explicit mapping to numbered tags in the model. How to enumerate them?}
+\per{Make explicit mapping to numbered tags in the model. How to enumerate them?}
 
+% Semantics of the model
 The \emph{practical} contribution of the research (i.e., the actual problem solving) is visualized by the boxes in the two bottom quadrants as instances of both the \emph{problem} and the \emph{solution}. The \emph{theoretical} contribution (i.e., generalization and scope definition) is visualized by the boxes in the two top quadrants in terms of the \emph{design proposition(s)} and their \emph{constructs}. 
 
+% Core consituents
 The arrows in Figure~\ref{fig:DS_model} illustrate knowledge creating activities that can be performed by both practitioners and researchers. 
 \begin{itemize}
 \item \emph{Problem conceptualization} refers to the activity of describing the problem in terms of the envisioned solution; 
@@ -196,18 +193,14 @@ The arrows in Figure~\ref{fig:DS_model} illustrate knowledge creating activities
 \end{itemize}
 
 %\per{Mention artifact? See reviewer 2}
-
-%where the instance of the problem. As illustrated in Figure~\ref{fig:DS_model} there are mainly two types of theoretical contributions of design science research, 1) prescriptive statements on how to achieve a certain objective (i.e. Technological rules) 2) and constructs
-
-
-
+Below we explore the contributions and activities of the design science model. \per{Explicit outline?}
 
 \subsection{Design propositions}
 \label{sec:technologicalrules}
 
 \per{I am leaning towards the term Design propositions -- fits well with propositions in general, which are claimed but still not validated as theory.}
 
-% outline: The technological rule is the theoretical contribution of design science research also referred to as design knowledge.
+% outline: The design proposition is the theoretical contribution of design science research also referred to as design knowledge.
 A design proposition captures generalized knowledge about mappings between instances of problems and solutions (i.e., in-context validations) and is thus a means to transfer knowledge between contexts. The design proposition spans both a problem domain and a solution domain, and is formulated based on constructs in both domains. 
 
 %In a design proposition, the solution (or intervention) may, for example,  refer to the use of a specific tool or the application of a more general technology, embedded in a tool. 
@@ -221,30 +214,30 @@ Design propositions comprise both the context in terms of the \emph{desired effe
 \end{quote}
 \per{ Gregor and Hevner~\cite{gregor_positioning_2013} write "in order to achieve something \emph{similar to} Z in situation Y, then perform X". This gives a better idea of the approximate character if the proposition. What do you think?}
 Design propositions correspond to fragments of \emph{design theory} in Gregor and Hevner's work~\cite{gregor_positioning_2013} as well as in Wieringa's, who defines them as theories of artifacts in context~\cite{wieringa_design_2009}.
-%Our visual abstract template,  see Figure~\ref{fig:VA-template}, emphasizes technological rules as the main takeaway of design science within software engineering research. 
 
-
+% Generalization 
 In a design proposition, a class of software engineering problems are generalized to a stakeholder's desired effect of applying a potential intervention in a specified situation. 
 Making this problem generalization explicit helps the researcher identify and communicate the different value-creating aspects of a research study or program.
-
 
 % outline: The abstraction level may vary
 Wieringa and Daneva address generalizability of design theory~\cite{wieringa_six_2015} and argue that there is no such thing as general design theories. Instead they emphasize the utility of \emph{middle-ranged theory}, defined as theories lacking universal scope. 
 Design propositions are examples of such middle-ranged theories \per{fragments?} that can be expressed at any convenient abstraction level. However, design propositions expressed at a very high abstraction level (e.g., ``To produce software of high quality apply good software engineering practices'') tend to be either trivial or too bold (easy to debunk), while propositions at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. 
 
+%Examples of DS in SE
 How the intervention in a design proposition is formulated may vary. It could, for example, refer to the use of a tool or articulate abstractions of the knowledge embedded in the tool. It could also refer to the application of a practice, a technique, a framework, or a set of guidelines. We extracted 38 examples of design propositions from a set of distinguished ICSE-papers from 2014--2018~\cite{Engstrom19arxiv}, these propositions demonstrate the breadth of knowledge that can be represented using design propositions. These design propositions are available online at \url{http://dsse.org}.
 
+% Hierarichical design propositions
 One single instance of a problem-solution pair can generate multiple design propositions that are hierarchically related to each other. For example, an abstract proposition may recommend using a general type of technology, while several more detailed propositions may specify the use of technology, embedded in a specific tool.  Similarly, there are hierarchical relationships with prior related design propositions to which a specific contribution is compared.
 \peggy{it may be nice to show an example of this hierarchical relationship at work -- I may have something we can use for this for the next version -- still trying to work it out}
 Thus, it is important to explicitly formulate the design proposition when presenting design science research and to be consistent with it both when arguing for its relevance and its novelty, as well as when presenting the empirical (or analytical) support for the claims.  A research contribution may refine any of the three constituents of an existing proposition, add empirical support for the proposition as a whole, or present a new proposition.
 
 \per{Mention artifacts?}
 
-% outline: Technological rules are validated by in-context validations (investigations of instantiations of the rule)
 
 
 \subsection{Problem and design constructs}
 \label{sec:constructs}
+% Constructs as theoretical design knowledge
 Another type of theoretical knowledge, produced in design science, is the 
 constructs on which we build design propositions. That is, the conceptualization of the problem domain and the solution domain, respectively.  
 A construct can, for example, be a taxonomy that is used to articulate a design proposition or to classify a set of design propositions in a research review. 
@@ -257,7 +250,7 @@ Design knowledge is gained by investigating one or more instances of a solution 
 
 % (Who?) Problem understanding is ultimately an act of the practitioner but could be done in collaboration between researchers and practitioners or by researchers alone
 
-\per{Attempt to rephrase, please check.}
+\per{I made an attempt to rephrase, please check.}
 In a mature research field, existing theory may help design solutions to their specific problems. Problem conceptualization is then an act of the practitioner, as well as the instantiation of the solution in a specific context. In fields where the theoretical foundation is less mature, such as software engineering, researchers and practitioners work together to advance and extend the scope of the theory. 
 %In the long run, software engineering theory aims at helping practitioners design solutions to their specific problems. Thus problem understanding is ideally an act of a software engineering practitioner and not a researcher.
 %\peggy{"ideally" do you mean "often"?}
@@ -271,8 +264,6 @@ In a mature research field, existing theory may help design solutions to their s
 The outcome of the problem conceptualization is expressed in terms of problem elements/constructs, pointing towards an envisioned solution. \per{Was: "The outcome of the problem understanding activities is a conceptualization of the problem instance towards an envisioned solution." Ok?} If, for example, the proposed solution is to design a visualization system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus, the problem formulation is tightly connected to the solution design and cannot be done in isolation. 
 
 Problem conceptualization is to a large extent in the eye of the beholder. A behavioural scientist would, for example,  make a different problem conceptualization of a software project, compared to a software engineering researcher. While different software engineering researchers may be influenced by their background, emphasizing how problem conceptualization is intertwined with solution design.
-
-%Although we consider much of our software engineering research to be design science research, not all exploratory and descriptive research produce design knowledge. The combination of problem understanding with the envisioned solution is what makes it design science.
 
 % (What?) The research contribution is not the conceptualization, but the identification of the problem instance (empirical support for prevalence of a conceptual problem) and potential updates of the modelling approach (new aspects of the technological rule)
 
@@ -291,21 +282,9 @@ Software engineering is a discipline, in which conditions are changing rapidly. 
 In a mature design science field, problem conceptualization can be guided by theory, i.e., prior design propositions and conceptualization approaches. 
 
 
-
-%\subsection{Solution design}
-
-
-%Solution design is one out of three knowledgecreating activities in the software engineering design cycle
-%Design science comprises both creation and validation of design knowledge, i.e. prescriptive and context dependant knowledge. Such knowledge can be achieved by investigating real world instances of problem-solution pairs. We have identified three different knowledge creating activities of which the \emph{solution design} is one. The other two are the \emph{problem understanding} and the \emph{empirical validation} of the solution to the problem in context, see Figure~\ref{fig:VA-template}
-
-
-%Ultimately an act of a SE practitioner
-%Just like problem conceptualization, the actual design of a real-life solution is the act of the practitioner, preferably guided by design knowledge produced by researchers. Guided by existing design propositions, see Section~\ref{sec:technologicalrules}, and related research outputs, a practitioner should be able to identify and adopt possible solutions to their context. However, 
-
-One activity in the production of design knowledge is to work through iterations of a solution design, either together with practitioners in a real-life setting or off-line. %Creative process/alternative solutions should be considered/design decisions reported
+%Creative process/alternative solutions should be considered/design decisions reported
+One activity in the production of design knowledge is to work through iterations of a solution design, either together with practitioners in a real-life setting or off-line. 
 While solution design is a creative activity, the design knowledge it produces can be made more accessible and trustworthy if critical design decisions are clearly reported together with considerations about alternative solutions.
-
-
 
 %May include several levels of design/evaluation and validation 
 
@@ -349,7 +328,7 @@ Design propositions may also develop from the general to the specific. The resea
 
 
 \subsection{Research Methods in Design Science} 
-
+\per{I removed the Gorschek figure -- can we keep the text?}
 
 Design science may embrace a multitude of research methods to be used. For \emph{problem conceptualization} and \emph{validation} of design propositions, empirical research methods are used. Methods supporting natural settings are preferred as the problem in context is in focus for design science research. 
 %\peggy{but Stol/Fitzgerald somehow treat system and human actors as the same in terms of method selection which to me goes against the goal of knowing when stakeholders should be involved or not but this is a discussion for a different day :) }
@@ -357,24 +336,14 @@ Design science may embrace a multitude of research methods to be used. For \emph
 Design science is considered a methodology by other scholars in software engineering~\cite{Wohlin2015}. As a consequence, they focus on the valid research activities (how to conduct the research) rather than on the theoretical contributions of the research (how to theorize from the research) when considered a paradigm. However, since a paradigm includes the methodologies, as defined above, there is a strong connection between the paradigm and the methodologies used, although the mapping is not one-to-one.
 
 
-The typical research methodology used to study and test design propositions is multiple case studies. In multiple case studies, a series of problems of the same class are addressed. Design knowledge is built up through the empirical validation of the solution in context. %The case study methodology is well established in software engineering \cite{Runeson12Case} and fits  well into the design science paradigm. 
-\peggy{isn't this repetitive -- feels like we've said this several times} \per{I cut the sentence for now. Let's check redundance in the next iteration}
+The typical research methodology used to study and test design propositions is multiple case studies. In multiple case studies, a series of problems of the same class are addressed. Design knowledge is built up through the empirical validation of the solution in context. 
 In a survey of 101 industry-academia collaboration projects, Garousi \emph{et al.} found 75 that were characterized as case studies~\cite{Garousi2019}. Further, they note that ``industrial case studies usually apply either the `exploratory' or the `improving' type, or both, rather than other case study types (descriptive, explanatory)''. Methods for data collection and analysis can be selected from the rich plethora of options available for such studies, for example, interviews, focus groups, observational studies, archival data analysis, and software metric analysis. 
 
 
 Action research is another way of producing and validating design propositions.  41 of the 101 industry-academia collaboration projects surveyed by Garousi \emph{et al.} were labeled as action research \cite{Garousi2019}. However action research does not explicitly aim at developing knowledge that can be transferred to other contexts, but rather to make a change in one specific local context. However, both Wieringa~\cite{wieringa_technical_2012} and Johannesson and Perjons~\cite{johannesson_introduction_2014} discuss action research as one of several empirical methods that can be used to produce design knowledge.
 
 
-%\begin{figure}[t]
-%  \includegraphics[width=0.9\textwidth]{Figures/GorschekModel.pdf}
-%% figure caption is below the figure
-%\caption{Model for technology transfer in practice \cite{GorschekSW2006}.}
-%\label{fig:GorschekModel}       % Give a unique label
-%\end{figure}
-
-\per{I removed the figure -- can we keep the text?}
-Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \cite{GorschekSW2006} focusing on industry--academia collaboration, which has some elements of design science. %, see Figure \ref{fig:GorschekModel}. 
-The model, which prescribes conceptual steps in solving a problem in an industry-academia collaboration setting, has elements of problem identification and formulation. The design of solutions involve studying the literature (state of the art) and selection of a candidate solution. This solution is validated in three steps, in academia, statically, and dynamically, before it is released into operations. 
+Gorschek \emph{et al.} defined a ``model for technology transfer in practice'' \cite{GorschekSW2006} focusing on industry--academia collaboration, which has some elements of design science. The model, which prescribes conceptual steps in solving a problem in an industry-academia collaboration setting, has elements of problem identification and formulation. The design of solutions involve studying the literature (state of the art) and selection of a candidate solution. This solution is validated in three steps, in academia, statically, and dynamically, before it is released into operations. 
 
 These elements fit the design science lens, although the model (by intention) focuses primarily on the artifact and specific context, rather than the generalized knowledge and design proposition, which are significant element of design science research. Further, when the generalization of knowledge and iterative knowledge building is stressed, it becomes clear that industry--academia collaboration is not a one-way transfer of technology, but a mutual interaction between the two.
 
@@ -382,8 +351,6 @@ These elements fit the design science lens, although the model (by intention) fo
 \section{Using the Design Science Frame in Software Engineering}
 \label{sec:UsingDSinSE}
 
-
-%In this section, we focus on how the design science paradigm can be used as a frame for software engineering research. 
 %Software engineering research aims at improving practice, which implies needs for various kinds of collaboration between researchers and practitioners. 
 In their practitioner article on industry--academia collaboration in software engineering, Carver and Prikladnicki stress the importance of a synergistic relationship between software practitioners and software engineering researchers:
 \begin{quote}Practitioners could obtain more relevant research results, and researchers could better understand the type and scope of problems to examine.~\cite{CarverIEEESW2018}
@@ -395,20 +362,15 @@ These practitioner--researcher synergies resonate well with the design science p
 \subsection{A template to highlight design science constructs}% in software engineering}
 \label{sec:VA_template}
 
-%Design Science Studie
-
 \begin{figure}[t]
-% Use the relevant command to insert your figure file.
-% For example, with the graphicx package use
-  \includegraphics[width=1.0\textwidth, trim={0 15mm 0 0},clip]{Figures/GenericVA.png}
-% figure caption is below the figure
+\includegraphics[width=1.0\textwidth, trim={0 15mm 0 0},clip]{Figures/GenericVA.png}
 \caption{Visual abstract template including the core constructs in the design science paradigm.}
-\label{fig:VA-template}       % Give a unique label
+\label{fig:VA-template}      
 \end{figure}
 
 
 %Design Science as a Lens
-The design science perspective is rarely used explicitly to design and present software engineering research~\cite{Engstrom19arxiv}. We therefore designed a \emph{visual abstract template} to help identify the design science constructs in software engineering research~\cite{StoreyESEM17}, see Figure~\ref{fig:VA-template}. We further extended the template with survey questions, to help analyze software engineering literature from a design science perspective~\cite{Engstrom19arxiv}. The template aims to capture the key takeaway from a research study to help researchers assess the research contribution, build knowledge iteratively, and communicate research to practitioners. %Note connections to end of this chapter
+The design science perspective is rarely used explicitly to design and present software engineering research~\cite{Engstrom19arxiv}. We therefore designed a \emph{visual abstract template} to help identify the design science constructs in software engineering research~\cite{StoreyESEM17}, see Figure~\ref{fig:VA-template}\per{Update terminology if we stick to design proposition}. We further extended the template with survey questions, to help analyze software engineering literature from a design science perspective~\cite{Engstrom19arxiv}. The template aims to capture the key takeaway from a research study to help researchers assess the research contribution, build knowledge iteratively, and communicate research to practitioners. %Note connections to end of this chapter
 
 Our design science template covers the main constructs of design science research: the theoretical contribution in terms of a \emph{design proposition}; its instantiation in terms of a real \emph{problem--solution} pair;  the empirical or theoretical support for \emph{problem} conceptualization, and the \emph{solution} design. Further, the bottom three boxes address the \emph{relevance} of the research, the \emph{rigor} of the research activities,  and a statement about what makes the design proposition \emph{novel} in relation to the underpinning research, be it with focus on a refined problem conceptualization, or a new or improved solution design, or a validation of the the design proposition in a new context. 
 
@@ -453,7 +415,7 @@ The \emph{relevance} of the research is ensured by anchoring the research in the
 \subsection{Assessment of contributions}
 \label{sec:assessment}
 
-Hevner presents three research cycles in  the conceptual model of design science, namely the \emph{relevance},   the \emph{rigor} and the \emph{design} cycles \cite{Hevner2007}. We propose that the contributions of design science research be assessed accordingly (relevance, rigor and novelty). 
+Hevner presents three research cycles in  the conceptual model of design science, namely the \emph{relevance},   the \emph{rigor} and the \emph{design} cycles \cite{Hevner2007}. We propose that the contributions of design science research be assessed accordingly, with respect to \emph{relevance, rigor} and \emph{novelty}. 
 Assessment of research contributions can be conducted proactively (when relevance may be a primary concern for consideration and before the research is executed), prospectively (as the research is ongoing and when rigor should be carefully considered), or retrospectively (where novelty of the design knowledge produced may become more evident).
 Below, we discuss assessments of contributions and refer to the examples we described above.
 
@@ -462,36 +424,28 @@ Below, we discuss assessments of contributions and refer to the examples we desc
 % Peggy:  not sure what to do with this...
 %\paragraph{Validation should be made in context and test the impact of the solution on the real problem}
 
-\subsubsection{Relevance %of a design science study is described in terms of problem similarity and solution applicability.
-} 
+\subsubsection{Relevance} 
 
 Relevance of a design science study is described in terms of problem similarity and solution applicability. The relevance of a research contribution could be viewed from two perspectives: 1) from other practitioners that may benefit from the design knowledge produced, and 2) from the research community. 
 
 From an individual practitioner's point of view, the relevance of a research contribution may be assessed by comparing their specific context with the study context described in the research report. 
 A practitioner may need to consider how their specific context may allow the design knowledge to be applied as is, or if it should be customized in some way, or perhaps the knowledge may not apply at all to their situation or problem.
-%In the example by Shi \emph{et al.}, (see Fig.~\ref{fig:VA-example}) a practitioner may similarly face the challenge of testing very larger systems and  that they too could benefit from using historical build information and test dependencies to guide which tests should be run (or not).
 In the example by Jonsson \emph{et al.}, (see Figure \ref{fig:BugAssignment}) a practitioner may  similarly face the challenge of manually assigning bugs to teams and  that they too could benefit from using ensemble-based machine learning to automate the bug assignment (or not).
 
 From the research community perspective, relevance is often considered in terms of how common the studied problem is, and how generalizable the produced design knowledge may be. To enable both types of assessments, relevant context factors need to be reported. Not all context factors are helpful in making this assessment, but only those that are critical for either the applicability of the solution or for the potential gain of applying the solution. 
-%Referring to the example by Shi \emph{et al.}, reducing wasteful test executions is a frequent topic of research in software engineering and builds on much evidence that this problem is also relevant in practice.
 Referring to the example by Jonsson \emph{et al.}, applying machine learning to bug assignment is  a frequent topic of research in software engineering. These authors report 20 previous studies on machine learning-based bug assignment \cite[Fig.2]{JonssonBug15}, which adds evidence that this problem is relevant in practice.
 
-\subsubsection{Rigor %of a design science study refers to the strength of the added support for the design proposition.
-} 
+\subsubsection{Rigor} 
 Rigor of a design science study refers to the strength of the added support for the design proposition. It may be assessed in all of the three knowledge creating activities (problem conceptualization, design, and solution validation). 
 Rigor should be considered when the research project is designed, as well as throughout the project and afterwards to reflect on possible threats to validity. 
 
 It is worth noting that the solution design activity is by nature a creative process and does not necessarily have to add to the rigor of the research overall. One aspect of rigor in the design activity could be the extent to which a solution is built on prior design knowledge, and in such cases consideration of alternative solutions can be taken into account. 
 In the case by Jonsson \emph{et al.}, they choose alternative classifiers from the Weka tool by reasoning about their properties, and combined them into ensembles of classifiers for evaluation.
-%Alternative, rigor in the problem understanding phase (which is the case of the research by Shi \emph{et al.}) can be used to guide a solution design which is what happened in the case of the research by Shi \emph{et al.} as their mathematical formulation of wasteful test executions guided them towards the solution to consider test movements based on historical build information and actual dependencies of tests. 
 
 The other two activities, i.e., problem conceptualization and solution validation, are on the other hand based on common empirical methods on which relevant validity criteria can be applied. For example, the study by Jonsson \emph{et al.} can be considered high in rigor as the proposed solution is validated by its application to 5 defect datasets from two large software systems, comprising 50,000 bugs.  Furthermore, they found that the precision in the automated bug assignment was on par with the manual industry practice, which makes it useful in practice.
-%For example, the study by Shi \emph{et al.} can be considered high in rigor as the proposed solution is validated by its application to 5 large software systems.  Furthermore, they found that developers accepted 84\% of the recommendations made by their proposed intervention (the TestOptimizer tool). 
 
-\subsubsection{Novelty %of a design science study is expressed in terms of new or refined design propositions.
-} 
+\subsubsection{Novelty } 
 Novelty of a design science study is expressed in terms of new or refined design propositions. Design propositions may be expressed at several abstraction levels, thus it is always possible to identify an abstraction level at which a research contribution is novel, may it be at the cost of general relevance.  In the research by Jonsson \emph{et al.}, novelty of the intervention proposed in the design proposition is not straightforward to assess, as there already exists 20 studies on machine learning to automate bug assignment. The novel contribution here is the systematic design and evaluation of a machine learning approach, applied to a real-world context, as expressed in the design proposition.
-%In the research by Shi \emph{et al.}, novelty of the intervention proposed in the design proposition is rather easy to assess, as the TestOptimizer tool (and the techniques it embodies) is a novel contribution.  
 
 However, novelty may not always be a priority in a given research effort.
 To optimize rigor, novelty and relevance of reported research, the researchers should strive to express the design proposition at the highest possible abstraction level at which it is novel, the provided evidence gives strong support, and the proposition is not debunked by previous studies (or commonsense). However, adding empirical support for existing, but under-validated, design propositions have a value of its own, which makes novelty less important than the rigor and relevance criteria.
@@ -504,7 +458,6 @@ Articulating the knowledge that is produced by our research in a more uniform wa
 The design propositions that emerge can at best be considered as theory fragments that prescribe and predict how a certain intervention for a particular context will lead to a proposed change. 
 Our hope is that linking design propositions that are related (perhaps in hierarchical form) may over time help our community arrive at theories that may be more general, and that can be refined and improved over time. 
 
-%For example, Shi \emph{et al.}'s research on reducing wasteful text executions can be related to other test minimization design propositions which together may be more generalizable. 
 For example, Jonsson \emph{et al.}'s research on automated bug assignment is related to previous bug assignment research, although it is hard to compare due to lack of detail and non-standardized validation practice. If the contributions were clearly expressed as design propositions with corresponding validations, the outcomes together would be more generalizable. 
 \peggy{not sure I agree the same validations are needed?}
 
@@ -517,7 +470,6 @@ Consequently, how we communicate our research to practitioners is critical to th
 
 We feel the design propositions will be valuable in communicating our findings to industry and that the visual abstract may also appeal to some practitioners wanting to quickly gain a bigger picture of the research that is behind the design knowledge embodied by the design proposition. 
 At the time of writing this chapter, we are in the process of evaluating our visual abstracts
-%We are currently in the process of getting feedback from industry partners.  For example, see \url{http://dsse.org} for a collection of visual abstracts we authored based on the distinguished papers from ICSE from 2014 to 2018.  
 
 Other examples include Petersen and Engstr\"om's framework, SERP taxonomy architecture~\cite{petersen_finding_2014} including the constructs of a design proposition  
 (i.e., desired effect, context and intervention), to support the mapping of practical problems with research. 
@@ -529,8 +481,6 @@ They used accepted information design principles to design the structure of the 
 
 \peggy{we really do need to validate the communication to industry part !}
 
-%\section{Examples}
-%Either we choose examples that illustrate the different aspects of DS, or we choose three examples that are good examples of DS -- candidates from the ICSE best papers, or our own papers?
 
 
 \section{Recommended Further Reading}
@@ -538,14 +488,12 @@ They used accepted information design principles to design the structure of the 
 Several fields of research have explicitly framed their work under the design science paradigm. This chapter is based on critically appraising these fields and adopting what we have found feasible for software engineering. We present the main literature sources and recommend them for further reading to advance software engineering under the design science paradigm.
 
 Hevner has conceptualized design science for \emph{information systems research}, combining behavioral science and design science research \cite{hevner_design_2004,hevner_design_2010}.
-The philosophical stance behind design science is what is characterized as pragmatism~\cite{easterbrook_selecting_2008}%\emelie{it is a philosophical tradition from 1870 not sure what reference to use...}
-, referring to a view that all knowledge is approximate and valued by its usefulness for solving practical problems. Hevner \emph{et al.} express this in terms of \emph{utility}: 
+The philosophical stance behind design science is what is characterized as pragmatism~\cite{easterbrook_selecting_2008}, referring to a view that all knowledge is approximate and valued by its usefulness for solving practical problems. Hevner \emph{et al.} express this in terms of \emph{utility}: 
 
 \begin{quote}
 	That is the essence of design science. Contribution arises from utility. If the artifact does not solve the problem (search, implementability), it has no utility. If utility is not demonstrated (evaluation), then there is no basis upon which to accept the claims that it provides any contribution (contribution).~\cite[p. 91]{hevner_design_2004}
 \end{quote}
 
-%\emelie{Skip this section?}Pragmatists strive to reach consensus over evidence, why access to stakeholders' perceptions are necessary in the validation of design knowledge. Since such stance is less dogmatic than other philosophical stances, our emphasis when framing empirical software engineering as design science, is on the type and nature of the produced knowledge rather than on the methodology applied. Various methods may be used to gain insights into a problem. 
 
 Gregor and Hevner also refer to design science as a paradigm~\cite{gregor_positioning_2013}. Johannesson and Perjons, on the other hand, disagree with this and argue that design science refers to the objective of changing the world, in contrast to describing it, and that this is done primarily by creating artifacts, not knowledge~\cite{johannesson_introduction_2014}. Johannesson and Perjons' view emphasizes design science as action research. Our stance is that design science is a paradigm for software engineering research and as researchers, our primary goal is to create knowledge to be applied by practitioners in the field. Furthermore, we consider artifacts as embedding design knowledge. 
 
@@ -564,30 +512,14 @@ We do not propose a corresponding distinction for software engineering, but call
 
 The Nobel Prize laureate in Economics, Herbert A.\ Simon, used other terms for the distinction between explanatory and design sciences paradigms~\cite{Simons69}. Design sciences are referred to as the ``science of the artificial'', in contrast to explanatory science, as the ``science of the natural''. The latter refers not only to natural sciences in the narrow sense, but to other phenomena that seem to appear `naturally'. In this broader sense, we may find both `natural' and `artificial' phenomena in software engineering, and thus may frame the research in different paradigms, depending on the phenomenon under study. 
 
-%\per{Removed see issue 6}
-%Purely observational studies, which aim to characterize the status of a field of software engineering practice, primarily have the characteristic of explanatory sciences as they aim to explore the current, `natural'  state of practice. This does not refer to `natural' in the sense of natural sciences, as software and its engineering are designed artifacts. However, the phenomena can be studied with respect to properties that are considered emergent from the phenomena, independently of their design variations. Observational studies, which aim to understand a problem, with the purpose of developing or improving an intervention to address the problem, may be viewed as a part of the design sciences paradigm. 
-
 
 Wierenga instantiated design science for software engineering and information systems research in the concept of technical action research, including an engineering cycle and an empirical research cycle, which combines research with real-world consultancy projects \cite{wieringa_six_2015,wieringa_technical_2012,wieringa_what_2014}. Further, to address the distinction between the descriptive and the prescriptive research, he introduces two types of research questions, namely \emph{knowledge} questions and \emph{improvement} questions \cite{wieringa_design_2009}. He also discusses scaling up research to practice \cite{Wieringa2014}. 
 
-
-%\per{Moved here from former section 2.2. Possibly keep the chapter as a container for relating to other's views.}
-%The formal sciences do not relate to empirical research as their primary goal is to build systems that are internally consistent. The explanatory sciences aim to describe, explain, and possibly predict phenomena in their field of study, and are thus empirical. The design sciences aim to develop knowledge for the design of artifacts or improvement of existing entities, i.e.\ solving \emph{construction problems} or  \emph{improvement problems}, and thus include both empirical and design constituents. 
-
-
 Munzner reviewed design science research in the field of visualization design and introduced a four-level nested model of design and validation, see Figure~\ref{fig:nested_model}~\cite{munzner2009}. She divides the design process into four distinct stages and emphasizes the importance of distinguishing between these levels when claiming contributions at more than one level. The nested model is a good example of a design construct in the solution domain, i.e., visualization, providing a lens for the problem conceptualization. Although, not all software engineering problems are solved with visualization approaches, the model may inspire similar thinking in other design processes. 
-
-%\per{Emelie -- add further reading -- Tamara}
-
-%As a research paradigm design science contains a set of beliefs regarding both the type and nature of knowledge as well as on how it can be validated. Although none of the design science advocates in the software engineering community would disagree with this claim, design science is often discussed as if it was a specific methodology to be selected among other empirical methods. For example, Wohlin and Aurum acknowledge that design science may be considered a paradigm or a method, and choose to view it as a method in their context \cite{Wohlin2015}.
-
-
-
 
 
 \section{Conclusion}
 \label{sec:conclusion}
-%\tableofcontents
 The design science paradigm is used in many fields of research, which aim to understand and improve some area of practice. Software engineering researchers have not used the design science to frame their research explicitly, although we found in an analysis that it resonates well with the aims and research practice in software engineering~\cite{Engstrom19arxiv}. 
 
 There are many flavours of design science in related fields of research. In this chapter, we propose an instantiation of design science that we find suitable for the characteristics of software engineering research. We also present our visual abstract, derived to help assess and communicate design science research~\cite{StoreyESEM17}. 
