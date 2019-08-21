@@ -133,19 +133,33 @@ The \emph{formal sciences} (for example, philosophy and mathematics) focus on bu
 In this chapter, we view design science as a research paradigm that helps frame research, which aims to improve an area of practice. In our case, the engineering of software is the practice area in focus. The software itself, the tools designed to support the engineers, as well as the organizations developing it, are human-made constructs. This speaks for design science being a feasible research paradigm for software engineering. On the other hand, some of the human behavior of software engineers and their stakeholders are related to humans' intrinsic capabilities and characteristics, which would speak for the explanatory science research paradigm. Still, we argue that most of the studied phenomena in software engineering are designed, and thus the research would benefit from being viewed as design science.
 
 % Design science concepts
-The practice is not homogenous over all kinds of software engineering research, neither are the potential improvements the same for all instances of practice. Thus, design science addresses general problems by studying  specific \emph{problem instances}, which constitute the \emph{research contexts}, where the research activities of \emph{problem conceptualization}, \emph{solution design} and \emph{validation} take place. \per{Maybe include graph, as reviewers 1 and 3 propose to? This should then be leading to the model in section 3.}
+The practice is not homogenous over all kinds of software engineering research, neither are the potential improvements the same for all instances of practice. Thus, design science addresses general problems by studying  specific \emph{problem instances}, which constitute the \emph{research contexts}, where the research activities of \emph{problem conceptualization}, \emph{solution design} and \emph{validation} take place. \per{Maybe include graph, as reviewers 1 and 3 propose to? This should then be leading to the model in section 3.}\emelie{It could be a good idea. I tried to figure out what to include in such graph, but it would be very similar to Fig 1, could this (or part of it) be introduced earlier? I provide an example below}
+
+
 
 %design propositions
 The theoretical contribution of design science research, i.e., the prescriptions for practice, are context dependent. The scientific knowledge, emanating from design science research are prescriptive recommendations, typically captured in \emph{design propositions}\footnote{Van Aken~\cite{van_aken_management_2004}, following Bunge~\cite{bunge_philosophy_1998}, denotes the recommendations as `technological rules'. We choose the term `design propositions' to acknowledge that solutions may be not only technical in software engineering research, but more often socio-technical.}. This means ``field-tested and grounded'' exemplars of how a problem can be solved~\cite{van_aken_management_2004}. The research does not claim that it is an optimal solution, but since it is field tested and grounded, it is a feasible solution.
-As a consequence, the validation must be done in context~\cite{wieringa_what_2014}.  This means the  `in vivo' context or the `in vitro' context capture important characteristics of the real context\footnote{`In vivo' (in life) refers to conducting a study in the real context of practice, while `in vitro' (in glass -- the test tube metaphor) refers to en artificial context for the study.}.  
+As a consequence, the validation must be done in context~\cite{wieringa_what_2014}.  This means the  `in vivo' context or the `in vitro' context capture important characteristics of the real context\footnote{`In vivo' (in life) refers to conducting a study in the real context of practice, while `in vitro' (in glass -- the test tube metaphor) refers to en artificial context for the study.}.\emelie{Could other terms (that we don't need to explain) be used?}   
+
+
+
+
 
 % Methodology aspects
-Other than the relation to context, design science does not prescribe specific method steps to be conducted in a research study. The above mentioned research activities are constituents of  a research process, that may be instantiated in different ways. 
+Other than the relation to context, design science does not prescribe specific method steps to be conducted in a research study. The above mentioned research activities (visualized in Figure~\ref{fig:DS_process}) are constituents of  a research process, that may be instantiated in different ways. 
 Further, a single study or research paper may or may not contain all the constituents of the design science paradigm; one study may focus, for example,  problem conceptualization towards finding a solution, whereas another may report the complete chain from problem conceptualization to validated solution. Studies that focus on one aspect of design science may contain research contributions that build on, or constitute, the basis for other research under the design science paradigm.
 
 
+\begin{figure}[t]
+\centering
+ \includegraphics[width=0.8\textwidth]{Figures/DSSE_process.pdf}
+% figure caption is below the figure
+\caption{A visualization of the different types of research activities that takes place in design science research. These activities may be instantiated in different ways.}
+\label{fig:DS_process}       % Give a unique label
+\end{figure}
+
 % Problem conceptualization
-Design science research aims to address real practice problems, and thus \emph{problem conceptualization} \per{changed from problem understanding to match terms in fig 1. Ok?} is a core constituent of the research. There is a large battery of empirical methods available for problem conceptualization -- surveys, data mining~\cite{MenziesDataMining2016}, ethnography studies \cite{SharpEthnography2016} etc., that can be used for this purpose. 
+Design science research aims to address real practice problems, and thus \emph{problem conceptualization} \per{changed from problem understanding to match terms in fig 1. Ok?} \emelie{In Fig 1, it says problem characterization Should I change that?}is a core constituent of the research. There is a large battery of empirical methods available for problem conceptualization -- surveys, data mining~\cite{MenziesDataMining2016}, ethnography studies \cite{SharpEthnography2016} etc., that can be used for this purpose. 
 
 Problem conceptualization is typically, but not necessarily, the first step in a design science research endeavor. Understanding a general problem, present in one or more concrete problem instances, is a basis for understanding how this general problem may be solved.  While exploring a specific problem instance,  it may become clearer what the core of the problem is, and thus focuses the potential solution design to these areas. 
 
@@ -156,7 +170,7 @@ While problem conceptualization is a basis for the research activity, it is not 
 %The outcome of a design science research endeavor is ultimately that \emph{design knowledge} is produced, that is, empirically grounded knowledge about how to design solutions to specific problems. The knowledge is gained while solving the identified problem at hand, and abstracted as general knowledge. 
 
 % Validation
- The primary goal of \emph{empirical validation} is to assess whether the solution proposal is feasible for the problem instance. The scope of the design knowledge gained in a study, can be extended by systematically extending the scope of the validation in subsequent studies. Thereby the knowledge base of the research area is extended. The prescriptive knowledge, expressed as design proposition,  may constitute theory fragments that are integrated into more comprehensive theories for software engineering. 
+ The primary goal of \emph{empirical validation} is to assess whether the solution proposal is feasible for the problem instance. The scope of the design knowledge gained in a study, can be extended by systematically extending the scope of the validation in subsequent studies. Thereby the knowledge base of the research area is extended. The prescriptive knowledge, expressed as design propositions,  may constitute theory fragments that are integrated into more comprehensive theories for software engineering. 
 
 
 Design science is a paradigm used in many different research fields, and it is instantiated in many different variants.  The above summary reflects what we have found prevalent in software engineering. Some of our rationale and alternative instantiations are discussed below.
