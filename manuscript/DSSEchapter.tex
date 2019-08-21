@@ -207,7 +207,7 @@ The arrows in Figure~\ref{fig:DS_model} illustrate knowledge creating activities
 \end{itemize}
 
 %\per{Mention artifact? See reviewer 2}
-Below we explore the contributions and activities of the design science model. \per{Explicit outline?}
+Below we explore the contributions and activities of the design science model. \per{Explicit outline?}\emelie{no, I don't think it's needed}
 
 \subsection{Design propositions}
 \label{sec:technologicalrules}
@@ -226,15 +226,15 @@ Design propositions comprise both the context in terms of the \emph{desired effe
 \begin{quote}{\emph{To achieve \textless Effect \textgreater ~ in \textless Situation \textgreater~apply \textless Intervention\textgreater}.} 
 %\newline
 \end{quote}
-\per{ Gregor and Hevner~\cite{gregor_positioning_2013} write "in order to achieve something \emph{similar to} Z in situation Y, then perform X". This gives a better idea of the approximate character if the proposition. What do you think?}
-Design propositions correspond to fragments of \emph{design theory} in Gregor and Hevner's work~\cite{gregor_positioning_2013} as well as in Wieringa's, who defines them as theories of artifacts in context~\cite{wieringa_design_2009}.
+\per{ Gregor and Hevner~\cite{gregor_positioning_2013} write "in order to achieve something \emph{similar to} Z in situation Y, then perform X". This gives a better idea of the approximate character if the proposition. What do you think?}\emelie{I think it is too vague, propositions should be falsifiable, and in the long run I guess we expect the propositions to have strong empirical support. I think the term proposition is sufficient to express the approximate character.}
+Design propositions correspond to fragments of \emph{design theory} in Gregor and Hevner's work~\cite{gregor_positioning_2013} as well as in Wieringa's, who defines them as theories of artifacts in context~\cite{wieringa_design_2009}.\emelie{We should also mention van Aken's Technological rules here: ... A thorough reflection about the role, nature and need for design propositions (aka technological rules) in design science research is provided by van Aken\cite{van_aken_management_2004}}.
 
 % Generalization 
 In a design proposition, a class of software engineering problems are generalized to a stakeholder's desired effect of applying a potential intervention in a specified situation. 
 Making this problem generalization explicit helps the researcher identify and communicate the different value-creating aspects of a research study or program.
 
 % outline: The abstraction level may vary
-Wieringa and Daneva address generalizability of design theory~\cite{wieringa_six_2015} and argue that there is no such thing as general design theories. Instead they emphasize the utility of \emph{middle-ranged theory}, defined as theories lacking universal scope. 
+Wieringa and Daneva address generalizability of design theory~\cite{wieringa_six_2015} and argue that there is no such thing as general design theories. Instead they emphasize the utility of \emph{middle-ranged theory}, defined as theories lacking universal scope. \emelie{I'm not sure I agree that the design propositions lack universal scope. They are general predictions. It may be that there may be unknown factors proving our predictions wrong but the predictions are still universal aren't they? Saying that something lacks universal scope is to say that generalization is not possible and then research is pointless or what can we learn from research if nothing is generalizeable? I suggest that we ignore their discussion.}
 Design propositions are examples of such middle-ranged theories \per{fragments?} that can be expressed at any convenient abstraction level. However, design propositions expressed at a very high abstraction level (e.g., ``To produce software of high quality apply good software engineering practices'') tend to be either trivial or too bold (easy to debunk), while propositions at very low abstraction levels have a narrow scope and thus lack relevance for most software engineers. 
 
 %Examples of DS in SE
@@ -257,7 +257,7 @@ constructs on which we build design propositions. That is, the conceptualization
 A construct can, for example, be a taxonomy that is used to articulate a design proposition or to classify a set of design propositions in a research review. 
 Taxonomies provide the means to relate different design propositions to each other. The different constituents of a design proposition may belong to different taxonomies. A construct can also be a conceptual model or a conceptualization approach that helps describe a problem in terms of an envisioned solution.
 
-Design knowledge is gained by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Each instantiation (for example, a case study or an iteration of action research) constitutes a unit of analysis in relation to the design proposition and the new knowledge is communicated and assessed from that perspective. 
+Design knowledge is gained by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Each instantiation (for example, a case study or an iteration of action research) constitutes a unit of analysis in relation to the design proposition and the new knowledge is communicated and assessed from that perspective.\emelie{Should this paragraph belong to Sec 3.1?} 
 
 \subsection{Problem conceptualization and solution design}
  % Who, What, Where, When, Why and How
@@ -265,7 +265,7 @@ Design knowledge is gained by investigating one or more instances of a solution 
 % (Who?) Problem understanding is ultimately an act of the practitioner but could be done in collaboration between researchers and practitioners or by researchers alone
 
 \per{I made an attempt to rephrase, please check.}
-In a mature research field, existing theory may help design solutions to their specific problems. Problem conceptualization is then an act of the practitioner, as well as the instantiation of the solution in a specific context. In fields where the theoretical foundation is less mature, such as software engineering, researchers and practitioners work together to advance and extend the scope of the theory. 
+In a mature research field, existing theory may help practitioners design solutions to their own specific problems. Problem conceptualization is then an act of the practitioner, as well as the instantiation of the solution in a specific context. In fields where the theoretical foundation is less mature, such as software engineering, researchers and practitioners work together to advance and extend the scope of the theory. \emelie{I think it is ok, but wonder if we are aware of such mature field :-). I guess researchers may be part of advancing any field of research}
 %In the long run, software engineering theory aims at helping practitioners design solutions to their specific problems. Thus problem understanding is ideally an act of a software engineering practitioner and not a researcher.
 %\peggy{"ideally" do you mean "often"?}
  %However, to produce a more general theory, research is needed. 
@@ -275,9 +275,9 @@ In a mature research field, existing theory may help design solutions to their s
 
 % (What?) The outcome of the problem understanding step is a conceptualuzation of the problem instance towards an envisioned solution and thus tightly connected to a specific design approach
 
-The outcome of the problem conceptualization is expressed in terms of problem elements/constructs, pointing towards an envisioned solution. \per{Was: "The outcome of the problem understanding activities is a conceptualization of the problem instance towards an envisioned solution." Ok?} If, for example, the proposed solution is to design a visualization system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus, the problem formulation is tightly connected to the solution design and cannot be done in isolation. 
+The outcome of the problem conceptualization is expressed in terms of problem elements/constructs, matching coresponding constructs of an envisioned solution. \per{Was: "The outcome of the problem understanding activities is a conceptualization of the problem instance towards an envisioned solution." Ok?}\emelie{changed to: matching, ok?} If, for example, the proposed solution is to design a visualization system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus, the problem formulation is tightly connected to the solution design and cannot be done in isolation. 
 
-Problem conceptualization is to a large extent in the eye of the beholder. A behavioural scientist would, for example,  make a different problem conceptualization of a software project, compared to a software engineering researcher. While different software engineering researchers may be influenced by their background, emphasizing how problem conceptualization is intertwined with solution design.
+Problem conceptualization is to a large extent in the eye of the beholder. A behavioural scientist would, for example,  make a different problem conceptualization of a software project, compared to a software engineering researcher. While different software engineering researchers may be influenced by their background, emphasizing how problem conceptualization is intertwined with solution design.\emelie{cut this paragraph out?}
 
 % (What?) The research contribution is not the conceptualization, but the identification of the problem instance (empirical support for prevalence of a conceptual problem) and potential updates of the modelling approach (new aspects of the technological rule)
 
@@ -287,10 +287,11 @@ Furthermore, the research contribution is \emph{not} the conceptualization as su
 
 % (When?) Problem understanding is the first step towards a solution design.
 
-Problem conceptualization is the first step towards a solution design. Depending on the type of solution, problem conceptualization may need to be repeated at several abstraction levels starting with the stakeholder's problem description and, in case of a tool reaching to the level of implementation details (such as  choice of algorithm). If this is the case, different types of design propositions are used and validated at different abstraction levels. It is important to be aware of what these propositions are and to ensure that the validation of a solution takes place at all these levels and that the validations are mapped to the correct design propositions. 
+%Problem conceptualization is the first step towards a solution design. 
+Depending on the type of solution, problem conceptualization may need to be repeated at several abstraction levels starting with the stakeholder's problem description and, in case of a tool reaching to the level of implementation details (such as  choice of algorithm). If this is the case, different types of design propositions are used and validated at different abstraction levels. It is important to be aware of what these propositions are and to ensure that the validation of a solution takes place at all these levels and that the validations are mapped to the correct design propositions. \emelie{exemplify or refer to the nested model?} 
 
 % (Where?) Problem understanding must originate in empirical observations of practice
-Software engineering is a discipline, in which conditions are changing rapidly. To provide relevant recommendations -- design propositions --  the problem conceptualization must originate in empirical observations of practice and within real life problem instances. Furthermore, software engineering is a socio-technical endeavour implying that stakeholders should often be involved in both problem conceptualization and solution validation, at least for design propositions at the higher abstraction levels. Lower level design propositions may be investigated in isolation to stakeholders but must be related to the higher level propositions to be relevant. 
+Software engineering is a discipline, in which conditions are changing rapidly. To provide relevant recommendations -- design propositions --  the problem conceptualization must originate in empirical observations of practice and within real life problem instances. Furthermore, software engineering is a socio-technical endeavour implying that stakeholders should often be involved in both problem conceptualization and solution validation, at least for design propositions at the higher abstraction levels. Lower level design propositions may be investigated in isolation to stakeholders but must be related to the higher level propositions to be relevant.\emelie{cut this paragraph out?} 
 \peggy{I think it depends on what the rule is aimed at too -- if it is something that is fully automated perhaps stakeholders are not needed} \per{I think there are stakeholders also in automated cases, e.g. reducing compile/build/test time may be addressed with a fully automated solution, but there is a stakeholder developer who would benefit from shorter turn around time.}
 % (How?) Problem understanding should build on prior work
 In a mature design science field, problem conceptualization can be guided by theory, i.e., prior design propositions and conceptualization approaches. 
@@ -330,11 +331,10 @@ This recommendation fits well with the design science paradigm and its pragmatis
 \begin{figure}[t]
   \includegraphics[width=\textwidth]{Figures/nested_model.pdf}
 % figure caption is below the figure
-\caption{Nested model for vizualisation design and validation~\cite{munzner2009}.}
-\label{fig:nested_model}       % Give a unique label
+\caption{Nested model for vizualisation design and validation~\cite{munzner2009}. At each level there is a "black-box" to be tested. Above the box validity threats are specified and examples of validation strategies for the problem conceptualisation are proposed for that abstraction level, while validation strategies for the instantiation of the solution are proposed below the box.}\label{fig:nested_model}       % Give a unique label
 \end{figure} 
 
-Furthermore, the choice of method depends on the abstraction level of the validation. Munzner illustrate this in a nested model for visualization design and validation, see Figure~\ref{fig:nested_model}. This model illustrates how one design science project must respond to validity questions at several levels of abstraction, and that it is important to be consistent when selecting validation methods to avoid a mismatch between levels. \per{Expand the explanation} As discussed in Section~\ref{sec:technologicalrules}, design propositions may be defined at all these different levels and the scope of validity of each proposition is defined by the context in terms of the conceptualization of the problem at the current abstraction level.
+Furthermore, the choice of method depends on the abstraction level of the validation. Munzner illustrate this in a nested model for visualization design and validation, see Figure~\ref{fig:nested_model}. This model illustrates how one design science project must respond to validity questions at several levels of abstraction, and that it is important to be consistent when selecting validation methods to avoid a mismatch between levels. \per{Expand the explanation}\emelie{I made an attempt in the caption} As discussed in Section~\ref{sec:technologicalrules}, design propositions may be defined at all these different levels and the scope of validity of each proposition is defined by the context in terms of the conceptualization of the problem at the current abstraction level.
 
 The design science paradigm builds primarily on theoretical/analytical generalizations, in contrast to explanatory sciences, which mostly rely on statistical generalizations~\cite[p. 30]{Runeson12Case}. Extending the scope of validity for a design proposition, i.e., creating a new more general proposition, is done by applying the intervention to new contexts or by reasoning about the validity to another context, by comparing key characteristics of the contexts. This is referred to as case-based generalization~\cite{wieringa_six_2015}.  
 
@@ -342,15 +342,17 @@ Design propositions may also develop from the general to the specific. The resea
 
 
 \subsection{Research Methods in Design Science} 
-\per{I removed the Gorschek figure -- can we keep the text?}
+\per{I removed the Gorschek figure -- can we keep the text?}\emelie{ok}
 
 Design science may embrace a multitude of research methods to be used. For \emph{problem conceptualization} and \emph{validation} of design propositions, empirical research methods are used. Methods supporting natural settings are preferred as the problem in context is in focus for design science research. 
 %\peggy{but Stol/Fitzgerald somehow treat system and human actors as the same in terms of method selection which to me goes against the goal of knowing when stakeholders should be involved or not but this is a discussion for a different day :) }
 
-Design science is considered a methodology by other scholars in software engineering~\cite{Wohlin2015}. As a consequence, they focus on the valid research activities (how to conduct the research) rather than on the theoretical contributions of the research (how to theorize from the research) when considered a paradigm. However, since a paradigm includes the methodologies, as defined above, there is a strong connection between the paradigm and the methodologies used, although the mapping is not one-to-one.
+Design science is considered a methodology by other scholars in software engineering~\cite{Wohlin2015}. As a consequence, they focus on the %valid research 
+activities (how to conduct the research) rather than on the theoretical contributions of the research (how to theorize from the research), which is the case when it is considered a paradigm. However, %since a paradigm includes the methodologies, as defined above, 
+there is a strong connection between the paradigm and the methodologies used.%, although the mapping is not one-to-one.
 
 
-The typical research methodology used to study and test design propositions is multiple case studies. In multiple case studies, a series of problems of the same class are addressed. Design knowledge is built up through the empirical validation of the solution in context. 
+The typical research methodology used to study and test design propositions is multiple case studies. In multiple case studies, a series of problems of the same class are addressed. Design knowledge is built up through the empirical validations of the solution in context. 
 In a survey of 101 industry-academia collaboration projects, Garousi \emph{et al.} found 75 that were characterized as case studies~\cite{Garousi2019}. Further, they note that ``industrial case studies usually apply either the `exploratory' or the `improving' type, or both, rather than other case study types (descriptive, explanatory)''. Methods for data collection and analysis can be selected from the rich plethora of options available for such studies, for example, interviews, focus groups, observational studies, archival data analysis, and software metric analysis. 
 
 
