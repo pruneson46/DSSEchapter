@@ -3,7 +3,6 @@
 .blg
 .idx
 .log
-*.pdf
 .gz
 .thm
 *.aux
@@ -17,3 +16,4 @@
 DSSEchapter.pdf
 *.idx
 .DS_Store
+/manuscript/Comments.pdf
