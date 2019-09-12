@@ -191,8 +191,6 @@ Design science is a paradigm used in many different research fields and it is in
 
 % Description of the core of the model
 Design science spans two major dimensions: the \emph{problem--solution} dimension and the \emph{theory--practice} dimension. To guide our in-depth elaboration of the design science paradigm, we present a model of design science contributions, see Figure~\ref{fig:DS_model}, where research activities under the design science paradigm can be expressed as transitions across this two-dimensional space.
-\per{Make explicit mapping to numbered tags in the model. How to enumerate them?}
-\peggy{I think more elements to the diagram would add clutter -- I think you refer to the relevant parts ok in the text...}
 
 % Semantics of the model
 The \emph{practical} contribution of the research (i.e., the actual problem solving) is visualized by the boxes in the two bottom quadrants as instances of both the \emph{problem} and the \emph{solution}. The \emph{theoretical} contribution (i.e., generalization and scope definition) is visualized by the boxes in the two top quadrants in terms of the \emph{design proposition(s)} and their \emph{constructs}. 
@@ -200,10 +198,10 @@ The \emph{practical} contribution of the research (i.e., the actual problem solv
 % Core consituents
 The arrows in Figure~\ref{fig:DS_model} illustrate knowledge creating activities that can be performed by both practitioners and researchers. 
 \begin{itemize}
-\item \emph{Problem conceptualization} refers to the activity of describing the problem in terms of the envisioned solution; 
-\peggy{should solution design come next here? and if the problem conceptualization is in terms of the envisioned solution then what is the core difference with solution design activity -- is that clear? perhaps remove "in terms of the envisioned solution" from the above activity?}
-\item \emph{Abstraction} refers to the activity of identifying the key design decisions for a defined scope of validity of a solution; 
+\item \emph{Problem conceptualization} refers to the activity of describing the problem; % in terms of the envisioned solution; 
+%\peggy{should solution design come next here? and if the problem conceptualization is in terms of the envisioned solution then what is the core difference with solution design activity -- is that clear? perhaps remove "in terms of the envisioned solution" from the above activity?}
 \item \emph{Solution design} refers to the activity of mapping a problem to a general solution; 
+\item \emph{Abstraction} refers to the activity of identifying the key design decisions for a defined scope of validity of a solution; 
 \item \emph{Instantiation} refers to the activity of implementing the solution in context; and 
 \item \emph{Empirical validation} refers to an evaluation of how well the implemented solution addresses the problem.
 \end{itemize}
@@ -214,47 +212,44 @@ These activities are performed iteratively across the theory--practice and probl
 \subsection{Design propositions}
 \label{sec:technologicalrules}
 
-\per{I am leaning towards the term Design propositions -- fits well with propositions in general, which are claimed but still not validated as theory.}
-\peggy{I too like the term but we've used technological rule at lot so far... and it is consistent with van Aken...   also some technological rules can be of the form do not apply an intervention, guess that is still ok though... I think I prefer it, do we introduce that term -- perhaps we should remind here and add a footnote about technological rule? --> Ah I see that below... is it clear we come up with that term though?}
+%\per{I am leaning towards the term Design propositions -- fits well with propositions in general, which are claimed but still not validated as theory.}
+%\peggy{I too like the term but we've used technological rule at lot so far... and it is consistent with van Aken...   also some technological rules can be of the form do not apply an intervention, guess that is still ok though... I think I prefer it, do we introduce that term -- perhaps we should remind here and add a footnote about technological rule? --> Ah I see that below... is it clear we come up with that term though?}
 
 % outline: The design proposition is the theoretical contribution of design science research also referred to as design knowledge.
 A design proposition captures generalized knowledge about mappings between instances of problems and solutions (i.e., in-context validations), and thus is a means to transfer knowledge between contexts. The design proposition spans both a problem domain and a solution domain, and is formulated based on constructs in both domains. 
 
 %In a design proposition, the solution (or intervention) may, for example,  refer to the use of a specific tool or the application of a more general technology, embedded in a tool. 
-The scope of validity of the solution is described in terms of a desired effect in a particular situation. 
-\peggy{replace situation with context?}
-The design knowledge within the design proposition aims to help software engineering professionals design customized solutions to their specific problems. Ideally it is a general recommendation based on current state of art, including new research contributions.
-
+The scope of validity of the solution is described in terms of a  \emph{desired effect} of a \emph{proposed intervention} in a particular \emph{context}. Thereby, it frames the research outcome in terms of effects of interventions, rather than in terms of a solution to a problem. A design proposition can typically be expressed in the form: 
 % outline: It can typically be expressed as: 'To achieve <desired effect> in <context> apply <intervention>
-Design propositions comprise both the context in terms of the \emph{desired effect} and \emph{the situation}, and a prescription in terms of a \emph{proposed intervention}. Thereby, it frames the research outcome in terms of desired effects and interventions rather than in terms of a solution to a problem. A design proposition can typically be expressed in the form: 
 
-\begin{quote}{\emph{To achieve \textless Effect \textgreater ~ in \textless Situation \textgreater~apply \textless Intervention\textgreater}.} 
+\begin{quote}{\emph{To achieve \textless Effect \textgreater ~ in \textless Context \textgreater~apply \textless Intervention\textgreater}.} 
 %\newline
 \end{quote}
+The design knowledge within the design proposition aims to help software engineering professionals design customized solutions to their specific problems. Ideally it is a general recommendation based on current state of art, including new research contributions.
+
 Design propositions correspond to fragments of \emph{design theory} in Gregor and Hevner's work~\cite{gregor_positioning_2013}, as well as in Wieringa's work who defines them as ``theories of artifacts in context''~\cite{wieringa_design_2009}. A thorough reflection about the role, nature and need for design propositions (also called technological rules) in design science research is provided by van Aken~\cite{van_aken_management_2004}.
 
 % Generalization 
-In a design proposition, a class of software engineering problems are generalized to a stakeholder's desired effect of applying a potential intervention in a specified situation. 
+In a design proposition, a class of software engineering problems are generalized to a stakeholder's desired effect of applying a potential intervention in a specified context. 
 Making this problem generalization explicit helps the researcher identify and communicate the different value-creating aspects of a research study or program.
-\peggy{is the paragraph break needed, seems connected...}
-
 % outline: The abstraction level may vary
-Wieringa and Daneva address generalizability of design theory~\cite{wieringa_six_2015} and emphasize the utility of \emph{middle-ranged theory}. %\emelie{I'm not sure I agree that the design propositions lack universal scope. They are general predictions. It may be that there may be unknown factors proving our predictions wrong but the predictions are still universal aren't they? Saying that something lacks universal scope is to say that generalization is not possible and then research is pointless or what can we learn from research if nothing is generalizeable? I suggest that we ignore their discussion.}\per{shorten}
-Design propositions are examples of such middle-ranged theories \per{fragments?}that can be expressed at any convenient abstraction level. However, design propositions expressed at a very high abstraction level (e.g., ``To produce software of high quality, apply good software engineering practices'') tend to be either trivial or too bold (easy to debunk), while propositions at very low abstraction levels have a narrow scope, and thus lack relevance for most software engineers. 
-\peggy{I didn't think of fragments as the same concept as middle range theories... but now I realize I don't have a good definition in mind for fragment... I miss our reading group and discussions!}
+%Wieringa and Daneva address generalizability of design theory~\cite{wieringa_six_2015} and emphasize the utility of \emph{middle-ranged theory}. %\emelie{I'm not sure I agree that the design propositions lack universal scope. They are general predictions. It may be that there may be unknown factors proving our predictions wrong but the predictions are still universal aren't they? Saying that something lacks universal scope is to say that generalization is not possible and then research is pointless or what can we learn from research if nothing is generalizeable? I suggest that we ignore their discussion.}\per{shorten}
+%\peggy{I didn't think of fragments as the same concept as middle range theories... but now I realize I don't have a good definition in mind for fragment... I miss our reading group and discussions!}
 
 %Examples of DS in SE
-How the intervention in a design proposition is formulated may vary. It could, for example, refer to the use of a tool or articulate abstractions of the knowledge embedded in the tool.
-\peggy{could also refer to the advice not to use a tool -- leave that out for now?}
+How the intervention in a design proposition is formulated may vary. It could, for example, refer to the use of a tool, articulate abstractions of the knowledge embedded in the tool, or even advice not to use the tool.
+%\peggy{could also refer to the advice not to use a tool -- leave that out for now?}
  It could also refer to the application of a practice, a technique, a framework, or a set of guidelines. We extracted 38 examples of design propositions from a set of distinguished ICSE-papers from 2014--2018~\cite{Engstrom19arxiv}; these propositions demonstrate the breadth of knowledge that can be represented using design propositions. These design propositions are available online at \url{http://dsse.org}.
 
 % Hierarichical design propositions
 One single instance of a problem--solution pair can generate multiple design propositions that are hierarchically related to each other. For example, an abstract proposition may recommend using a general type of technology, while several more detailed propositions may specify the use of technology, embedded in a specific tool. Similarly, there are hierarchical relationships with prior related design propositions to which a specific contribution is compared.
-\peggy{this is a related to the middle range theories above, no?  perhaps add that here and combine these paragraphs?  I think you could remove the above discussion and just add a footnote about middle range theories to this paragraph IMO}
+However, design propositions expressed at a very high abstraction level (e.g., ``To produce software of high quality, apply good software engineering practices'') tend to be either trivial or too bold (easy to debunk), while propositions at very low abstraction levels have a narrow scope, and thus lack relevance for most software engineers. 
+%\peggy{this is a related to the middle range theories above, no?  perhaps add that here and combine these paragraphs?  I think you could remove the above discussion and just add a footnote about middle range theories to this paragraph IMO}
+
 Thus, it is important to explicitly formulate the design proposition when presenting design science research and to be consistent with it, both when arguing for its relevance and its novelty, as well as when presenting the empirical (or analytical) support for the claims. A research contribution may refine any of the three constituents of an existing proposition, add empirical support for the proposition as a whole, or present a new proposition.
 
-\per{Mention artifacts?}
-\peggy{What is an artifact? :)}
+%\per{Mention artifacts?}
+%\peggy{What is an artifact? :)}
 
 
 
@@ -266,8 +261,10 @@ constructs on which we build design propositions. That is, the conceptualization
 A construct can, for example, be a taxonomy that is used to articulate a design proposition or classify a set of design propositions in a research review. 
 Taxonomies provide the means to relate different design propositions to each other. The different constituents of a design proposition may belong to different taxonomies. A construct can also be a conceptual model or a conceptualization approach that helps describe a problem in terms of an envisioned solution.
 
-Design knowledge is gained by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Each instantiation (e.g., a case study or iteration of action research) constitutes a unit of analysis in relation to the design proposition, and the new knowledge is communicated and assessed from that perspective.\emelie{Should this paragraph belong to Sec 3.1?} 
+%Design knowledge is gained by investigating one or more instances of a solution in context~\cite{wieringa_what_2014}. Each instantiation (e.g., a case study or iteration of action research) constitutes a unit of analysis in relation to the design proposition, and the new knowledge is communicated and assessed from that perspective.\emelie{Should this paragraph belong to Sec 3.1?} 
 \peggy{I was just going to suggest to cut it and then saw Emelie's comment -- certainly the first sentence is redundant...  I really like the ideas above though -- Per did you have some references or papers you were considering when you wrote that up? are these constructs somehow the same as knowledge produced by explanatory sciences? if so, should you say that here?  This subsection is very short compared to the next one btw}
+
+\per{I think parts of the text comes from Emelie... However, my primary source for the focus on taxonomies and conceptual models as "a language" to describe the domain is from our work on theory building (Elizabeths Gap theory and Hussan's openness theory).}
 
 \subsection{Problem conceptualization and solution design}
  % Who, What, Where, When, Why and How
@@ -284,64 +281,63 @@ In a mature research field, existing theory may help practitioners design soluti
 
 % (What?) The outcome of the problem understanding step is a conceptualuzation of the problem instance towards an envisioned solution and thus tightly connected to a specific design approach
 
-The outcome of the problem conceptualization is expressed in terms of problem elements/constructs, matching corresponding constructs of an envisioned solution. If, for example, the proposed solution is to design a visualization system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus, the problem formulation is tightly connected to the solution design and cannot be performed in isolation. 
+The outcome of the problem conceptualization is expressed in terms of problem elements/constructs, matching corresponding constructs of an envisioned solution. If, for example, the proposed solution is to design a visualization system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus, the problem contextualization is tightly connected to the solution design and cannot be performed in isolation. 
 
-Problem conceptualization is, to a large extent, in the eye of the beholder. A behavioral scientist would, for example, make a different problem conceptualization of a software project, compared to a software engineering researcher, while different software engineering researchers may be influenced by their background, emphasizing how problem conceptualization is intertwined with solution design.\emelie{cut this paragraph out?}\per{I would like to keep this statement, but perhaps it is misplaced?}
-\peggy{I liked it but perhaps should come later -- end of this subsection or discussion}
+
 
 % (What?) The research contribution is not the conceptualization, but the identification of the problem instance (empirical support for prevalence of a conceptual problem) and potential updates of the modelling approach (new aspects of the technological rule)
 
-Furthermore, the research contribution is \emph{not} the conceptualization as such, since this is connected to the instance of the problem and not the class of problems. Instead the research contribution is the empirical support for new, existing or refined design propositions. A research contribution from the problem conceptualization step could, for example, be the identification of problem instances (confirming the prevalence of a general problem) or updates of the conceptualization approach (i.e., the design constructs of a general solution).
-\peggy{I do think we could cut this paragraph though.... previously I had mentioned this section was feeling too long}
+%Furthermore, the research contribution is \emph{not} the conceptualization as such, since this is connected to the instance of the problem and not the class of problems. Instead the research contribution is the empirical support for new, existing or refined design propositions. A research contribution from the problem conceptualization step could, for example, be the identification of problem instances (confirming the prevalence of a general problem) or updates of the conceptualization approach (i.e., the design constructs of a general solution).
+%\peggy{I do think we could cut this paragraph though.... previously I had mentioned this section was feeling too long}
 
 % (When?) Problem understanding is the first step towards a solution design.
 
 %Problem conceptualization is the first step towards a solution design. 
-Depending on the type of solution, problem conceptualization may need to be repeated at several abstraction levels, starting with the stakeholder's problem description and, in case of a tool, reaching to the level of implementation details (such as choice of algorithm). If this is the case, different types of design propositions are used and validated at different abstraction levels. It is important to be aware of what these propositions are, and to ensure that the validation of a solution takes place at all these levels and that the validations are mapped to the correct design propositions. \emelie{exemplify or refer to the nested model?}  \peggy{we could do that but this subsection is so long already...}
+Depending on the type of solution, problem conceptualization may need to be repeated at several abstraction levels, starting with the stakeholder's problem description and, in case of a tool, reaching to the level of implementation details (such as choice of algorithm). If this is the case, different types of design propositions are used and validated at different abstraction levels. It is important to be aware of what these propositions are, and to ensure that the validation of a solution takes place at all these levels and that the validations are mapped to the correct design propositions. Further, while solution design is a creative activity, the design knowledge it produces can be made more accessible and trustworthy if critical design decisions are clearly reported together with considerations about alternative solutions.
+
+Finally, problem conceptualization is, to a large extent, in the eye of the beholder. A behavioral scientist would, for example, make a different problem conceptualization of a software project, compared to a software engineering researcher. Similarly, different software engineering researchers may be influenced by their background, emphasizing how problem conceptualization is intertwined with solution design.%\emelie{cut this paragraph out?}\per{I would like to keep this statement, but perhaps it is misplaced?}
+%\peggy{I liked it but perhaps should come later -- end of this subsection or discussion}
 
 % (Where?) Problem understanding must originate in empirical observations of practice
-Software engineering is a discipline in which conditions are changing rapidly. To provide relevant recommendations---design propositions---the problem conceptualization must originate in empirical observations of practice and within real-life problem instances. Furthermore, software engineering is a socio-technical endeavor, implying that stakeholders should often be involved in both problem conceptualization and solution validation, at least for design propositions at higher abstraction levels. Lower level design propositions may be investigated in isolation from stakeholders, but they must be related to the higher level propositions to be relevant.\emelie{cut this paragraph out?} 
-\peggy{yes was also going to suggest to cut this}
+%Software engineering is a discipline in which conditions are changing rapidly. To provide relevant recommendations---design propositions---the problem conceptualization must originate in empirical observations of practice and within real-life problem instances. Furthermore, software engineering is a socio-technical endeavor, implying that stakeholders should often be involved in both problem conceptualization and solution validation, at least for design propositions at higher abstraction levels. Lower level design propositions may be investigated in isolation from stakeholders, but they must be related to the higher level propositions to be relevant.\emelie{cut this paragraph out?} 
+%\peggy{yes was also going to suggest to cut this}
 
 % (How?) Problem understanding should build on prior work
-In a mature design science field, problem conceptualization can be guided by theory, i.e., prior design propositions and conceptualization approaches. 
-\peggy{this also feels obvious by now...}
+%In a mature design science field, problem conceptualization can be guided by theory, i.e., prior design propositions and conceptualization approaches. 
+%\peggy{this also feels obvious by now...}
 
 
 %Creative process/alternative solutions should be considered/design decisions reported
-One activity in the production of design knowledge is to work through iterations of a solution design, either together with practitioners in a real-life setting or offline. 
-While solution design is a creative activity, the design knowledge it produces can be made more accessible and trustworthy if critical design decisions are clearly reported together with considerations about alternative solutions.
-\peggy{cut first sentence of this paragraph and second sentence could perhaps this  could be combined above?} 
+%One activity in the production of design knowledge is to work through iterations of a solution design, either together with practitioners in a real-life setting or offline. 
+
+%\peggy{cut first sentence of this paragraph and second sentence could perhaps this  could be combined above?} 
 
 %May include several levels of design/evaluation and validation 
 
 
 %Reflections on the design process less important in the SE domain than in the IS domain
-\peggy{I've lost the flow to the next paragraph... is this needed at all?}
-Wieringa describes design science as an act of producing knowledge by designing useful things~\cite{wieringa_design_2009}, and makes a distinction between \emph{knowledge} problems and \emph{practical} problems. Similarly, Gregor and Hevner emphasize the dual focus on the artifact and its design in information systems~\cite{gregor_positioning_2013}, and argue for an iterative design process where validation of the artifact provides feedback to improve both the design process and the artifact. Although such an approach may also be relevant for designing software engineering artifacts, there is an important difference between the two research domains: while information systems are considered a solution domain, software engineering research originates in a problem domain with a plethora of more or less sophisticated solutions, not necessarily artifacts. Thus, the empirical contribution to problem conceptualization is of higher importance in the software engineering context, while the reflection on the design as such is of less value compared to research contributions in a typical solution domain such as information systems. Still, in both cases it is design knowledge that is produced as the aim is to create prescriptive knowledge for practitioners in their respective domains. 
+%\peggy{I've lost the flow to the next paragraph... is this needed at all?}
+%Wieringa describes design science as an act of producing knowledge by designing useful things~\cite{wieringa_design_2009}, and makes a distinction between \emph{knowledge} problems and \emph{practical} problems. Similarly, Gregor and Hevner emphasize the dual focus on the artifact and its design in information systems~\cite{gregor_positioning_2013}, and argue for an iterative design process where validation of the artifact provides feedback to improve both the design process and the artifact. Although such an approach may also be relevant for designing software engineering artifacts, there is an important difference between the two research domains: while information systems are considered a solution domain, software engineering research originates in a problem domain with a plethora of more or less sophisticated solutions, not necessarily artifacts. Thus, the empirical contribution to problem conceptualization is of higher importance in the software engineering context, while the reflection on the design as such is of less value compared to research contributions in a typical solution domain such as information systems. Still, in both cases it is design knowledge that is produced as the aim is to create prescriptive knowledge for practitioners in their respective domains. 
 
  
 
 \subsection{Validation, instantiation and abstraction}
 
 To validate a design proposition it must be instantiated, preferably in multiple cases of problem--solution pairs that instantiate the proposition where each case adds to the validity strength of the proposition. Alternatively, a new design proposition may be abstracted from an observed implemented solution applied to a real-life problem.
+The constituents of the design proposition implicitly specify the validation activities if expressed in the form of:
 
-\peggy{why paragraph break, and is the next sentence here needed?}
-Validation of research under the design science paradigm is always about a problem--solution pair in \emph{context}. As mentioned above, the constituents of the design proposition implicitly specify the validation activities if expressed in the form of:
-
-\begin{quote}{\emph{To achieve \textless Effect \textgreater ~ in \textless Situation \textgreater~apply \textless Intervention\textgreater}.} 
+\begin{quote}{\emph{To achieve \textless Effect \textgreater ~ in \textless Context \textgreater~apply \textless Intervention\textgreater}.} 
 \end{quote} 
 The \emph{intervention} is the object of study,
 \peggy{object of design?}
- the \emph{situation} defines \peggy{refers to?} the context, and the expected \emph{effect} defines the validation criteria. This points to `in vivo' software engineering context as the ultimate validation context for design science research. 
- \peggy{Not I cut the in vivo/vitro defns above as per Emelie's suggestion... but perhaps we need those here or cut here too as per Emelie's suggestion above?}
- Consequently, multiple case studies are brought forward as the natural research methodology in design science~\cite{van_aken_management_2004}. However, for some design problems, the characteristics of the real context may be very similar to the `in vitro' settings for the validation. For example, a tool which has no human--tool interaction can be evaluated with real or realistic data in an offline setting. In other cases, practical economical limitations can prevent the research endeavor from taking place in real operational environments, and thus scaled down validation contexts may be used in the research. 
+ the \emph{context}  refers to where the research is conducted, and the expected \emph{effect} defines the validation criteria. This points to real software engineering contexts as the ultimate validation context for design science research. 
+Consequently, multiple case studies are brought forward as the natural research methodology in design science~\cite{van_aken_management_2004}. However, for some design problems, the characteristics of the real context may be very similar to the artificial context settings for the validation. For example, a tool which has no human--tool interaction can be evaluated with real or realistic data in an offline setting. In other cases, practical economical limitations can prevent the research endeavor from taking place in real operational environments, and thus scaled down validation contexts may be used in the research. 
 
 
 The risks related to validating interventions in business critical contexts may be high. If the intervention does not deliver the effect as expected, the outcome of the software engineering activity as a whole may be endangered. Furthermore, the costs related to implementing the intervention may also be high (e.g., changing a work flow or adapting the information infrastructure to a new tool). Thus, validation procedures may be used, which gradually extend the validation scope for the intervention.
-On the other hand, \peggy{need a "one the one hand" to precede this... but not sure exactly where to put it...} reducing the scope and complexity of the validation context by too much may reduce the realism, which is essential for addressing a relevant problem with a feasible solution. `In vitro' studies may be useful to validate specific mechanisms, but they are not feasible for complex systems studies.  
+However, reducing the scope and complexity of the validation context by too much may reduce the realism, which is essential for addressing a relevant problem with a feasible solution. Studies in artificial contexts may be useful to validate specific mechanisms, but they are not feasible for complex systems studies.  
 
-Stol and Fitzgerald adapted Runkel and McGrath's framework for research strategies to guide balancing generalizability, precision and realism in designing validation studies~\cite{StolABC18}\per{chapter X in this book?}. This framework may be useful in choosing research strategies in relation to the goals of the research endeavor. The framework defines two dimensions: i) universality/specificity of context and systems, and ii) level of obtrusiveness. Maximum potential of realism may be achieved with specific contexts and systems, and more or less obtrusive research, depending on the perspective of explanatory research (field study) or design science (field experiments).   \peggy{something is missing in this last sentence not sure what the point it?}
+Stol and Fitzgerald adapted Runkel and McGrath's framework for research strategies to guide balancing generalizability, precision and realism in designing validation studies~\cite{StolABC18}\per{chapter X in this book?}. This framework may be useful in choosing research strategies in relation to the goals of the research endeavor. The framework defines two dimensions: i) universality/specificity of context and systems, and ii) level of obtrusiveness, which have to be balanced, as discussed above. %Maximum potential of realism may be achieved with specific contexts and systems, and more or less obtrusive research, depending on the perspective of explanatory research (field study) or design science (field experiments).   \peggy{something is missing in this last sentence not sure what the point it?}
 
 The specific choice of methods for the validation depends on the research question. Easterbrook \emph{et al.} provide guidance to the selection of methods for types of research question and conclude for the philosophical stance behind design science: ``Pragmatists use any available methods, and strongly prefer mixed methods research, where several methods are used to shed light on the issue under study.''~\cite{easterbrook_selecting_2008} 
 This recommendation fits well with the design science paradigm and its pragmatist viewpoint.
@@ -354,8 +350,7 @@ This recommendation fits well with the design science paradigm and its pragmatis
 
 Furthermore, the choice of method depends on the abstraction level of the validation. Munzner illustrates this in a nested model for visualization design and validation, see Figure~\ref{fig:nested_model}. This model shows how one design science project must respond to validity questions at several levels of abstraction, and that it is important to be consistent when selecting validation methods to avoid a mismatch between levels. As discussed in Section~\ref{sec:technologicalrules}, design propositions may be defined at all these different levels, and the scope of validity of each proposition is defined by the context in terms of the conceptualization of the problem at the current abstraction level.
 
-The design science paradigm primarily builds on theoretical/analytical generalizations, in contrast to explanatory sciences, which mostly rely on statistical generalizations~\cite[p. 30]{Runeson12Case}. Extending the scope of validity for a design proposition, i.e., creating a new more general proposition, is done by applying the intervention to new contexts, or by reasoning about the validity to another context by comparing key characteristics of the contexts. This is referred to as case-based generalization~\cite{wieringa_six_2015}.  
-
+The design science paradigm primarily builds on theoretical/analytical generalizations, in contrast to explanatory sciences, which mostly rely on statistical generalizations~\cite[p. 30]{Runeson12Case}. Extending the scope of validity for a design proposition (i.e., creating a new, more general proposition) is done by applying the intervention to new contexts, or by reasoning about the validity to another context by comparing key characteristics of the contexts. This is referred to as case-based generalization~\cite{wieringa_six_2015}.  
 Design propositions may also develop from the general to the specific. The research may start with a general proposition which is refined as new knowledge is gained through the instantiation of the proposition in multiple contexts. 
 
 
@@ -376,7 +371,7 @@ In a survey of 101 industry--academia collaboration projects, Garousi \emph{et a
 Action research is another way of producing and validating design propositions.  41 of the 101 industry--academia collaboration projects surveyed by Garousi \emph{et al.} were labeled as action research~\cite{Garousi2019}. However, action research does not explicitly aim to develop knowledge that can be transferred to other contexts, but rather to make a change in one specific local context. However, both Wieringa~\cite{wieringa_technical_2012} and Johannesson and Perjons~\cite{johannesson_introduction_2014} discuss action research as one of several empirical methods that can be used to produce design knowledge.
 
 
-Gorschek \emph{et al.} define a ``model for technology transfer in practice''~\cite{GorschekSW2006} focusing on industry--academia collaboration, which has some elements of design science. The model, which prescribes conceptual steps in solving a problem in an industry--academia collaboration setting, has elements of problem identification and formulation. The design of solutions involve studying the literature (state of the art) and selection of a candidate solution. This solution is validated in three steps, in academia, statically, and dynamically, before it is released into operations. 
+Gorschek \emph{et al.} define a ``model for technology transfer in practice''~\cite{GorschekSW2006} focusing on industry--academia collaboration, which has some elements of design science. The model, which prescribes conceptual steps in solving a problem in an industry--academia collaboration setting, has elements of problem identification and conceptualization. The design of solutions involve studying the literature (state of the art) and selection of a candidate solution. This solution is validated in three steps, in academia, statically, and dynamically, before it is released into operations. 
 
 These elements fit the design science lens, although the model (by intention) focuses primarily on the artifact and specific context rather than the generalized knowledge and design proposition, which are significant elements of design science research. Further, when the generalization of knowledge and iterative knowledge building is stressed, it becomes clear that industry--academia collaboration is not a one-way transfer of technology, but a mutual interaction between the two.
 
@@ -467,7 +462,7 @@ Below, we discuss assessments of contributions and refer to the examples we desc
 Relevance of a design science study is described in terms of problem similarity \peggy{similarity to what? oh I get it when I read it -- can this sentence be cut?} and solution applicability. The relevance of a research contribution can be viewed from two perspectives: 1) from other practitioners that may benefit from the design knowledge produced, and 2) from the research community. 
 
 From an individual practitioner's point of view, the relevance of a research contribution may be assessed by comparing their specific context with the study context described in the research report. 
-A practitioner may need to consider whether the design knowledge can be applied to their specific context as is, or if it should be customized in some way, or if the knowledge does not apply to their situation or problem at all.
+A practitioner may need to consider whether the design knowledge can be applied to their specific context as is, or if it should be customized in some way, or if the knowledge does not apply to their context or problem at all.
 In the example by Jonsson \emph{et al.}, (see Figure \ref{fig:BugAssignment}) a practitioner that faces the challenge of manually assigning bugs to teams could benefit from using ensemble-based machine learning to automate bug assignment (or not).
 
 From the research community perspective, relevance is often considered in terms of how common the studied problem is, and how generalizable the produced design knowledge may be. To enable both types of assessments, relevant context factors need to be reported. Not all context factors are helpful in making this assessment, but only those that are critical for either the applicability of the solution or for the potential gain of applying the solution. 
