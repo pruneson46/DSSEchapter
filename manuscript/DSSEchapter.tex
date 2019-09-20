@@ -39,7 +39,7 @@
 \usepackage{color}
 \usepackage{ifthen}
 \newboolean{showcomments}
-\setboolean{showcomments}{true} % toggle to show or hide comments
+\setboolean{showcomments}{false} % toggle to show or hide comments
 \ifthenelse{\boolean{showcomments}}
     {
         \newcommand{\emelie}[1]{\textcolor{red}{{\it [Emelie says: #1]}}}
@@ -88,7 +88,6 @@ Please use the 'starred' version of the \texttt{abstract} command for typesettin
 
 \abstract{Software engineering research aims to help improve real-world practice. With the adoption of empirical software engineering research methods, the understanding of real-world needs and validation of solution proposals have evolved. However, the philosophical perspective on what constitutes theoretical knowledge and research contributions in software engineering is less discussed in the community.   In this chapter, we use the \emph{design science paradigm} as a frame for articulating and communicating prescriptive software engineering research contributions. 
 Design science embraces \emph{problem conceptualization, solution (or artifact) design}, and \emph{validation} of solution proposals, with recommendations for practice phrased as \emph{technological rules}. Design science is used in related research areas, particularly information systems and management theory. We elaborate the constructs of design science for software engineering, relate them to different conceptualizations of design science and provide examples of possible research methods. We outline how the assessment of research contributions, industry-academia communication and theoretical knowledge building may be supported by the design science paradigm. Finally, we provide examples of software engineering research presented through a design science lens.} 
-\per{I use frame for the general discussion and lens for the VA. ok?}
 
 \section{Introduction}
 \label{sec:intro}
@@ -247,7 +246,7 @@ In a mature research field, existing theory may help practitioners design soluti
 
 % (What?) The outcome of the problem understanding step is a conceptualuzation of the problem instance towards an envisioned solution and thus tightly connected to a specific design approach
 
-The outcome of the problem conceptualization is expressed in terms of problem constructs, matching corresponding constructs of an envisioned solution. If, for example, the proposed solution is to design a visualization system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus, the problem contextualization\emelie{Conceptualization?} is tightly connected to the solution design and cannot be performed in isolation. 
+The outcome of the problem conceptualization is expressed in terms of problem constructs, matching corresponding constructs of an envisioned solution. If, for example, the proposed solution is to design a visualization system, the problem should typically be described in terms of a group of target users, their questions and tasks, and their measurements or data~\cite{meyer_nested_2015}. Thus, the problem conceptualization is tightly connected to the solution design and cannot be performed in isolation. 
 
 % (What?) The research contribution is not the conceptualization, but the identification of the problem instance (empirical support for prevalence of a conceptual problem) and potential updates of the modelling approach (new aspects of the technological rule)
 
@@ -291,14 +290,9 @@ Technological rules may also develop from the general to the specific. The resea
 
 
 \subsection{Design Science Research in Practice} 
-\peggy{I like the discussion in this section a lot but it doesn't match the title very well...  perhaps this should go later in a discussion section or even earlier? I'm not sure... perhaps this could even go in further reading... or maybe the title should be about alternative views or something...}\per{Proposed title change}
-
 The design science paradigm may embrace the use of a multitude of research methods. For \emph{problem conceptualization} and \emph{validation} of technological rules, empirical research methods are used, however, methods supporting natural settings are preferred as the problem in context is a focus for design science research. 
 
-Design science is considered a methodology by other scholars in software engineering research~\cite{Wohlin2015}. As a consequence, they focus on the %valid research 
-activities (how to conduct the research) rather than on the theoretical contributions of the research (how to theorize from the research), which is the case when it is considered a paradigm. However, %since a paradigm includes the methodologies, as defined above, 
-there is a strong connection between the paradigm and the methodologies used.%, although the mapping is not one-to-one.
-\emelie{If we keep the title I suggest that we skip (or move) this paragraph. I agree with Peggy that I like the discussion in this section and I think the flow is better if we just skip this paragraph}
+
 
 In a survey of 101 industry--academia collaboration projects, Garousi \emph{et al.} found 75 that were characterized as case studies~\cite{Garousi2019}. Further, they note that ``industrial case studies usually apply either the `exploratory' or the `improving' type, or both, rather than other case study types (descriptive, explanatory)''. Methods for data collection and analysis can be selected from the rich plethora of options available for such studies, for example, interviews, focus groups, observational studies, archival data analysis, and software metric analysis. 
 
@@ -439,7 +433,8 @@ The philosophical stance behind design science is what is characterized as pragm
 \end{quote}
 
 
-Gregor and Hevner also refer to design science as a paradigm~\cite{gregor_positioning_2013}. Johannesson and Perjons  disagree with this view and argue that design science refers to the objective of changing the world---in contrast to describing it---and that this is done primarily by creating artifacts, not knowledge~\cite{johannesson_introduction_2014}. Johannesson and Perjons' view emphasizes design science as action research. Our stance is that design science is a paradigm for software engineering research, and as researchers our primary goal is to create knowledge to be applied by practitioners in the field. Furthermore, we consider artifacts as embedding design knowledge. 
+Gregor and Hevner also refer to design science as a paradigm~\cite{gregor_positioning_2013}. Johannesson and Perjons  disagree with this view and argue that design science refers to the objective of changing the world---in contrast to describing it---and that this is done primarily by creating artifacts, not knowledge~\cite{johannesson_introduction_2014}. Johannesson and Perjons' view emphasizes design science as action research. Wohlin and Aurum also present design science as a methodology~\cite{Wohlin2015}. As a consequence, they focus on the activities (how to conduct the research) rather than on the theoretical contributions of the research (how to theorize from the research), which is the case when it is considered a paradigm. However, there is a strong connection between the paradigm and the methodologies used.
+Our stance is that design science is a paradigm for software engineering research, and as researchers our primary goal is to create knowledge to be applied by practitioners in the field. Furthermore, we consider artifacts as embedding design knowledge. 
 
 Hevner adds three research cycles to the conceptual model of design science, namely the \emph{relevance}, the \emph{design}, and the \emph{rigor} cycles~\cite{Hevner2007}. The relevance cycle connects the environment with the design science activities, the design cycle iterates between designing and evaluating the interventions, while the rigor cycle connects the research with the theoretical foundation of the research. We were inspired by Hevner's work when we added assessment criteria to the visual abstract template.
 %\peggy{I added this last sentence hope ok...}
